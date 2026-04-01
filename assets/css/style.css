@@ -401,7 +401,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -664,14 +664,18 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Services (FIXED FOR PERFECT ALIGNMENT)
 --------------------------------------------------------------*/
 .services .icon-box {
-  margin-bottom: 20px;
+  margin-bottom: 40px; /* Added spacing between rows */
+  display: grid;
+  grid-template-columns: 54px 1fr; /* Exact icon width, then remaining space */
+  column-gap: 25px; /* Perfect space between icon and text */
 }
 
 .services .icon {
-  float: left;
+  grid-column: 1;
+  grid-row: 1 / span 2; /* Forces the icon to span across both title and description rows */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -681,6 +685,7 @@ section {
   border-radius: 50%;
   transition: 0.5s;
   border: 1px solid #149ddd;
+  margin-top: -2px; /* Fine-tunes vertical alignment with title */
 }
 
 .services .icon i {
@@ -698,10 +703,12 @@ section {
 }
 
 .services .title {
-  margin-left: 80px;
+  grid-column: 2;
+  grid-row: 1;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 8px; /* Spacing between title and description */
   font-size: 18px;
+  margin-left: 0; /* Removed old breaking margin */
 }
 
 .services .title a {
@@ -713,9 +720,12 @@ section {
 }
 
 .services .description {
-  margin-left: 80px;
+  grid-column: 2;
+  grid-row: 2;
   line-height: 24px;
   font-size: 14px;
+  margin-left: 0; /* Removed old breaking margin */
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
