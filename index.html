@@ -1,724 +1,747 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Manula Pamod Haputhanthrie — Senior Network Engineer</title>
+  <meta name="description" content="Senior Network Engineer at SLT-Mobitel PEOTV. BSc (Hons) Computer Systems & Network Engineering, SLIIT. Colombo, Sri Lanka."/>
+  <meta property="og:title" content="Manula Pamod Haputhanthrie — Senior Network Engineer"/>
+  <meta property="og:description" content="Senior Network Engineer specializing in IPTV infrastructure, enterprise LAN/WAN, VMware, ISO 27001 compliance — Colombo, Sri Lanka."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);
+      --text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);
+      --text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);
+      --text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);
+      --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+      --text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
+      --text-3xl:clamp(2.5rem,1rem + 4vw,5rem);
+      --text-hero:clamp(2.8rem,0.5rem + 6.5vw,6.5rem);
+      --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;
+      --space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;
+      --space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;
+      --radius-sm:.375rem;--radius-md:.5rem;--radius-lg:.75rem;
+      --radius-xl:1rem;--radius-2xl:1.5rem;--radius-full:9999px;
+      --trans:180ms cubic-bezier(0.16,1,0.3,1);
+      --content:960px;--wide:1200px;
+      --font-display:'Cabinet Grotesk','Space Grotesk',sans-serif;
+      --font-body:'Space Grotesk',system-ui,sans-serif;
+      --font-mono:'JetBrains Mono','Courier New',monospace;
+    }
+    :root,[data-theme="dark"]{
+      --bg:#0d0e10;--surf:#12141a;--surf2:#181b22;--surfo:#1e2130;--surfd:#252a3a;
+      --div:#1f2334;--brd:#2a2f42;
+      --tx:#e2e4ec;--txm:#8892a8;--txf:#4a5268;--txi:#0d0e10;
+      --pri:#00d4aa;--prih:#00b898;--pria:#009a80;--prih2:rgba(0,212,170,.1);
+      --acc:#6c63ff;--acc2:rgba(108,99,255,.1);
+      --sh-sm:0 1px 2px rgba(0,0,0,.35);--sh-md:0 4px 12px rgba(0,0,0,.45);--sh-lg:0 12px 32px rgba(0,0,0,.55);
+      --glow:0 0 28px rgba(0,212,170,.15);--glow2:0 0 28px rgba(108,99,255,.12);
+    }
+    [data-theme="light"]{
+      --bg:#f4f5f9;--surf:#fff;--surf2:#f9fafc;--surfo:#edf0f6;--surfd:#e3e7f0;
+      --div:#dce0ec;--brd:#cdd2e0;
+      --tx:#1a1d28;--txm:#586278;--txf:#9aa0b8;--txi:#fff;
+      --pri:#007a63;--prih:#006655;--pria:#005244;--prih2:rgba(0,122,99,.07);
+      --acc:#4a42d0;--acc2:rgba(74,66,208,.07);
+      --sh-sm:0 1px 2px rgba(0,0,0,.06);--sh-md:0 4px 12px rgba(0,0,0,.08);--sh-lg:0 12px 32px rgba(0,0,0,.12);
+      --glow:none;--glow2:none;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;scroll-padding-top:5rem;}
+    body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);color:var(--tx);background:var(--bg);line-height:1.65;}
+    img,picture,svg{display:block;max-width:100%;height:auto;}
+    h1,h2,h3,h4{text-wrap:balance;line-height:1.15;font-family:var(--font-display);}
+    p,li{text-wrap:pretty;}
+    button{cursor:pointer;background:none;border:none;}
+    a{color:inherit;text-decoration:none;}
+    ::selection{background:rgba(0,212,170,.2);color:var(--tx);}
+    :focus-visible{outline:2px solid var(--pri);outline-offset:3px;border-radius:var(--radius-sm);}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0;}
 
-  <title>Manula</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    /* SCROLL ANIM */
+    .fi{opacity:1;}
+    @supports(animation-timeline:scroll()){
+      .fi{opacity:0;animation:rfade linear both;animation-timeline:view();animation-range:entry 0% entry 75%;}
+    }
+    @keyframes rfade{to{opacity:1;}}
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    /* LAYOUT */
+    .c{max-width:var(--content);margin-inline:auto;padding-inline:var(--space-6);}
+    .cw{max-width:var(--wide);margin-inline:auto;padding-inline:var(--space-6);}
+    section{padding-block:clamp(var(--space-16),8vw,var(--space-24));}
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    
-  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    /* ── NAV ── */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;
+      background:color-mix(in oklab,var(--bg) 88%,transparent);
+      backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--div);transition:background var(--trans);}
+    .ni{max-width:var(--wide);margin-inline:auto;padding:var(--space-4) var(--space-6);display:flex;align-items:center;justify-content:space-between;}
+    .nlogo{display:flex;align-items:center;gap:var(--space-3);font-family:var(--font-display);font-weight:800;font-size:var(--text-base);letter-spacing:-.02em;}
+    .nlinks{display:flex;gap:var(--space-8);list-style:none;font-size:var(--text-sm);font-weight:500;}
+    .nlinks a{color:var(--txm);transition:color var(--trans);}
+    .nlinks a:hover{color:var(--pri);}
+    .nact{display:flex;align-items:center;gap:var(--space-3);}
+    .ttoggle{width:40px;height:40px;border-radius:var(--radius-full);border:1px solid var(--brd);display:flex;align-items:center;justify-content:center;color:var(--txm);transition:all var(--trans);}
+    .ttoggle:hover{color:var(--pri);border-color:var(--pri);}
+    .bnav{font-size:var(--text-sm);font-weight:600;font-family:var(--font-body);padding:var(--space-2) var(--space-5);background:var(--pri);color:var(--txi);border-radius:var(--radius-full);transition:all var(--trans);}
+    .bnav:hover{background:var(--prih);transform:translateY(-1px);box-shadow:var(--glow);}
+    .ham{display:none;width:40px;height:40px;border-radius:var(--radius-md);border:1px solid var(--brd);align-items:center;justify-content:center;color:var(--txm);transition:all var(--trans);}
+    .ham:hover{color:var(--pri);}
+    .mmenu{display:none;position:fixed;inset:0;z-index:99;background:var(--bg);padding:5rem var(--space-6) var(--space-8);flex-direction:column;gap:var(--space-6);}
+    .mmenu.open{display:flex;}
+    .mmenu a{font-size:var(--text-xl);font-weight:700;font-family:var(--font-display);color:var(--txm);border-bottom:1px solid var(--div);padding-bottom:var(--space-4);transition:color var(--trans);}
+    .mmenu a:hover{color:var(--pri);}
 
-    
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    /* ── HERO ── */
+    #hero{padding-top:clamp(6rem,14vw,10rem);padding-bottom:clamp(var(--space-16),8vw,var(--space-24));position:relative;overflow:hidden;}
+    .hbg{position:absolute;inset:0;z-index:0;
+      background:radial-gradient(ellipse 80% 60% at 70% 40%,rgba(0,212,170,.06) 0%,transparent 70%),
+      radial-gradient(ellipse 60% 50% at 20% 70%,rgba(108,99,255,.05) 0%,transparent 70%);}
+    .hgrid{position:absolute;inset:0;z-index:0;opacity:.03;
+      background-image:linear-gradient(var(--pri) 1px,transparent 1px),linear-gradient(90deg,var(--pri) 1px,transparent 1px);
+      background-size:50px 50px;}
+    .hc{position:relative;z-index:1;}
+    .hbadge{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-xs);font-family:var(--font-mono);font-weight:500;padding:var(--space-2) var(--space-4);border:1px solid var(--pri);border-radius:var(--radius-full);color:var(--pri);margin-bottom:var(--space-6);letter-spacing:.05em;}
+    .hdot{width:6px;height:6px;border-radius:50%;background:var(--pri);animation:pdot 2s ease-in-out infinite;}
+    @keyframes pdot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(.8);}}
+    .hname{font-family:var(--font-display);font-weight:900;font-size:var(--text-hero);letter-spacing:-.03em;line-height:1;margin-bottom:var(--space-4);}
+    .hname span{background:linear-gradient(in oklab,var(--pri),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .htitle{font-size:var(--text-xl);font-weight:600;color:var(--txm);margin-bottom:var(--space-6);font-family:var(--font-display);}
+    .hdesc{font-size:var(--text-base);color:var(--txm);max-width:56ch;line-height:1.75;margin-bottom:var(--space-10);}
+    .hact{display:flex;gap:var(--space-4);flex-wrap:wrap;}
+    .bpri{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:600;font-family:var(--font-body);padding:var(--space-3) var(--space-8);background:var(--pri);color:var(--txi);border-radius:var(--radius-full);transition:all var(--trans);}
+    .bpri:hover{background:var(--prih);transform:translateY(-2px);box-shadow:var(--glow);}
+    .bsec{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:600;font-family:var(--font-body);padding:var(--space-3) var(--space-8);border:1px solid var(--brd);border-radius:var(--radius-full);color:var(--txm);transition:all var(--trans);}
+    .bsec:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px);}
+    /* typed roles */
+    .typed-wrap{font-size:var(--text-base);color:var(--txm);margin-bottom:var(--space-8);font-family:var(--font-mono);min-height:1.65em;}
+    .typed-cursor{color:var(--pri);animation:blink 1.2s step-end infinite;}
+    @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+    /* terminal */
+    .hterm{margin-top:var(--space-12);background:var(--surf);border:1px solid var(--brd);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--sh-lg);max-width:580px;}
+    .tbar{padding:var(--space-3) var(--space-5);background:var(--surfo);border-bottom:1px solid var(--brd);display:flex;align-items:center;gap:var(--space-2);}
+    .td{width:12px;height:12px;border-radius:50%;}
+    .tr{background:#ff5f56;}.ty{background:#ffbd2e;}.tg{background:#27c93f;}
+    .ttl{font-size:var(--text-xs);color:var(--txf);font-family:var(--font-mono);margin-left:auto;margin-right:auto;}
+    .tbody{padding:var(--space-5) var(--space-6);font-family:var(--font-mono);font-size:var(--text-xs);line-height:2;}
+    .tp{color:var(--pri);}.tc{color:var(--tx);}.to{color:var(--txm);}
+    .thi{color:var(--pri);}.tac{color:#6c63ff;}
+    .tcur{display:inline-block;width:8px;height:14px;background:var(--pri);animation:blink 1.2s step-end infinite;vertical-align:middle;margin-left:2px;}
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    /* ── SOCIAL LINKS HERO ── */
+    .socials{display:flex;gap:var(--space-4);margin-top:var(--space-6);}
+    .soc-link{width:40px;height:40px;border:1px solid var(--brd);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;color:var(--txm);transition:all var(--trans);}
+    .soc-link:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px);box-shadow:var(--glow);}
 
+    /* ── STATS ── */
+    #stats{padding-block:var(--space-8);border-top:1px solid var(--div);border-bottom:1px solid var(--div);}
+    .sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:var(--space-8);text-align:center;}
+    .snum{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:900;color:var(--pri);line-height:1;}
+    .slbl{font-size:var(--text-xs);color:var(--txm);margin-top:var(--space-1);letter-spacing:.05em;text-transform:uppercase;}
+
+    /* ── SECTION HEADING ── */
+    .slabel{font-size:var(--text-xs);font-family:var(--font-mono);color:var(--pri);letter-spacing:.1em;text-transform:uppercase;margin-bottom:var(--space-3);}
+    .stitle{font-size:var(--text-2xl);font-weight:900;letter-spacing:-.02em;margin-bottom:var(--space-4);}
+    .sdesc{font-size:var(--text-base);color:var(--txm);max-width:54ch;line-height:1.75;}
+
+    /* ── ABOUT ── */
+    #about{background:var(--surf);}
+    .about-g{display:grid;grid-template-columns:1fr 1.3fr;gap:var(--space-16);align-items:center;margin-top:var(--space-12);}
+    .avisual{background:var(--surfo);border-radius:var(--radius-2xl);border:1px solid var(--brd);padding:var(--space-8);aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;}
+    .avbg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(0,212,170,.08) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(108,99,255,.06) 0%,transparent 60%);}
+    .avatar{position:absolute;top:var(--space-8);left:50%;transform:translateX(-50%);width:140px;height:140px;border-radius:50%;background:linear-gradient(135deg,var(--prih2),var(--surfd));border:3px solid var(--pri);display:flex;align-items:center;justify-content:center;color:var(--pri);font-family:var(--font-display);font-size:2.8rem;font-weight:900;box-shadow:var(--glow);}
+    .acard{position:relative;z-index:1;background:rgba(18,20,26,.88);backdrop-filter:blur(8px);border:1px solid var(--brd);border-radius:var(--radius-xl);padding:var(--space-5);}
+    [data-theme="light"] .acard{background:rgba(255,255,255,.88);}
+    .acname{font-family:var(--font-display);font-weight:900;font-size:var(--text-lg);margin-bottom:var(--space-1);}
+    .acrole{font-size:var(--text-sm);color:var(--pri);font-family:var(--font-mono);}
+    .acloc{font-size:var(--text-xs);color:var(--txm);margin-top:var(--space-2);display:flex;align-items:center;gap:var(--space-2);}
+    .atxt p{font-size:var(--text-base);color:var(--txm);line-height:1.8;margin-bottom:var(--space-5);}
+    .alist{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3) var(--space-8);margin-top:var(--space-6);}
+    .aitem{display:flex;flex-direction:column;gap:2px;}
+    .albl{font-size:var(--text-xs);color:var(--txf);text-transform:uppercase;letter-spacing:.05em;}
+    .aval{font-size:var(--text-sm);font-weight:600;color:var(--tx);}
+    .aval a{color:var(--pri);}
+    .aval a:hover{text-decoration:underline;}
+
+    /* ── SKILLS ── */
+    #skills{background:var(--bg);}
+    .sk-cols{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);margin-top:var(--space-12);}
+    .sk-item{margin-bottom:var(--space-5);}
+    .sk-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-2);}
+    .sk-name{font-size:var(--text-sm);font-weight:600;font-family:var(--font-mono);}
+    .sk-pct{font-size:var(--text-xs);font-family:var(--font-mono);color:var(--pri);}
+    .sk-bar{height:6px;background:var(--surfd);border-radius:var(--radius-full);overflow:hidden;}
+    .sk-fill{height:100%;background:linear-gradient(90deg,var(--pri),var(--acc));border-radius:var(--radius-full);transform-origin:left;transform:scaleX(0);transition:transform 1.2s cubic-bezier(.16,1,.3,1);}
+    .sk-fill.animated{transform:scaleX(1);}
+
+    /* tech stack icons row */
+    .tech-row{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-10);}
+    .tech-chip{font-size:var(--text-xs);font-family:var(--font-mono);padding:var(--space-2) var(--space-4);border:1px solid var(--brd);border-radius:var(--radius-full);background:var(--surf);color:var(--txm);transition:all var(--trans);}
+    .tech-chip:hover{border-color:var(--pri);color:var(--pri);}
+
+    /* ── SERVICES ── */
+    #services{background:var(--surf);}
+    .svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:var(--space-6);margin-top:var(--space-12);}
+    .svc-card{background:var(--bg);border:1px solid var(--brd);border-radius:var(--radius-xl);padding:var(--space-6);transition:all var(--trans);}
+    .svc-card:hover{border-color:var(--pri);box-shadow:var(--glow);transform:translateY(-3px);}
+    .svc-icon{width:48px;height:48px;border-radius:var(--radius-md);background:var(--prih2);display:flex;align-items:center;justify-content:center;color:var(--pri);margin-bottom:var(--space-4);border:1px solid rgba(0,212,170,.2);}
+    .svc-name{font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-2);}
+    .svc-desc{font-size:var(--text-sm);color:var(--txm);line-height:1.65;}
+
+    /* ── EXPERIENCE ── */
+    #experience{background:var(--bg);}
+    .exp-tl{margin-top:var(--space-12);position:relative;}
+    .exp-tl::before{content:'';position:absolute;left:20px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--pri),transparent);}
+    .exp-item{display:grid;grid-template-columns:44px 1fr;gap:var(--space-6);margin-bottom:var(--space-10);}
+    .edot{width:44px;height:44px;border-radius:50%;background:var(--surfo);border:2px solid var(--pri);display:flex;align-items:center;justify-content:center;color:var(--pri);flex-shrink:0;position:relative;z-index:1;}
+    .econt{padding-top:var(--space-1);}
+    .eperiod{font-size:var(--text-xs);font-family:var(--font-mono);color:var(--pri);margin-bottom:var(--space-2);letter-spacing:.05em;}
+    .erole{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;margin-bottom:var(--space-1);}
+    .eco{font-size:var(--text-sm);color:var(--txm);margin-bottom:var(--space-4);}
+    .eco span{color:var(--txf);font-size:var(--text-xs);font-family:var(--font-mono);}
+    .elist{list-style:none;display:flex;flex-direction:column;gap:var(--space-2);}
+    .elist li{font-size:var(--text-sm);color:var(--txm);padding-left:var(--space-5);position:relative;}
+    .elist li::before{content:"▸";position:absolute;left:0;color:var(--pri);}
+
+    /* ── EDUCATION ── */
+    #education{background:var(--surf);}
+    .edu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--space-6);margin-top:var(--space-12);}
+    .edu-card{background:var(--bg);border:1px solid var(--brd);border-radius:var(--radius-xl);padding:var(--space-6);transition:all var(--trans);}
+    .edu-card:hover{border-color:var(--pri);box-shadow:var(--glow);transform:translateY(-2px);}
+    .edu-year{font-size:var(--text-xs);font-family:var(--font-mono);color:var(--pri);letter-spacing:.05em;margin-bottom:var(--space-3);}
+    .edu-name{font-family:var(--font-display);font-size:var(--text-base);font-weight:800;margin-bottom:var(--space-1);}
+    .edu-deg{font-size:var(--text-sm);color:var(--pri);margin-bottom:var(--space-3);}
+    .edu-notes{font-size:var(--text-xs);color:var(--txm);line-height:1.65;}
+
+    /* ── CONTACT ── */
+    #contact{position:relative;overflow:hidden;}
+    .cglow{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(0,212,170,.05) 0%,transparent 70%);}
+    .cinn{position:relative;z-index:1;text-align:center;}
+    .ctitle{font-size:var(--text-3xl);font-weight:900;letter-spacing:-.03em;margin-bottom:var(--space-4);}
+    .cdesc{font-size:var(--text-base);color:var(--txm);max-width:48ch;margin-inline:auto;line-height:1.75;margin-bottom:var(--space-10);}
+    .clinks{display:flex;justify-content:center;flex-wrap:wrap;gap:var(--space-4);margin-bottom:var(--space-10);}
+    .clink{display:flex;align-items:center;gap:var(--space-3);font-size:var(--text-sm);font-weight:600;padding:var(--space-3) var(--space-6);border:1px solid var(--brd);border-radius:var(--radius-full);background:var(--surf);color:var(--txm);transition:all var(--trans);}
+    .clink:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px);box-shadow:var(--glow);}
+    .clink.pri{background:var(--pri);color:var(--txi);border-color:var(--pri);}
+    .clink.pri:hover{background:var(--prih);}
+    /* map */
+    .cmap{border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--brd);max-width:700px;margin-inline:auto;box-shadow:var(--sh-lg);}
+    .cmap iframe{display:block;width:100%;height:300px;}
+
+    /* ── FOOTER ── */
+    footer{border-top:1px solid var(--div);padding:var(--space-8) var(--space-6);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4);max-width:var(--wide);margin-inline:auto;font-size:var(--text-xs);color:var(--txf);}
+    .flogo{font-family:var(--font-display);font-weight:800;color:var(--txm);}
+    .fstat{display:flex;align-items:center;gap:var(--space-2);}
+    .fdot{width:6px;height:6px;border-radius:50%;background:var(--pri);}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:768px){
+      .nlinks,.bnav{display:none;}
+      .ham{display:flex;}
+      .sk-cols{grid-template-columns:1fr;}
+      .about-g{grid-template-columns:1fr;}
+      .alist{grid-template-columns:1fr;}
+    }
+    @media(max-width:480px){
+      .hact{flex-direction:column;}
+      .bpri,.bsec{justify-content:center;}
+      .sgrid{grid-template-columns:1fr 1fr;}
+    }
   
+    /* Mouse Highlight Effect */
+    .mouse-glow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 212, 170, 0.08) 0%, transparent 60%);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      mix-blend-mode: screen;
+    }
+
+</style>
 </head>
-
 <body>
+<div class="mouse-glow" id="mouse-glow"></div>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+<a href="#main" class="sr-only">Skip to content</a>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Manula</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/manula_97" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/manula97/" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/manula_97/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://wa.me/+94717435584" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/in/manulasapu/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user-circle"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bxs-report"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-customize"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+<!-- NAV -->
+<nav>
+  <div class="ni">
+    <div class="nlogo">
+      <img src="assets/img/ms97.png" alt="ms97.live logo" width="85" height="85" style="object-fit: contain;">
+      ms97.live
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-        
-      <h1>Manula</h1>
-      <p>I'm <span class="typed" data-typed-items="Network Engineer, Web Developer, Electronics Developer, IoT Developer, Designer, Content Creator, Photographer, Google Local Guide L08"></span></p>
+    <ul class="nlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nact">
+      <button class="ttoggle" data-theme-toggle aria-label="Switch theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="bnav">Hire Me</a>
+      <button class="ham" id="ham" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title ">
-          <h2>About</h2>
-          <p>Welcome to my ePortfolio!<br/>
-             I'm Manula Pamod Haputhanthrie, and when I put together my ePortfolio, I was twenty-nine years old. <br/> At this point, I have received my Bachelor of Science with Honours degree in Computer Systems and Network Engineering from the Sri Lanka Institute of Information Technology (SLIIT).</p>
-        </div> <br/>
-          <br/>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid rounded-circle" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-              <h3>Manula Pamod Haputhanthrie</h3> <br/>
-           <!-- <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p> -->
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>22 November 1997</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.ms97.live</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <a href="tel:071-743-5584">(+94)71 743 5584</a><!--<span>+9476 755 5306</span>--></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Colombo, Sri Lanka</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>29</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Science</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>  <a  style = "text-transform:lowercase;" href="mailto:name@email.com"> manulasapu2016@gmail.com </a><!--<span>manulasapu2016@gmail.com</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-              <br/>
-            <p> <ul>
-             <li>At present, I am working as a Senior Network Engineer at SLT-Mobitel PEOTV, where I am responsible for the operation, monitoring, and optimization of the IPTV service platform, along with the design, implementation, and management of enterprise-grade LAN and WAN network infrastructures, ensuring high availability, performance, and service reliability.</li>
-             <li>Previously, I worked as a Network Engineer at Commercial Bank of Ceylon PLC, where I was responsible for setting up and managing the islandwide branches' full network infrastructure.</li>
-             <li>Lastly, I am employed as an Internet of Things Engineer at N-able Private Limited, where I worked on several industrial Internet of Things projects. </li> 
-             <li>I formerly worked as an Associate Network Engineer in the Department of Engineering at NextEn (Pvt) Ltd.</li>
-             <li>At Dialog Axiata, where I worked as a trainee Network/Telecom Engineer in the Department of Network Operations & Service Assurance, I completed my half-year internship with distinction.</li>
-            </ul>  <div class="social-icons">
-                        </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container">
-
-      <!--  <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills </h2>
-             
-            
-          <p>
-              <div class="col-lg-6" data-aos="fade-up"><!--<ul class="list-inline dev-icons"> -->
-                  <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-windows"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-jsfiddle"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-database"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-codiepie"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-code"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-microchip"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-terminal"></i></li>
-                        <li class="list-inline-item"><i class="fa fa-clone"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-free-code-camp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-amazon"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-expeditedssl"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-reddit"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-odnoklassniki-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-stack-overflow"></i></li> <br/>
-                   <!-- </ul> --></p>
-            </div>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">ARDUINO <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-              
-            <div class="progress">
-              <span class="skill">NETWORK MANAGEMENT TOOLS <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-              
-            <div class="progress">
-              <span class="skill">PREMIERE PRO <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">KALI-LINUX <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">ELECTRONICS <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-              
-            <div class="progress">
-              <span class="skill">DBMS <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-              
-            <div class="progress">
-              <span class="skill">PHOTOSHOP <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-     <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-        
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Manula</h4>
-              <p><em>Hi! You may get in touch with me quickly and simply by using any of these two email addresses or any of these mobile phone numbers.</em></p>
-              <ul>
-               <!-- <li>No: 100/5 1-1, Baddagana Road, Kotte.</li> -->
-                <li><a href="tel:076-755-5306">(+94)71 743 5584</a></li>
-                <li><a href="tel:076-905-8114">(+94)70 671 8800</a></li>
-                <li><a  style = "text-transform:lowercase;" href="mailto:name@email.com"> manulasapu2016@gmail.com </a></li>
-                <li><a  style = "text-transform:lowercase;" href="mailto:name@email.com"> manula.pamod@slt.com.lk </a></li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Mahinda College Galle</h4>
-              <h5>2003 - 2016</h5>
-              <p><em>Biological Science Stream</em></p>
-              <p><li>Passed G.C.E. Ordinary Level Examination (2013) with 8 "A" passes, and 1 pass "C".</li><br/>
-                 <li>Passed G.C.E. Advanced Level Examination (2018) with 2 "C" passes, and 2 passes "S".</li></p>
-            </div>
-            <div class="resume-item">
-              <h4>ESOFT Metro Campus</h4>
-              <h5>2018 - 2019</h5>
-              <p><em>Diploma in IT (International)</em></p>
-              <p><li>Successfully finished the (DiTec) half-year Dip.IT at ESOFT Galle.</li></p>
-            </div>
-              
-               <div class="resume-item">
-              <h4>Sri Lanka Institute of Information Technology (SLIIT)</h4>
-              <h5>2019 - 2022</h5>
-              <p><em>BSc (Hons) Computer Systems &amp; Network Engineering</em></p>
-              <ul>
-                <li>The final-year research project was completed by developing a Computer Vision-Based Navigation Robot and exhibiting it at a conference held by the University of Moratuwa.</li>
-                <li>Automated Visitor Counter with 7-Segment Display for Elevator Counting and Warning System Using 74193 Microprocessor.</li>
-                <li>Motion Detector Security System using ATmega32 Microcontroller.</li>
-                <li>Built up an online shopping website using HTML/PHP/SQL.</li>
-                <li>Arduino Real Time Clock with Temperature Monitor using DHT11.</li>
-                <li>Developed an Insurance Administration System using HTML/CSS and Java.</li>
-                <li>LP Gas Monitoring &amp; Controlling System using Arduino IDE.</li>
-                <li>Automatic AC Temperature Controller using Arduino, DHT11 and IR Blaster.</li>
-                <li>Real-time Face Recognition &amp; Face Mask Detector using Python OpenCV.</li>
-                <li>Arduino Projects: Line Following Robot, Obstacle Avoiding Robot, Bluetooth Controlling Robot, IR Controlling Robot, Maze Solving Robot, Hand Following Robot, and Self-Balancing Robot.</li>
-              </ul>
-            </div>
-              
-              
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            
-           
-             <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Trainee Network/Telecom Engineer at Dialog Axiata</h4>
-              
-              <p><em>T.B. Jaya MW, 110 Akbar Brothers' Rd, Colombo, Sri Lanka. </em></p>
-              <ul> <br/>
-                <li>Subsea Cable Systems and IPLC &amp; ITMC Operations.</li>
-                <li>International Voice Service and International Fr. </li>
-                <li>Fixed Broadband Service Operations.</li>
-                <li>Packet Core Network Operations. </li>
-                <li>Enterprise and Fixed Broadband Operations. </li>
-              </ul>
-            </div>
-              
-              <div class="resume-item">
-              <h4>Associate Network Engineer at Nexten (pvt) ltd</h4>
-              
-              <p><em>No: 719/1 Ethulkotte, Sri Jayawardenepura Kotte 10100. </em></p>
-              <ul> <br/>
-                <li>Completed the routing and switching component of the ICTA Public Library Project, which included the establishment of 18 public libraries in Sri Lanka.</li>
-                <li>Using a Raspberry Pi 3, I built a Unifi Wireless Controller. </li>
-                <li>Using an ESP8266, I developed a wireless Wi-Fi extender and Wi-Fi jammer.</li>
-                <li>I did the site survey and developed the heatmap for frequency, area, and headcount in Aruba Wi-Fi at Kelaniya University. </li>
-                
-              </ul>
-            </div>
-              
-              <div class="resume-item">
-              <h4> IoT Engineer at n-able (pvt) ltd</h4>
-              <p><em>No: 36 Bristol St, Colombo 00100 </em></p>
-              <ul> <br/>
-                <li>As the site engineer, implements the Dangerous Gas Monitoring end-to-end solution at the biggest port terminal, CICT in Sri Lanka.</li>
-                <li>The development of a Smart Office architecture involved the utilization of both Image Processing and the Zigbee communication protocol.</li>
-                <li>MQTT and the AWS IoT cloud were used to construct a real-time temperature and humidity monitor using an ESP32.</li>
-                <li>I made a temperature and humidity detector with an ESP32, NodeRed, and Arduino IoT cloud. The device's real-time temperature and humidity data streamlines weather monitoring. </li>
-                <li>Obtaining certification with Advantech for IoT gateways of the ADAM 6300 and 6700 series. </li>
-                <li>Using an Arduino microcontroller, GPS, and SMS, a system for monitoring vehicles was developed. The car's location was monitored in real-time by the GPS system. </li>
-                
-              </ul>
-            </div>
-              
-              <div class="resume-item">
-              <h4>Network engineer at Commercial Bank of Ceylon PLC</h4>
-              <p><em>No 21, Sir Razik Fareed Mawatha, P.O. Box 856, Colombo 01</em></p>
-              <ul> <br/>
-                <li>Upgrading, designing, installing, maintaining, and supporting LAN, WAN, and VoIP infrastructure.</li>
-                <li>Provides administration, configuration, troubleshooting, and support of Office 365 cloud apps, Exchange Online, Active Directory Federation Services, and other services.</li>
-                <li>Capacity planning, health check monitoring, and management reports for data/voice network/messaging platform.</li>
-                <li>Ensure Network Security with proactive monitoring and compliance with industry standards. </li>
-                <li>Vendor management of services, implementation, maintenance, and support contracts/service level agreements. </li>
-                    
-              </ul>
-            </div>
-
-              <div class="resume-item">
-              <h4>Senior Network Engineer at SLT-Mobitel PEOTV</h4>
-              <h5>Present</h5>
-              <p><em>No. 148/15, Lesley Ranagala Mawatha, Colombo 08</em></p>
-              <ul> <br/>
-                <li>Oversee end-to-end IPTV platform operations, including satellite signal acquisition, stream ingestion, encoding/decoding workflows, content distribution, and STB lifecycle management.</li>
-                <li>Design, implement, and manage scalable enterprise LAN/WAN architectures utilizing Cisco and Brocade switching and routing platforms.</li>
-                <li>Perform configuration, optimization, and troubleshooting of application delivery controllers and network security appliances to ensure high availability and traffic efficiency.</li>
-                <li>Administer and maintain VMware vCenter infrastructure, managing 200+ virtual machines with a focus on resource optimization, high availability, and performance tuning. </li>
-                <li>Ensure compliance with ISO 27001 and PCI DSS standards by enforcing security controls, conducting audits, and maintaining up-to-date network and system documentation. </li>
-                    
-              </ul>
-            </div>
-              
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Here you may see screenshots and images from some of my efforts in various disciplines. There are some group duties as well as my personal tasks.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">ONLINE STORE</li>
-              <li data-filter=".filter-card">LAN</li>
-              <li data-filter=".filter-web">COUNTING SYSTEM</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="O 1"><i class="bx bx-show-alt"></i></a>
-              <!--  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="C 3"><i class="bx bx-show-alt"></i></a>
-             <!--   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="O 2"><i class="bx bx-show-alt"></i></a>
-              <!--  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="L 2"><i class="bx bx-show-alt"></i></a>
-              <!--  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="C 2"><i class="bx bx-show-alt"></i></a>
-             <!--   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="O 3"><i class="bx bx-show-alt"></i></a>
-               <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="L 1"><i class="bx bx-show-alt"></i></a>
-              <!--  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="L 3"><i class="bx bx-show-alt"></i></a>
-              <!--  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="C 3"><i class="bx bx-show-alt"></i></a>
-              <!--  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p></p>
-        </div>
-
-      <!-  <div class="row">
-  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-    <div class="icon"><i class="bi bi-router"></i></div>
-    <h4 class="title"><a href="#">Enterprise Network Engineering</a></h4>
-    <p class="description">Extensive experience designing and managing complex LAN/WAN architectures across hundreds of branches. Proficient in advanced routing protocols (OSPF, BGP, EIGRP) and switching using enterprise equipment from Cisco, Huawei, Brocade, and Aruba.</p>
   </div>
-  
-  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-    <div class="icon"><i class="bi bi-tv"></i></div>
-    <h4 class="title"><a href="#">IPTV & Multicast Infrastructure</a></h4>
-    <p class="description">Specialized in overseeing IPTV platform operations, including satellite signal acquisition, robust content distribution, and Set-Top Box (STB) management. Skilled in handling multicast networking for continuous, high-quality media delivery.</p>
-  </div>
-  
-  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-    <div class="icon"><i class="bi bi-shield-check"></i></div>
-    <h4 class="title"><a href="#">Network Security & Compliance</a></h4>
-    <p class="description">Dedicated to securing enterprise boundaries using Next-Generation Firewalls (Fortinet, Check Point, pfSense) and IDS/IPS systems. Proven track record of maintaining rigorous compliance frameworks such as ISO 27001 and PCI DSS.</p>
-  </div>
-  
-  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-    <div class="icon"><i class="bi bi-cloud-network"></i></div>
-    <h4 class="title"><a href="#">Virtualization & Cloud Services</a></h4>
-    <p class="description">Expertise in administering highly available virtualized environments and data centres. Manages massive infrastructure setups utilizing VMware vCenter (200+ VMs), Microsoft Hyper-V, alongside AWS and Azure cloud platforms.</p>
-  </div>
-  
-  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-    <div class="icon"><i class="bi bi-cpu"></i></div>
-    <h4 class="title"><a href="#">Internet of Things (IoT) Solutions</a></h4>
-    <p class="description">Hands-on experience deploying enterprise-grade IoT architectures. Successfully implemented real-time hazard detection systems, such as a dangerous gas monitoring IoT solution for major port terminals.</p>
-  </div>
-  
-  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-    <div class="icon"><i class="bi bi-robot"></i></div>
-    <h4 class="title"><a href="#">Robotics & Computer Vision</a></h4>
-    <p class="description">Developed an advanced Computer Vision–based Navigation Robot utilizing ROS and TensorFlow. This significant research was successfully presented at the University of Moratuwa and formally published in IEEE (ICITR 2022).</p>
-  </div>
+</nav>
+
+<div class="mmenu" id="mmenu">
+  <a href="#about" onclick="cmenu()">About</a>
+  <a href="#skills" onclick="cmenu()">Skills</a>
+  <a href="#services" onclick="cmenu()">Services</a>
+  <a href="#experience" onclick="cmenu()">Experience</a>
+  <a href="#education" onclick="cmenu()">Education</a>
+  <a href="#contact" onclick="cmenu()">Contact</a>
 </div>
 
+<main id="main">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hbg"></div>
+  <div class="hgrid"></div>
+  <div class="c hc">
+    <div class="hbadge"><span class="hdot"></span>Freelance Available</div>
+    <h1 class="hname">Manula<br><span>Haputhanthrie</span></h1>
+    <p class="htitle">Senior Network Engineer</p>
+    <div class="typed-wrap" id="typed-out"></div>
+    <p class="hdesc">BSc (Hons) Computer Systems &amp; Network Engineering · Senior Network Engineer at SLT-Mobitel PEOTV · Specialising in IPTV infrastructure, enterprise LAN/WAN, VMware vCenter, and ISO 27001/PCI DSS compliance.</p>
+    <div class="hact">
+      <a href="#experience" class="bpri">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        View Experience
+      </a>
+      <a href="#contact" class="bsec">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        Get in Touch
+      </a>
+    </div>
+    <div class="socials">
+      <a href="https://linkedin.com/in/manulasapu" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://wa.me/94717435584" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </a>
+      <a href="https://twitter.com/manula97" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="Twitter">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+      </a>
+    </div>
+
+    <!-- TERMINAL -->
+    <div class="hterm">
+      <div class="tbar">
+        <span class="td tr"></span><span class="td ty"></span><span class="td tg"></span>
+        <span class="ttl">manula@slt-peotv:~</span>
       </div>
-    </section><!-- End Services Section -->
-
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-          
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p></p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-            <!--  <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>No 100/5 1-1, Baddagana Road, Kotte.</p>
-              </div>   -->
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p> <a  style = "text-transform:lowercase;" href="mailto:manulasapu2016@gmail.com"> manulasapu2016@gmail.com </a></p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p><a href="tel:071-743-5584">(+94)71 743 5584</a></p>
-              </div>
-<script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com//zzcjjxew.json"
-    trigger="loop"
-    colors="primary:#3080e8,secondary:#1663c7"
-    style="width:420px;height:45px">
-</lord-icon>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15846.86680951098!2d79.90803035!3d6.80427675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1775027380849!5m2!1sen!2slk" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <!--<div class="error-message"></div>  -->
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-       
-        
-        
-        <div class="copyright">
-             <img src="assets/img/ms97.png" class="img-fluid" alt="">
-       <!-- &copy; Copyright <strong><span>MS97™</span></strong> -->
-      </div>
-       
-      <div class="credits">
-          Designed by <a href="https://github.com/Manula97">©Manula97</a>
+      <div class="tbody">
+        <div><span class="tp">manula@slt-peotv:~$</span> <span class="tc">whoami</span></div>
+        <div class="to">Senior Network Engineer | SLT-Mobitel PEOTV, Colombo LK</div>
+        <div style="margin-top:.5rem"><span class="tp">manula@slt-peotv:~$</span> <span class="tc">cat expertise.txt</span></div>
+        <div class="to">→ <span class="thi">Cisco/Brocade</span> LAN/WAN · VMware vCenter (250+ VMs)</div>
+        <div class="to">→ <span class="thi">IPTV Platform</span> · Satellite · STB · Multicast</div>
+        <div class="to">→ <span class="tac">ISO 27001</span> · PCI DSS · NGFW · IDS/IPS</div>
+        <div class="to">→ <span class="tac">IoT · AWS · Arduino · Python · Robotics</span></div>
+        <div style="margin-top:.5rem"><span class="tp">manula@slt-peotv:~$</span> <span class="tcur"></span></div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </div>
+</section>
 
-  <a href="https://github.com/Manula97" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- STATS -->
+<section id="stats">
+  <div class="c">
+    <div class="sgrid">
+      <div class="fi"><div class="snum">5+</div><div class="slbl">Years Experience</div></div>
+      <div class="fi"><div class="snum">5</div><div class="slbl">Companies</div></div>
+	  <div class="fi"><div class="snum">300+</div><div class="slbl">Networks Managed</div></div>
+      <div class="fi"><div class="snum">250+</div><div class="slbl">VMs Managing</div></div>
+      <div class="fi"><div class="snum">100+</div><div class="slbl">Projects Done</div></div>
+    </div>
+  </div>
+</section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<!-- ABOUT -->
+<section id="about">
+  <div class="c">
+    <div class="about-g">
+      <div class="avisual fi">
+        <div class="avbg"></div>
+        <img src="assets/img/profile-img.jpg" alt="Manula Pamod Haputhanthrie" class="avatar" style="object-fit: cover;" width="600" height="600">
+        <div class="acard">
+          <div class="acname">Manula Pamod Haputhanthrie</div>
+          <div class="acrole">// Senior Network Engineer</div>
+          <div class="acloc">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Colombo, Sri Lanka
+          </div>
+        </div>
+      </div>
+      <div class="atxt fi">
+        <p class="slabel">// About Me</p>
+        <h2 class="stitle">Network Engineer &amp; IoT Innovator</h2>
+        <p>Welcome to my ePortfolio! I'm Manula Pamod Haputhanthrie. I hold a BSc (Hons) in Computer Systems &amp; Network Engineering from SLIIT. Currently serving as <strong>Senior Network Engineer at SLT-Mobitel PEOTV</strong>, I oversee enterprise IPTV platform operations, scalable LAN/WAN architectures, and VMware vCenter infrastructure with 250+ VMs.</p>
+        <p>My career spans telecom giants (Dialog Axiata), banking (Commercial Bank of Ceylon), IoT (N-able), and network engineering (NextEn) — giving me a uniquely broad perspective across industries.</p>
+        <div class="alist">
+          <div class="aitem"><span class="albl">Birthday</span><span class="aval">22 November 1997</span></div>
+          <div class="aitem"><span class="albl">Age</span><span class="aval">29</span></div>
+          <div class="aitem"><span class="albl">Phone</span><span class="aval"><a href="tel:+94717435584">(+94) 71 743 5584</a></span></div>
+          <div class="aitem"><span class="albl">Email</span><span class="aval"><a href="mailto:manulasapu2016@gmail.com">manulasapu2016@gmail.com</a></span></div>
+          <div class="aitem"><span class="albl">Work Email</span><span class="aval"><a href="mailto:manula.pamod@slt.com.lk">manula.pamod@slt.com.lk</a></span></div>
+          <div class="aitem"><span class="albl">Website</span><span class="aval"><a href="https://www.ms97.live" target="_blank" rel="noopener noreferrer">www.ms97.live</a></span></div>
+          <div class="aitem"><span class="albl">City</span><span class="aval">Colombo, Sri Lanka</span></div>
+          <div class="aitem"><span class="albl">Degree</span><span class="aval">BSc (Hons) — SLIIT</span></div>
+          <div class="aitem"><span class="albl">Freelance</span><span class="aval" style="color:var(--pri);">Available</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="c">
+    <p class="slabel fi">// Proficiency</p>
+    <h2 class="stitle fi">Technical Skills</h2>
+    <p class="sdesc fi">A blend of networking, software, electronics, and creative skills built across enterprise environments and academic projects.</p>
+    <div class="sk-cols fi" id="skillsArea">
+      <div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">Network Management Tools</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.95"></div></div></div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">HTML / Web</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.90"></div></div></div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">Arduino / Embedded Systems</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.80"></div></div></div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">JavaScript</span><span class="sk-pct">65%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.65"></div></div></div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">Premiere Pro / Video Editing</span><span class="sk-pct">70%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.70"></div></div></div>
+      </div>
+      <div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">Kali Linux / Cybersecurity</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.75"></div></div></div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">Electronics Engineering</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.80"></div></div></div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">CSS / UI Design</span><span class="sk-pct">70%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.70"></div></div></div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">DBMS / SQL</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.75"></div></div></div>
+        <div class="sk-item"><div class="sk-header"><span class="sk-name">Photoshop / Design</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.75"></div></div></div>
+      </div>
+    </div>
+    <!-- Tech stack chips -->
+    <div class="tech-row fi">
+      <span class="tech-chip">Linux</span><span class="tech-chip">Windows Server</span><span class="tech-chip">Python</span>
+      <span class="tech-chip">Java</span><span class="tech-chip">Cisco IOS/NX-OS</span><span class="tech-chip">Brocade</span>
+	  <span class="tech-chip">Oracle</span><span class="tech-chip">Hitachi</span><span class="tech-chip">Radware</span>
+      <span class="tech-chip">VMware vCenter</span><span class="tech-chip">Hyper-V</span><span class="tech-chip">AWS</span>
+      <span class="tech-chip">Azure</span><span class="tech-chip">OSPF/BGP/EIGRP</span><span class="tech-chip">Fortinet NGFW</span>
+      <span class="tech-chip">Check Point</span><span class="tech-chip">pfSense</span><span class="tech-chip">ESP32/ESP8266</span>
+      <span class="tech-chip">Raspberry Pi</span><span class="tech-chip">MQTT/IoT</span><span class="tech-chip">TensorFlow</span>
+      <span class="tech-chip">OpenCV</span><span class="tech-chip">ROS</span><span class="tech-chip">WordPress</span>
+      <span class="tech-chip">PHP/SQL</span><span class="tech-chip">Cisco VoIP</span><span class="tech-chip">Git/GitHub</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="c">
+    <p class="slabel fi">// What I Offer</p>
+    <h2 class="stitle fi">Services</h2>
+    <p class="sdesc fi">Comprehensive engineering services across network infrastructure, IPTV, security, cloud, IoT, and cutting-edge research.</p>
+    <div class="svc-grid">
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg></div>
+        <div class="svc-name">Enterprise Network Engineering</div>
+        <div class="svc-desc">Extensive experience designing and managing complex LAN/WAN architectures across hundreds of branches. Proficient in advanced routing protocols (OSPF, BGP, EIGRP) and switching using enterprise equipment from Cisco, Huawei, Brocade, and Aruba.</div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+        <div class="svc-name">IPTV &amp; Multicast Infrastructure</div>
+        <div class="svc-desc">Specialized in overseeing IPTV platform operations, including satellite signal acquisition, robust content distribution, and Set-Top Box (STB) management. Skilled in handling multicast networking for continuous, high-quality media delivery.</div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="svc-name">Network Security &amp; Compliance</div>
+        <div class="svc-desc">Dedicated to securing enterprise boundaries using Next-Generation Firewalls (Fortinet, Check Point, pfSense) and IDS/IPS systems. Proven track record of maintaining rigorous compliance frameworks such as ISO 27001 and PCI DSS.</div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div>
+        <div class="svc-name">Virtualization &amp; Cloud Services</div>
+        <div class="svc-desc">Expertise in administering highly available virtualized environments. Manages massive infrastructure setups utilizing VMware vCenter (250+ VMs), Microsoft Hyper-V, alongside AWS and Azure cloud platforms.</div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="svc-name">Internet of Things (IoT) Solutions</div>
+        <div class="svc-desc">Hands-on experience deploying enterprise-grade IoT architectures. Successfully implemented real-time hazard detection systems, such as a dangerous gas monitoring IoT solution for CICT — the biggest port terminal in Sri Lanka.</div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+        <div class="svc-name">Robotics &amp; Computer Vision</div>
+        <div class="svc-desc">Developed an advanced Computer Vision–based Navigation Robot utilizing ROS and TensorFlow. Research successfully presented at University of Moratuwa and formally published in IEEE (ICITR 2022).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="c">
+    <p class="slabel fi">// Career History</p>
+    <h2 class="stitle fi">Professional Experience</h2>
+    <p class="sdesc fi">A progressive career spanning telecommunications, banking, IoT, and enterprise networking across leading Sri Lankan organizations.</p>
+    <div class="exp-tl">
+
+      <!-- SLT PEOTV -->
+      <div class="exp-item fi">
+        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+        <div class="econt">
+          <div class="eperiod">Present</div>
+          <div class="erole">Senior Network Engineer</div>
+          <div class="eco">SLT-Mobitel PEOTV <span>· No. 148/15, Lesley Ranagala Mawatha, Colombo 08</span></div>
+          <ul class="elist">
+            <li>Oversee end-to-end IPTV platform operations, including satellite signal acquisition, stream ingestion, encoding/decoding workflows, content distribution, and STB lifecycle management</li>
+            <li>Design, implement, and manage scalable enterprise LAN/WAN architectures utilizing Cisco and Brocade switching and routing platforms</li>
+            <li>Perform configuration, optimization, and troubleshooting of application delivery controllers and network security appliances to ensure high availability and traffic efficiency</li>
+            <li>Administer and maintain VMware vCenter infrastructure, managing 250+ virtual machines with a focus on resource optimization, high availability, and performance tuning</li>
+            <li>Ensure compliance with ISO 27001 and PCI DSS standards by enforcing security controls, conducting audits, and maintaining up-to-date network and system documentation</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COMMERCIAL BANK -->
+      <div class="exp-item fi">
+        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <div class="econt">
+          <div class="eperiod">Network Engineer</div>
+          <div class="erole">Commercial Bank of Ceylon PLC</div>
+          <div class="eco">Islandwide Branch Network <span>· No 21, Sir Razik Fareed Mawatha, P.O. Box 856, Colombo 01</span></div>
+          <ul class="elist">
+            <li>Upgrading, designing, installing, maintaining, and supporting LAN, WAN, and VoIP infrastructure across all islandwide branches</li>
+            <li>Administration, configuration, troubleshooting, and support of Office 365 cloud apps, Exchange Online, Active Directory Federation Services</li>
+            <li>Capacity planning, health check monitoring, and management reports for data/voice network/messaging platform</li>
+            <li>Ensure Network Security with proactive monitoring and compliance with industry standards</li>
+            <li>Vendor management of services, implementation, maintenance, and support contracts/SLAs</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- N-ABLE IoT -->
+      <div class="exp-item fi">
+        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="econt">
+          <div class="eperiod">IoT Engineer</div>
+          <div class="erole">N-able (Pvt) Ltd</div>
+          <div class="eco">Industrial IoT <span>· No: 36 Bristol St, Colombo 00100</span></div>
+          <ul class="elist">
+            <li>As site engineer, implemented the Dangerous Gas Monitoring end-to-end IoT solution at CICT — the biggest port terminal in Sri Lanka</li>
+            <li>Developed Smart Office architecture utilizing Image Processing and Zigbee communication protocol</li>
+            <li>Built real-time temperature &amp; humidity monitor using MQTT, AWS IoT cloud, and ESP32</li>
+            <li>Obtained Advantech certification for IoT gateways of the ADAM 6300 and 6700 series</li>
+            <li>Developed vehicle monitoring system using Arduino microcontroller, GPS, and SMS for real-time location tracking</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- NEXTEN -->
+      <div class="exp-item fi">
+        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <div class="econt">
+          <div class="eperiod">Associate Network Engineer</div>
+          <div class="erole">NextEn (Pvt) Ltd</div>
+          <div class="eco">Department of Engineering <span>· No: 719/1 Ethulkotte, Sri Jayawardenepura Kotte 10100</span></div>
+          <ul class="elist">
+            <li>Completed the routing and switching component of the ICTA Public Library Project — establishment of 18 public libraries across Sri Lanka</li>
+            <li>Built a Unifi Wireless Controller using Raspberry Pi 3</li>
+            <li>Developed a wireless Wi-Fi extender and Wi-Fi jammer using ESP8266</li>
+            <li>Conducted site survey and developed heatmap for frequency, area, and headcount in Aruba Wi-Fi at Kelaniya University</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIALOG AXIATA -->
+      <div class="exp-item fi">
+        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div class="econt">
+          <div class="eperiod">Trainee Network/Telecom Engineer (Internship — Distinction)</div>
+          <div class="erole">Dialog Axiata PLC</div>
+          <div class="eco">Network Operations &amp; Service Assurance <span>· T.B. Jaya MW, 110 Akbar Brothers' Rd, Colombo</span></div>
+          <ul class="elist">
+            <li>Subsea Cable Systems and IPLC &amp; ITMC Operations</li>
+            <li>International Voice Service and International Frame Relay operations</li>
+            <li>Fixed Broadband Service Operations and Packet Core Network Operations</li>
+            <li>Enterprise and Fixed Broadband Operations — completed internship with distinction</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="c">
+    <p class="slabel fi">// Academic Background</p>
+    <h2 class="stitle fi">Education</h2>
+    <p class="sdesc fi">From secondary school through to a full engineering honours degree, with hands-on research published at IEEE.</p>
+    <div class="edu-grid">
+
+      <div class="edu-card fi">
+        <div class="edu-year">2003 — 2016</div>
+        <div class="edu-name">Mahinda College, Galle</div>
+        <div class="edu-deg">Biological Science Stream</div>
+        <div class="edu-notes">G.C.E. O/L 2013 — 8 A passes, 1 C pass · G.C.E. A/L 2018 — 2 C passes, 2 S passes</div>
+      </div>
+
+      <div class="edu-card fi">
+        <div class="edu-year">2018 — 2019</div>
+        <div class="edu-name">ESOFT Metro Campus</div>
+        <div class="edu-deg">Diploma in IT (International)</div>
+        <div class="edu-notes">Successfully completed the DiTec half-year Dip.IT at ESOFT Galle.</div>
+      </div>
+
+      <div class="edu-card fi">
+        <div class="edu-year">2019 — 2022</div>
+        <div class="edu-name">SLIIT — Sri Lanka Institute of Information Technology</div>
+        <div class="edu-deg">BSc (Hons) Computer Systems &amp; Network Engineering</div>
+        <div class="edu-notes">Final-year research: Computer Vision–Based Navigation Robot — exhibited at University of Moratuwa &amp; published in IEEE (ICITR 2022). Projects included robotics, face recognition, IoT systems, and full-stack web development.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="cglow"></div>
+  <div class="c cinn">
+    <p class="slabel fi" style="text-align:center;">// Get In Touch</p>
+    <h2 class="ctitle fi">Let's Work Together</h2>
+    <p class="cdesc fi">Available for freelance work, consulting engagements, and full-time opportunities. Reach out via email, phone, or LinkedIn.</p>
+    <div class="clinks fi">
+      <a href="mailto:manulasapu2016@gmail.com" class="clink pri">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        manulasapu2016@gmail.com
+      </a>
+      <a href="tel:+94717435584" class="clink">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (+94) 71 743 5584
+      </a>
+      <a href="https://linkedin.com/in/manulasapu" target="_blank" rel="noopener noreferrer" class="clink">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://wa.me/94717435584" target="_blank" rel="noopener noreferrer" class="clink">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp
+      </a>
+      <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" class="clink">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+    </div>
+    <!-- Map embed -->
+    <div class="cmap fi">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15846.86680951098!2d79.90803035!3d6.80427675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1775027380849!5m2!1sen!2slk" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Colombo, Sri Lanka map" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <span class="flogo">MPH · Manula Pamod Haputhanthrie ™</span>
+  <div class="fstat"><span class="fdot"></span><span>All Rights Reserved</span></div>
+  <span>© ms97.live · <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" style="color:var(--pri);">GitHub</a></span>
+</footer>
+
+<script>
+// Theme toggle
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  if(t) t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);
+    t.innerHTML=d==='dark'
+      ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+      :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  });
+})();
+
+// Mobile menu
+const h=document.getElementById('ham'),m=document.getElementById('mmenu');
+h.addEventListener('click',()=>m.classList.toggle('open'));
+function cmenu(){m.classList.remove('open');}
+document.addEventListener('click',(e)=>{if(!h.contains(e.target)&&!m.contains(e.target))m.classList.remove('open');});
+
+// Typed effect
+const roles=['Network Engineer','Web Developer','Electronics Developer','IoT Developer','Designer','Content Creator','Photographer','Google Local Guide L08'];
+let ri=0,ci=0,del=false,tout=document.getElementById('typed-out');
+function type(){
+  const r=roles[ri];
+  if(!del){
+    tout.innerHTML=r.substring(0,ci+1)+'<span class="typed-cursor">|</span>';
+    ci++;
+    if(ci===r.length){del=true;setTimeout(type,2000);return;}
+  } else {
+    tout.innerHTML=r.substring(0,ci-1)+'<span class="typed-cursor">|</span>';
+    ci--;
+    if(ci===0){del=false;ri=(ri+1)%roles.length;}
+  }
+  setTimeout(type,del?60:90);
+}
+type();
+
+// Skill bar animation
+function animSkills(){
+  const fills=document.querySelectorAll('.sk-fill');
+  fills.forEach(f=>{
+    f.style.width=(parseFloat(f.style.getPropertyValue('--w'))*100)+'%';
+    f.classList.add('animated');
+  });
+}
+const so=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){animSkills();so.disconnect();}});
+},{threshold:0.2});
+const sa=document.getElementById('skillsArea');
+if(sa) so.observe(sa);
+</script>
+
+<script>
+  // Mouse Highlight Effect Script
+  const mouseGlow = document.getElementById('mouse-glow');
+
+  document.addEventListener('mousemove', (e) => {
+    if (mouseGlow) {
+      mouseGlow.style.opacity = '1';
+      mouseGlow.style.left = e.clientX + 'px';
+      mouseGlow.style.top = e.clientY + 'px';
+    }
+  });
+
+  document.addEventListener('mouseleave', () => {
+    if (mouseGlow) {
+      mouseGlow.style.opacity = '0';
+    }
+  });
+</script>
 
 </body>
-
 </html>
