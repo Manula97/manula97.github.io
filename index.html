@@ -1,296 +1,347 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Manula Pamod Haputhanthrie — Senior Network Engineer</title>
-  <meta name="description" content="Senior Network Engineer at SLT-Mobitel PEOTV. BSc (Hons) Computer Systems & Network Engineering, SLIIT. Colombo, Sri Lanka."/>
-  <meta property="og:title" content="Manula Pamod Haputhanthrie — Senior Network Engineer"/>
-  <meta property="og:description" content="Senior Network Engineer specializing in IPTV infrastructure, enterprise LAN/WAN, VMware, ISO 27001 compliance — Colombo, Sri Lanka."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);
-      --text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);
-      --text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);
-      --text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);
-      --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
-      --text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
-      --text-3xl:clamp(2.5rem,1rem + 4vw,5rem);
-      --text-hero:clamp(2.8rem,0.5rem + 6.5vw,6.5rem);
-      --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;
-      --space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;
-      --space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;
-      --radius-sm:.375rem;--radius-md:.5rem;--radius-lg:.75rem;
-      --radius-xl:1rem;--radius-2xl:1.5rem;--radius-full:9999px;
-      --trans:180ms cubic-bezier(0.16,1,0.3,1);
-      --content:960px;--wide:1200px;
-      --font-display:'Cabinet Grotesk','Space Grotesk',sans-serif;
-      --font-body:'Space Grotesk',system-ui,sans-serif;
-      --font-mono:'JetBrains Mono','Courier New',monospace;
-    }
-    :root,[data-theme="dark"]{
-      --bg:#0d0e10;--surf:#12141a;--surf2:#181b22;--surfo:#1e2130;--surfd:#252a3a;
-      --div:#1f2334;--brd:#2a2f42;
-      --tx:#e2e4ec;--txm:#8892a8;--txf:#4a5268;--txi:#0d0e10;
-      --pri:#00d4aa;--prih:#00b898;--pria:#009a80;--prih2:rgba(0,212,170,.1);
-      --acc:#6c63ff;--acc2:rgba(108,99,255,.1);
-      --sh-sm:0 1px 2px rgba(0,0,0,.35);--sh-md:0 4px 12px rgba(0,0,0,.45);--sh-lg:0 12px 32px rgba(0,0,0,.55);
-      --glow:0 0 28px rgba(0,212,170,.15);--glow2:0 0 28px rgba(108,99,255,.12);
-    }
-    [data-theme="light"]{
-      --bg:#f4f5f9;--surf:#fff;--surf2:#f9fafc;--surfo:#edf0f6;--surfd:#e3e7f0;
-      --div:#dce0ec;--brd:#cdd2e0;
-      --tx:#1a1d28;--txm:#586278;--txf:#9aa0b8;--txi:#fff;
-      --pri:#007a63;--prih:#006655;--pria:#005244;--prih2:rgba(0,122,99,.07);
-      --acc:#4a42d0;--acc2:rgba(74,66,208,.07);
-      --sh-sm:0 1px 2px rgba(0,0,0,.06);--sh-md:0 4px 12px rgba(0,0,0,.08);--sh-lg:0 12px 32px rgba(0,0,0,.12);
-      --glow:none;--glow2:none;
-    }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;scroll-padding-top:5rem;}
-    body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);color:var(--tx);background:var(--bg);line-height:1.65;}
-    img,picture,svg{display:block;max-width:100%;height:auto;}
-    h1,h2,h3,h4{text-wrap:balance;line-height:1.15;font-family:var(--font-display);}
-    p,li{text-wrap:pretty;}
-    button{cursor:pointer;background:none;border:none;}
-    a{color:inherit;text-decoration:none;}
-    ::selection{background:rgba(0,212,170,.2);color:var(--tx);}
-    :focus-visible{outline:2px solid var(--pri);outline-offset:3px;border-radius:var(--radius-sm);}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0;}
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Manula Pamod Haputhanthrie — Senior Network &amp; Security Engineer</title>
+<meta name="description" content="Senior Network & Security Engineer at SLT-Mobitel PEOTV. BSc (Hons) Computer Systems & Network Engineering, SLIIT. Colombo, Sri Lanka."/>
+<meta property="og:title" content="Manula Pamod Haputhanthrie — Senior Network & Security Engineer"/>
+<meta property="og:description" content="Senior Network & Security Engineer specializing in network security, NGFW, IDS/IPS, Kali Linux, ISO 27001/PCI DSS compliance, IPTV infrastructure and VMware — Colombo, Sri Lanka."/>
+<meta name="theme-color" content="#0a0b0f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&display=swap" rel="stylesheet">
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<script>
+  document.documentElement.classList.add('js');
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+</script>
+<style>
+:root{
+  --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);
+  --text-sm:clamp(.875rem,.8rem + .35vw,1rem);
+  --text-base:clamp(1rem,.95rem + .25vw,1.125rem);
+  --text-lg:clamp(1.125rem,1rem + .75vw,1.5rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
+  --text-3xl:clamp(2.5rem,1rem + 4vw,5rem);
+  --text-hero:clamp(2.8rem,.5rem + 6.5vw,6.5rem);
+  --r-md:.5rem;--r-lg:.75rem;--r-xl:1rem;--r-2xl:1.5rem;--r-full:9999px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --content:1120px;
+  --font-display:'Cabinet Grotesk','Space Grotesk',sans-serif;
+  --font-body:'Space Grotesk',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono','Courier New',monospace;
+}
+[data-theme="dark"]{
+  --bg:#0a0b0f;--surf:#101218;--surfo:#1b1f2b;--surfd:#232838;
+  --div:#1c2030;--brd:#262b3d;
+  --tx:#e6e8f0;--txm:#8a93a8;--txf:#4d556b;--txi:#0a0b0f;
+  --pri:#00d4aa;--prih:#00f0c0;--prih2:rgba(0,212,170,.10);
+  --acc:#6c63ff;--acc2:rgba(108,99,255,.12);
+  --ok:#27c93f;--warn:#ffbd2e;--danger:#ff4d6d;--kblue:#3d8bff;
+  --glow:0 0 32px rgba(0,212,170,.25);
+  --card:rgba(16,18,24,.72);
+}
+[data-theme="light"]{
+  --bg:#f4f5f9;--surf:#fff;--surfo:#edf0f6;--surfd:#dfe3ec;
+  --div:#dce0ec;--brd:#cdd2e0;
+  --tx:#141722;--txm:#566076;--txf:#9aa0b8;--txi:#fff;
+  --pri:#00876d;--prih:#006b57;--prih2:rgba(0,135,109,.08);
+  --acc:#4a42d0;--acc2:rgba(74,66,208,.08);
+  --ok:#1f9d36;--warn:#b7791f;--danger:#d6284a;--kblue:#1f5fd1;
+  --glow:0 6px 24px rgba(0,135,109,.18);
+  --card:rgba(255,255,255,.85);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-top:5rem}
+body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);color:var(--tx);background:var(--bg);line-height:1.65;overflow-x:hidden;transition:background .3s,color .3s}
+img,svg{display:block;max-width:100%;height:auto}
+h1,h2,h3{line-height:1.1;font-family:var(--font-display);text-wrap:balance}
+p,li{text-wrap:pretty}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;background:none;border:none;color:inherit;font:inherit}
+::selection{background:rgba(0,212,170,.25)}
+:focus-visible{outline:2px solid var(--pri);outline-offset:3px;border-radius:6px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.mono{font-family:var(--font-mono)}
+.pri{color:var(--pri)}
+.c{max-width:var(--content);margin-inline:auto;padding-inline:1.5rem}
+section{padding-block:clamp(4rem,9vw,7rem);position:relative}
 
-    /* SCROLL ANIM */
-    .fi{opacity:1;}
-    @supports(animation-timeline:scroll()){
-      .fi{opacity:0;animation:rfade linear both;animation-timeline:view();animation-range:entry 0% entry 75%;}
-    }
-    @keyframes rfade{to{opacity:1;}}
+/* Kali prompt colours */
+.kl{color:var(--pri)}
+.ku{color:var(--kblue);font-weight:700}
+.kd{color:var(--tx);font-weight:700}
+.tbad{color:var(--danger)}
+.tinfo{color:var(--kblue)}
 
-    /* LAYOUT */
-    .c{max-width:var(--content);margin-inline:auto;padding-inline:var(--space-6);}
-    .cw{max-width:var(--wide);margin-inline:auto;padding-inline:var(--space-6);}
-    section{padding-block:clamp(var(--space-16),8vw,var(--space-24));}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
 
-    /* ── NAV ── */
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;
-      background:color-mix(in oklab,var(--bg) 88%,transparent);
-      backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
-      border-bottom:1px solid var(--div);transition:background var(--trans);}
-    .ni{max-width:var(--wide);margin-inline:auto;padding:var(--space-4) var(--space-6);display:flex;align-items:center;justify-content:space-between;}
-    .nlogo{display:flex;align-items:center;gap:var(--space-3);font-family:var(--font-display);font-weight:800;font-size:var(--text-base);letter-spacing:-.02em;}
-    .nlinks{display:flex;gap:var(--space-8);list-style:none;font-size:var(--text-sm);font-weight:500;}
-    .nlinks a{color:var(--txm);transition:color var(--trans);}
-    .nlinks a:hover{color:var(--pri);}
-    .nact{display:flex;align-items:center;gap:var(--space-3);}
-    .ttoggle{width:40px;height:40px;border-radius:var(--radius-full);border:1px solid var(--brd);display:flex;align-items:center;justify-content:center;color:var(--txm);transition:all var(--trans);}
-    .ttoggle:hover{color:var(--pri);border-color:var(--pri);}
-    .bnav{font-size:var(--text-sm);font-weight:600;font-family:var(--font-body);padding:var(--space-2) var(--space-5);background:var(--pri);color:var(--txi);border-radius:var(--radius-full);transition:all var(--trans);}
-    .bnav:hover{background:var(--prih);transform:translateY(-1px);box-shadow:var(--glow);}
-    .ham{display:none;width:40px;height:40px;border-radius:var(--radius-md);border:1px solid var(--brd);align-items:center;justify-content:center;color:var(--txm);transition:all var(--trans);}
-    .ham:hover{color:var(--pri);}
-    .mmenu{display:none;position:fixed;inset:0;z-index:99;background:var(--bg);padding:5rem var(--space-6) var(--space-8);flex-direction:column;gap:var(--space-6);}
-    .mmenu.open{display:flex;}
-    .mmenu a{font-size:var(--text-xl);font-weight:700;font-family:var(--font-display);color:var(--txm);border-bottom:1px solid var(--div);padding-bottom:var(--space-4);transition:color var(--trans);}
-    .mmenu a:hover{color:var(--pri);}
+/* progress + glow */
+#progress{position:fixed;top:0;left:0;height:2px;width:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--pri),var(--acc));z-index:300;box-shadow:0 0 10px var(--pri)}
+.mouse-glow{position:fixed;top:0;left:0;width:600px;height:600px;background:radial-gradient(circle,rgba(0,212,170,.07) 0%,transparent 60%);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);z-index:1;opacity:0;transition:opacity .3s}
+[data-theme="light"] .mouse-glow{display:none}
 
-    /* ── HERO ── */
-    #hero{padding-top:clamp(6rem,14vw,10rem);padding-bottom:clamp(var(--space-16),8vw,var(--space-24));position:relative;overflow:hidden;}
-    .hbg{position:absolute;inset:0;z-index:0;
-      background:radial-gradient(ellipse 80% 60% at 70% 40%,rgba(0,212,170,.06) 0%,transparent 70%),
-      radial-gradient(ellipse 60% 50% at 20% 70%,rgba(108,99,255,.05) 0%,transparent 70%);}
-    .hgrid{position:absolute;inset:0;z-index:0;opacity:.03;
-      background-image:linear-gradient(var(--pri) 1px,transparent 1px),linear-gradient(90deg,var(--pri) 1px,transparent 1px);
-      background-size:50px 50px;}
-    .hc{position:relative;z-index:1;}
-    .hbadge{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-xs);font-family:var(--font-mono);font-weight:500;padding:var(--space-2) var(--space-4);border:1px solid var(--pri);border-radius:var(--radius-full);color:var(--pri);margin-bottom:var(--space-6);letter-spacing:.05em;}
-    .hdot{width:6px;height:6px;border-radius:50%;background:var(--pri);animation:pdot 2s ease-in-out infinite;}
-    @keyframes pdot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(.8);}}
-    .hname{font-family:var(--font-display);font-weight:900;font-size:var(--text-hero);letter-spacing:-.03em;line-height:1;margin-bottom:var(--space-4);}
-    .hname span{background:linear-gradient(in oklab,var(--pri),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-    .htitle{font-size:var(--text-xl);font-weight:600;color:var(--txm);margin-bottom:var(--space-6);font-family:var(--font-display);}
-    .hdesc{font-size:var(--text-base);color:var(--txm);max-width:56ch;line-height:1.75;margin-bottom:var(--space-10);}
-    .hact{display:flex;gap:var(--space-4);flex-wrap:wrap;}
-    .bpri{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:600;font-family:var(--font-body);padding:var(--space-3) var(--space-8);background:var(--pri);color:var(--txi);border-radius:var(--radius-full);transition:all var(--trans);}
-    .bpri:hover{background:var(--prih);transform:translateY(-2px);box-shadow:var(--glow);}
-    .bsec{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:600;font-family:var(--font-body);padding:var(--space-3) var(--space-8);border:1px solid var(--brd);border-radius:var(--radius-full);color:var(--txm);transition:all var(--trans);}
-    .bsec:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px);}
-    /* typed roles */
-    .typed-wrap{font-size:var(--text-base);color:var(--txm);margin-bottom:var(--space-8);font-family:var(--font-mono);min-height:1.65em;}
-    .typed-cursor{color:var(--pri);animation:blink 1.2s step-end infinite;}
-    @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
-    /* terminal */
-    .hterm{margin-top:var(--space-12);background:var(--surf);border:1px solid var(--brd);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--sh-lg);max-width:580px;}
-    .tbar{padding:var(--space-3) var(--space-5);background:var(--surfo);border-bottom:1px solid var(--brd);display:flex;align-items:center;gap:var(--space-2);}
-    .td{width:12px;height:12px;border-radius:50%;}
-    .tr{background:#ff5f56;}.ty{background:#ffbd2e;}.tg{background:#27c93f;}
-    .ttl{font-size:var(--text-xs);color:var(--txf);font-family:var(--font-mono);margin-left:auto;margin-right:auto;}
-    .tbody{padding:var(--space-5) var(--space-6);font-family:var(--font-mono);font-size:var(--text-xs);line-height:2;}
-    .tp{color:var(--pri);}.tc{color:var(--tx);}.to{color:var(--txm);}
-    .thi{color:var(--pri);}.tac{color:#6c63ff;}
-    .tcur{display:inline-block;width:8px;height:14px;background:var(--pri);animation:blink 1.2s step-end infinite;vertical-align:middle;margin-left:2px;}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in oklab,var(--bg) 80%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--div)}
+.ni{max-width:var(--content);margin-inline:auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.nlogo{display:flex;align-items:center;gap:.6rem;font-family:var(--font-mono);font-weight:700;font-size:var(--text-sm)}
+.nlogo img{width:42px;height:42px;object-fit:contain}
+.nlogo b{color:var(--pri)}
+.nlinks{display:flex;gap:2rem;list-style:none;font-size:var(--text-sm);font-weight:500}
+.nlinks a{color:var(--txm);position:relative;transition:color .2s}
+.nlinks a::after{content:'';position:absolute;left:0;bottom:-6px;height:2px;width:100%;background:var(--pri);transform:scaleX(0);transition:transform .3s var(--ease);box-shadow:0 0 8px var(--pri)}
+.nlinks a:hover,.nlinks a.active{color:var(--tx)}
+.nlinks a.active::after{transform:scaleX(1)}
+.nact{display:flex;align-items:center;gap:.75rem}
+.icon-btn{width:40px;height:40px;border-radius:var(--r-full);border:1px solid var(--brd);display:flex;align-items:center;justify-content:center;color:var(--txm);transition:all .2s}
+.icon-btn:hover{color:var(--pri);border-color:var(--pri)}
+.bnav{font-size:var(--text-sm);font-weight:600;padding:.5rem 1.25rem;background:var(--pri);color:var(--txi);border-radius:var(--r-full);transition:all .2s}
+.bnav:hover{box-shadow:var(--glow);transform:translateY(-1px)}
+.ham{display:none}
+.mmenu{display:none;position:fixed;inset:0;z-index:99;background:var(--bg);padding:6rem 1.5rem 2rem;flex-direction:column;gap:1.25rem}
+.mmenu.open{display:flex}
+.mmenu a{font-size:var(--text-xl);font-weight:800;font-family:var(--font-display);color:var(--txm);border-bottom:1px solid var(--div);padding-bottom:1rem}
+.mmenu a span{font-family:var(--font-mono);font-size:var(--text-sm);color:var(--pri);margin-right:.75rem}
 
-    /* ── SOCIAL LINKS HERO ── */
-    .socials{display:flex;gap:var(--space-4);margin-top:var(--space-6);}
-    .soc-link{width:40px;height:40px;border:1px solid var(--brd);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;color:var(--txm);transition:all var(--trans);}
-    .soc-link:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px);box-shadow:var(--glow);}
+/* HERO */
+#hero{min-height:100svh;display:flex;align-items:center;padding-top:7rem;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hfade{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 60% 55% at 75% 40%,var(--prih2),transparent 70%),radial-gradient(ellipse 50% 50% at 15% 80%,var(--acc2),transparent 70%),linear-gradient(to bottom,transparent 65%,var(--bg))}
+.c.hero-g{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3.5rem;align-items:center;width:100%;max-width:1360px}
+.hbadge{display:inline-flex;align-items:center;gap:.5rem;font:500 var(--text-xs) var(--font-mono);padding:.4rem 1rem;border:1px solid color-mix(in oklab,var(--pri) 50%,transparent);background:var(--prih2);border-radius:var(--r-full);color:var(--pri);margin-bottom:1.5rem;letter-spacing:.05em}
+.hdot{width:7px;height:7px;border-radius:50%;background:var(--pri);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(0,212,170,.6)}70%{box-shadow:0 0 0 8px rgba(0,212,170,0)}100%{box-shadow:0 0 0 0 rgba(0,212,170,0)}}
+.whoami{font-family:var(--font-mono);font-size:var(--text-sm);color:var(--txm);margin-bottom:.9rem;line-height:1.6}
+.hname{font-weight:900;font-size:clamp(2.6rem,.5rem + 5vw,5.4rem);letter-spacing:-.035em;line-height:.95;margin-bottom:1.25rem;cursor:default}
+.grad{background:linear-gradient(90deg,var(--pri),var(--acc),var(--pri));background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:200% center}}
+.htitle{font-size:var(--text-xl);font-weight:700;color:var(--tx);font-family:var(--font-display);margin-bottom:.5rem}
+.typed-wrap{font-family:var(--font-mono);font-size:var(--text-base);color:var(--txm);margin-bottom:1.5rem;min-height:1.65em}
+.typed-wrap .pfx{color:var(--acc)}
+.typed-cursor{color:var(--pri);animation:blink 1.1s step-end infinite}
+@keyframes blink{50%{opacity:0}}
+.hdesc{color:var(--txm);max-width:54ch;line-height:1.75;margin-bottom:2rem}
+.hact{display:flex;gap:1rem;flex-wrap:wrap}
+.bpri,.bsec{display:inline-flex;align-items:center;gap:.5rem;font-size:var(--text-sm);font-weight:600;padding:.8rem 1.8rem;border-radius:var(--r-full);transition:all .25s var(--ease)}
+.bpri{background:var(--pri);color:var(--txi)}
+.bpri:hover{transform:translateY(-2px);box-shadow:var(--glow)}
+.bsec{border:1px solid var(--brd);color:var(--tx);background:color-mix(in oklab,var(--surf) 60%,transparent);backdrop-filter:blur(6px)}
+.bsec:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px)}
+.socials{display:flex;gap:.75rem;margin-top:1.75rem}
+.socials a{width:42px;height:42px;border:1px solid var(--brd);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--txm);background:color-mix(in oklab,var(--surf) 60%,transparent);transition:all .25s var(--ease)}
+.socials a:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-3px);box-shadow:var(--glow)}
 
-    /* ── STATS ── */
-    #stats{padding-block:var(--space-8);border-top:1px solid var(--div);border-bottom:1px solid var(--div);}
-    .sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:var(--space-8);text-align:center;}
-    .snum{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:900;color:var(--pri);line-height:1;}
-    .slbl{font-size:var(--text-xs);color:var(--txm);margin-top:var(--space-1);letter-spacing:.05em;text-transform:uppercase;}
+/* terminal */
+.term{width:100%;background:color-mix(in oklab,var(--surf) 88%,transparent);backdrop-filter:blur(12px);border:1px solid var(--brd);border-radius:var(--r-xl);overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.45),var(--glow);position:relative}
+.term::after{content:'';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.022) 0 1px,transparent 1px 3px)}
+[data-theme="light"] .term::after{display:none}
+[data-theme="light"] .term{box-shadow:0 20px 50px rgba(0,0,0,.1)}
+.tbar{padding:.75rem 1.25rem;background:var(--surfo);border-bottom:1px solid var(--brd);display:flex;align-items:center;gap:.5rem}
+.td{width:12px;height:12px;border-radius:50%}
+.tr{background:#ff5f56}.ty{background:#ffbd2e}.tg{background:#27c93f}
+.ttl{font:var(--text-xs) var(--font-mono);color:var(--txf);margin-inline:auto;transform:translateX(-24px)}
+.tbody{padding:1.25rem 1.5rem;font-family:var(--font-mono);font-size:clamp(.72rem,.62rem + .3vw,.875rem);line-height:1.9;min-height:520px;overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--brd) transparent}
+.tbody .cmd{white-space:nowrap}
+.tbody .cmd:not(:first-child){margin-top:.6rem}
+.tbody .to{white-space:pre}
+.tc{color:var(--tx)}
+.to{color:var(--txm)}
+.thi{color:var(--pri)}
+.tac{color:var(--acc)}
+.tok{color:var(--ok)}
+.tcur{display:inline-block;width:8px;height:15px;background:var(--pri);animation:blink 1.1s step-end infinite;vertical-align:middle;margin-left:2px}
+.scroll-cue{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:2;font:var(--text-xs) var(--font-mono);color:var(--txf);display:flex;flex-direction:column;align-items:center;gap:.4rem}
+.scroll-cue i{width:1px;height:36px;background:linear-gradient(var(--pri),transparent);animation:cue 2s ease-in-out infinite}
+@keyframes cue{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1)}}
 
-    /* ── SECTION HEADING ── */
-    .slabel{font-size:var(--text-xs);font-family:var(--font-mono);color:var(--pri);letter-spacing:.1em;text-transform:uppercase;margin-bottom:var(--space-3);}
-    .stitle{font-size:var(--text-2xl);font-weight:900;letter-spacing:-.02em;margin-bottom:var(--space-4);}
-    .sdesc{font-size:var(--text-base);color:var(--txm);max-width:54ch;line-height:1.75;}
+/* STATS */
+#stats{padding-block:2.5rem;border-block:1px solid var(--div);background:var(--surf)}
+.sgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.stat{text-align:center;padding:1rem;border-right:1px dashed var(--brd)}
+.stat:last-child{border-right:none}
+.snum{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:900;line-height:1;background:linear-gradient(180deg,var(--tx),var(--pri));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.slbl{font:var(--text-xs) var(--font-mono);color:var(--txm);margin-top:.5rem;letter-spacing:.06em;text-transform:uppercase}
 
-    /* ── ABOUT ── */
-    #about{background:var(--surf);}
-    .about-g{display:grid;grid-template-columns:1fr 1.3fr;gap:var(--space-16);align-items:center;margin-top:var(--space-12);}
-    .avisual{background:var(--surfo);border-radius:var(--radius-2xl);border:1px solid var(--brd);padding:var(--space-8);aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;}
-    .avbg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(0,212,170,.08) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(108,99,255,.06) 0%,transparent 60%);}
-    .avatar{position:absolute;top:var(--space-8);left:50%;transform:translateX(-50%);width:140px;height:140px;border-radius:50%;background:linear-gradient(135deg,var(--prih2),var(--surfd));border:3px solid var(--pri);display:flex;align-items:center;justify-content:center;color:var(--pri);font-family:var(--font-display);font-size:2.8rem;font-weight:900;box-shadow:var(--glow);}
-    .acard{position:relative;z-index:1;background:rgba(18,20,26,.88);backdrop-filter:blur(8px);border:1px solid var(--brd);border-radius:var(--radius-xl);padding:var(--space-5);}
-    [data-theme="light"] .acard{background:rgba(255,255,255,.88);}
-    .acname{font-family:var(--font-display);font-weight:900;font-size:var(--text-lg);margin-bottom:var(--space-1);}
-    .acrole{font-size:var(--text-sm);color:var(--pri);font-family:var(--font-mono);}
-    .acloc{font-size:var(--text-xs);color:var(--txm);margin-top:var(--space-2);display:flex;align-items:center;gap:var(--space-2);}
-    .atxt p{font-size:var(--text-base);color:var(--txm);line-height:1.8;margin-bottom:var(--space-5);}
-    .alist{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3) var(--space-8);margin-top:var(--space-6);}
-    .aitem{display:flex;flex-direction:column;gap:2px;}
-    .albl{font-size:var(--text-xs);color:var(--txf);text-transform:uppercase;letter-spacing:.05em;}
-    .aval{font-size:var(--text-sm);font-weight:600;color:var(--tx);}
-    .aval a{color:var(--pri);}
-    .aval a:hover{text-decoration:underline;}
+/* MARQUEE */
+.mq{overflow:hidden;padding-block:1.5rem;border-bottom:1px solid var(--div);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mq-track{display:flex;width:max-content;animation:mq 45s linear infinite}
+.mq:hover .mq-track{animation-play-state:paused}
+.mq-set{display:flex;gap:.75rem;padding-right:.75rem}
+@keyframes mq{to{transform:translateX(-50%)}}
+.chip{display:inline-flex;align-items:center;gap:.5rem;font:var(--text-xs) var(--font-mono);padding:.5rem 1rem;border:1px solid var(--brd);border-radius:var(--r-full);background:var(--surf);color:var(--txm);white-space:nowrap;transition:all .2s}
+.chip:hover{border-color:var(--pri);color:var(--pri)}
+.ico{width:16px;height:16px;filter:brightness(0) invert(1);opacity:.85}
+[data-theme="light"] .ico{filter:brightness(0);opacity:.7}
 
-    /* ── SKILLS ── */
-    #skills{background:var(--bg);}
-    .sk-cols{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);margin-top:var(--space-12);}
-    .sk-item{margin-bottom:var(--space-5);}
-    .sk-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-2);}
-    .sk-name{font-size:var(--text-sm);font-weight:600;font-family:var(--font-mono);}
-    .sk-pct{font-size:var(--text-xs);font-family:var(--font-mono);color:var(--pri);}
-    .sk-bar{height:6px;background:var(--surfd);border-radius:var(--radius-full);overflow:hidden;}
-    .sk-fill{height:100%;background:linear-gradient(90deg,var(--pri),var(--acc));border-radius:var(--radius-full);transform-origin:left;transform:scaleX(0);transition:transform 1.2s cubic-bezier(.16,1,.3,1);}
-    .sk-fill.animated{transform:scaleX(1);}
+/* SECTION HEAD */
+.sh{margin-bottom:3rem}
+.slabel{font:500 var(--text-xs) var(--font-mono);color:var(--pri);letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem}
+.slabel::after{content:'';height:1px;width:64px;background:linear-gradient(90deg,var(--pri),transparent)}
+.stitle{font-size:var(--text-2xl);font-weight:900;letter-spacing:-.025em;margin-bottom:1rem}
+.sdesc{color:var(--txm);max-width:58ch;line-height:1.75}
 
-    /* tech stack icons row */
-    .tech-row{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-10);}
-    .tech-chip{font-size:var(--text-xs);font-family:var(--font-mono);padding:var(--space-2) var(--space-4);border:1px solid var(--brd);border-radius:var(--radius-full);background:var(--surf);color:var(--txm);transition:all var(--trans);}
-    .tech-chip:hover{border-color:var(--pri);color:var(--pri);}
+/* spotlight cards */
+.card{position:relative;isolation:isolate;background:var(--card);border:1px solid var(--brd);border-radius:var(--r-xl);padding:1.75rem;transition:transform .45s var(--ease),border-color .3s}
+.card::before{content:'';position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),var(--pri),transparent 45%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .35s;pointer-events:none}
+.card::after{content:'';position:absolute;inset:0;border-radius:inherit;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),var(--prih2),transparent 65%);opacity:0;transition:opacity .35s;z-index:-1;pointer-events:none}
+.card:hover{transform:translateY(-4px)}
+.card:hover::before,.card:hover::after{opacity:1}
 
-    /* ── SERVICES ── */
-    #services{background:var(--surf);}
-    .svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:var(--space-6);margin-top:var(--space-12);}
-    .svc-card{background:var(--bg);border:1px solid var(--brd);border-radius:var(--radius-xl);padding:var(--space-6);transition:all var(--trans);}
-    .svc-card:hover{border-color:var(--pri);box-shadow:var(--glow);transform:translateY(-3px);}
-    .svc-icon{width:48px;height:48px;border-radius:var(--radius-md);background:var(--prih2);display:flex;align-items:center;justify-content:center;color:var(--pri);margin-bottom:var(--space-4);border:1px solid rgba(0,212,170,.2);}
-    .svc-name{font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-2);}
-    .svc-desc{font-size:var(--text-sm);color:var(--txm);line-height:1.65;}
+/* ABOUT */
+.about-g{display:grid;grid-template-columns:.9fr 1.3fr;gap:4rem;align-items:center}
+.avisual{text-align:center;padding:2.5rem 1.75rem 1.75rem;overflow:hidden}
+.avisual .gridbg{position:absolute;inset:0;z-index:-1;opacity:.06;background-image:linear-gradient(var(--pri) 1px,transparent 1px),linear-gradient(90deg,var(--pri) 1px,transparent 1px);background-size:28px 28px;-webkit-mask-image:radial-gradient(circle at 50% 30%,#000,transparent 70%);mask-image:radial-gradient(circle at 50% 30%,#000,transparent 70%)}
+.av-wrap{position:relative;width:170px;height:170px;margin:0 auto 1.75rem}
+.av-wrap::before{content:'';position:absolute;inset:-5px;border-radius:50%;background:conic-gradient(var(--pri),var(--acc),transparent 55%,var(--pri));animation:spin 5s linear infinite}
+.av-wrap img{position:relative;width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid var(--surf)}
+.av-status{position:absolute;bottom:10px;right:10px;width:22px;height:22px;border-radius:50%;background:var(--ok);border:4px solid var(--surf);z-index:1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.acname{font-family:var(--font-display);font-weight:900;font-size:var(--text-lg)}
+.acrole{font:var(--text-sm) var(--font-mono);color:var(--pri);margin:.25rem 0 1rem}
+.acmeta{display:grid;gap:.4rem;font:var(--text-xs) var(--font-mono);color:var(--txm);text-align:left;background:var(--surfo);border:1px solid var(--brd);border-radius:var(--r-lg);padding:.9rem 1rem}
+.acmeta span b{color:var(--tx);font-weight:500}
+.atxt p{color:var(--txm);line-height:1.8;margin-bottom:1.25rem}
+.atxt strong{color:var(--tx)}
+.alist{display:grid;grid-template-columns:1fr 1fr;gap:1rem 2rem;margin-top:1.75rem;padding-top:1.75rem;border-top:1px dashed var(--brd)}
+.aitem{display:flex;flex-direction:column;gap:2px}
+.albl{font:var(--text-xs) var(--font-mono);color:var(--txf);text-transform:uppercase;letter-spacing:.06em}
+.aval{font-size:var(--text-sm);font-weight:600;word-break:break-word}
+.aval a{color:var(--pri)}
+.aval a:hover{text-decoration:underline}
 
-    /* ── EXPERIENCE ── */
-    #experience{background:var(--bg);}
-    .exp-tl{margin-top:var(--space-12);position:relative;}
-    .exp-tl::before{content:'';position:absolute;left:20px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--pri),transparent);}
-    .exp-item{display:grid;grid-template-columns:44px 1fr;gap:var(--space-6);margin-bottom:var(--space-10);}
-    .edot{width:44px;height:44px;border-radius:50%;background:var(--surfo);border:2px solid var(--pri);display:flex;align-items:center;justify-content:center;color:var(--pri);flex-shrink:0;position:relative;z-index:1;}
-    .econt{padding-top:var(--space-1);}
-    .eperiod{font-size:var(--text-xs);font-family:var(--font-mono);color:var(--pri);margin-bottom:var(--space-2);letter-spacing:.05em;}
-    .erole{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;margin-bottom:var(--space-1);}
-    .eco{font-size:var(--text-sm);color:var(--txm);margin-bottom:var(--space-4);}
-    .eco span{color:var(--txf);font-size:var(--text-xs);font-family:var(--font-mono);}
-    .elist{list-style:none;display:flex;flex-direction:column;gap:var(--space-2);}
-    .elist li{font-size:var(--text-sm);color:var(--txm);padding-left:var(--space-5);position:relative;}
-    .elist li::before{content:"▸";position:absolute;left:0;color:var(--pri);}
+/* SKILLS */
+.sk-term{font:var(--text-sm) var(--font-mono);color:var(--txm);padding:.8rem 1.1rem;border:1px solid var(--brd);border-radius:var(--r-lg);background:var(--surf);margin-bottom:2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.sk-term .st{color:var(--ok)}
+.sk-cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem 3.5rem}
+.sk{margin-bottom:1.4rem}
+.sk-h{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--font-mono);font-size:var(--text-sm);margin-bottom:.55rem}
+.sk-if{color:var(--txf);margin-right:.6rem;font-size:var(--text-xs)}
+.sk-p{color:var(--pri);font-size:var(--text-xs)}
+.seg{display:grid;grid-template-columns:repeat(20,1fr);gap:3px}
+.seg i{height:9px;border-radius:2px;background:var(--surfd);transition:background .25s,box-shadow .25s}
+.seg i.on{background:color-mix(in oklab,var(--pri),var(--acc) calc(var(--k)*100%));box-shadow:0 0 8px color-mix(in oklab,var(--pri),var(--acc) calc(var(--k)*100%))}
+[data-theme="light"] .seg i.on{box-shadow:none}
 
-    /* ── EDUCATION ── */
-    #education{background:var(--surf);}
-    .edu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--space-6);margin-top:var(--space-12);}
-    .edu-card{background:var(--bg);border:1px solid var(--brd);border-radius:var(--radius-xl);padding:var(--space-6);transition:all var(--trans);}
-    .edu-card:hover{border-color:var(--pri);box-shadow:var(--glow);transform:translateY(-2px);}
-    .edu-year{font-size:var(--text-xs);font-family:var(--font-mono);color:var(--pri);letter-spacing:.05em;margin-bottom:var(--space-3);}
-    .edu-name{font-family:var(--font-display);font-size:var(--text-base);font-weight:800;margin-bottom:var(--space-1);}
-    .edu-deg{font-size:var(--text-sm);color:var(--pri);margin-bottom:var(--space-3);}
-    .edu-notes{font-size:var(--text-xs);color:var(--txm);line-height:1.65;}
+/* SERVICES bento */
+#services{background:var(--surf)}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.b-wide{grid-column:span 2}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.25rem}
+.svc-icon{width:50px;height:50px;border-radius:14px;background:var(--prih2);display:flex;align-items:center;justify-content:center;color:var(--pri);border:1px solid color-mix(in oklab,var(--pri) 30%,transparent)}
+.svc-num{font:var(--text-xs) var(--font-mono);color:var(--txf)}
+.svc-name{font-family:var(--font-display);font-weight:800;font-size:var(--text-lg);margin-bottom:.5rem}
+.svc-desc{font-size:var(--text-sm);color:var(--txm);line-height:1.7}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.1rem}
+.tags span{font:var(--text-xs) var(--font-mono);padding:.2rem .6rem;border-radius:6px;background:var(--surfo);color:var(--txm);border:1px solid var(--brd)}
 
-    /* ── CONTACT ── */
-    #contact{position:relative;overflow:hidden;}
-    .cglow{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(0,212,170,.05) 0%,transparent 70%);}
-    .cinn{position:relative;z-index:1;text-align:center;}
-    .ctitle{font-size:var(--text-3xl);font-weight:900;letter-spacing:-.03em;margin-bottom:var(--space-4);}
-    .cdesc{font-size:var(--text-base);color:var(--txm);max-width:48ch;margin-inline:auto;line-height:1.75;margin-bottom:var(--space-10);}
-    .clinks{display:flex;justify-content:center;flex-wrap:wrap;gap:var(--space-4);margin-bottom:var(--space-10);}
-    .clink{display:flex;align-items:center;gap:var(--space-3);font-size:var(--text-sm);font-weight:600;padding:var(--space-3) var(--space-6);border:1px solid var(--brd);border-radius:var(--radius-full);background:var(--surf);color:var(--txm);transition:all var(--trans);}
-    .clink:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px);box-shadow:var(--glow);}
-    .clink.pri{background:var(--pri);color:var(--txi);border-color:var(--pri);}
-    .clink.pri:hover{background:var(--prih);}
-    /* map */
-    .cmap{border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--brd);max-width:700px;width:100%;margin:0 auto;box-shadow:var(--sh-lg);display:flex;justify-content:center;align-items:center;}
-    .cmap iframe{display:block;width:100%;height:300px;border:none;}
+/* EXPERIENCE */
+.trh{font:var(--text-sm) var(--font-mono);color:var(--txm);margin-bottom:2.25rem;padding:.75rem 1.1rem;border:1px dashed var(--brd);border-radius:var(--r-lg);display:inline-block;background:var(--surf)}
+.hops{position:relative}
+.hops::before{content:'';position:absolute;left:27px;top:0;bottom:0;width:2px;background:linear-gradient(var(--pri),var(--acc),transparent)}
+.hops::after{content:'';position:absolute;left:24px;top:0;width:8px;height:8px;border-radius:50%;background:var(--pri);box-shadow:0 0 14px var(--pri);animation:pkt 5s linear infinite}
+@keyframes pkt{0%{top:0;opacity:0}5%{opacity:1}90%{opacity:1}100%{top:100%;opacity:0}}
+.hop{display:grid;grid-template-columns:56px 1fr;gap:1.5rem;margin-bottom:1.5rem}
+.hop-n{width:56px;height:56px;border-radius:14px;background:var(--surfo);border:1px solid var(--pri);display:grid;place-items:center;font:700 var(--text-sm) var(--font-mono);color:var(--pri);position:relative;z-index:1}
+.hop.current .hop-n{background:var(--pri);color:var(--txi);box-shadow:0 0 0 6px var(--prih2),var(--glow)}
+.hop-head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap;margin-bottom:.25rem}
+.erole{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800}
+.pill{font:500 var(--text-xs) var(--font-mono);padding:.2rem .7rem;border-radius:var(--r-full);border:1px solid var(--brd);color:var(--txm);white-space:nowrap}
+.pill.live{border-color:color-mix(in oklab,var(--ok) 50%,transparent);color:var(--ok);background:color-mix(in oklab,var(--ok) 10%,transparent)}
+.eco{font-size:var(--text-sm);color:var(--pri);font-weight:600}
+.eaddr{font:var(--text-xs) var(--font-mono);color:var(--txf);margin:.2rem 0 1rem}
+.elist{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.elist li{font-size:var(--text-sm);color:var(--txm);padding-left:1.25rem;position:relative}
+.elist li::before{content:"▸";position:absolute;left:0;color:var(--pri)}
 
-    /* ── FOOTER ── */
-    footer{border-top:1px solid var(--div);padding:var(--space-8) var(--space-6);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4);max-width:var(--wide);margin-inline:auto;font-size:var(--text-xs);color:var(--txf);}
-    .flogo{font-family:var(--font-display);font-weight:800;color:var(--txm);}
-    .fstat{display:flex;align-items:center;gap:var(--space-2);}
-    .fdot{width:6px;height:6px;border-radius:50%;background:var(--pri);}
+/* EDUCATION */
+#education{background:var(--surf)}
+.edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.edu-year{font:var(--text-xs) var(--font-mono);color:var(--pri);letter-spacing:.05em;margin-bottom:.9rem;display:flex;justify-content:space-between}
+.edu-year span{color:var(--txf)}
+.edu-name{font-family:var(--font-display);font-size:var(--text-base);font-weight:800;margin-bottom:.3rem}
+.edu-deg{font-size:var(--text-sm);color:var(--tx);margin-bottom:.75rem}
+.edu-notes{font-size:var(--text-xs);color:var(--txm);line-height:1.7}
+.ieee{display:inline-block;margin-top:.9rem;font:500 var(--text-xs) var(--font-mono);color:var(--acc);border:1px solid color-mix(in oklab,var(--acc) 40%,transparent);background:var(--acc2);padding:.2rem .6rem;border-radius:6px}
 
-    /* ── RESPONSIVE ── */
-    @media(max-width:768px){
-    .nlogo img { width: 45px !important; height: 45px !important; }
-  
-      .nlinks,.bnav{display:none;}
-      .ham{display:flex;}
-      .sk-cols{grid-template-columns:1fr;}
-      .about-g{grid-template-columns:1fr;}
-      .alist{grid-template-columns:1fr;}
-    }
-    @media(max-width:480px){
-      .hact{flex-direction:column;}
-      .bpri,.bsec{justify-content:center;}
-      .sgrid{grid-template-columns:1fr 1fr;}
-    }
-  
-    /* Mouse Highlight Effect */
-    .mouse-glow {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(0, 212, 170, 0.08) 0%, transparent 60%);
-      border-radius: 50%;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      mix-blend-mode: screen;
-    }
+/* CONTACT */
+#contact{overflow:hidden;text-align:center}
+.cglow{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 60% 55% at 50% 40%,var(--prih2),transparent 70%)}
+.ssh{font:var(--text-sm) var(--font-mono);color:var(--txm);margin-bottom:1rem}
+.ctitle{font-size:var(--text-3xl);font-weight:900;letter-spacing:-.035em;margin-bottom:1rem}
+.cdesc{color:var(--txm);max-width:48ch;margin:0 auto 2.5rem;line-height:1.75}
+.clinks{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem;margin-bottom:2.5rem}
+.clink{display:flex;align-items:center;gap:.6rem;font-size:var(--text-sm);font-weight:600;padding:.75rem 1.4rem;border:1px solid var(--brd);border-radius:var(--r-full);background:var(--surf);color:var(--txm);transition:all .25s var(--ease)}
+.clink:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px);box-shadow:var(--glow)}
+.clink.main{background:var(--pri);color:var(--txi);border-color:var(--pri)}
+.cmap{border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--brd);max-width:760px;margin:0 auto;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.cmap iframe{display:block;width:100%;height:320px;border:0}
+[data-theme="dark"] .cmap iframe{filter:invert(.92) hue-rotate(180deg) saturate(.8) contrast(.9)}
 
+/* FOOTER */
+footer{border-top:1px solid var(--div)}
+.fi-in{max-width:var(--content);margin-inline:auto;padding:2rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;font:var(--text-xs) var(--font-mono);color:var(--txf)}
+.flogo{color:var(--txm);font-weight:700}
+.fstat{display:flex;align-items:center;gap:.5rem}
+.fdot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok)}
+
+/* RESPONSIVE */
+@media(max-width:1240px){
+  .c.hero-g{grid-template-columns:1fr;max-width:var(--content)}
+  .term{max-width:780px}
+  .hname{font-size:var(--text-hero)}
+}
+@media(max-width:960px){
+  .about-g{grid-template-columns:1fr;gap:2.5rem}
+  .bento,.edu-grid{grid-template-columns:1fr 1fr}
+  .b-wide{grid-column:span 2}
+  .sgrid{grid-template-columns:repeat(3,1fr)}
+  .stat:nth-child(3){border-right:none}
+  .scroll-cue{display:none}
+}
+@media(max-width:768px){
+  .nlinks,.bnav{display:none}
+  .ham{display:flex}
+  .sk-cols{grid-template-columns:1fr}
+  .bento,.edu-grid{grid-template-columns:1fr}
+  .b-wide{grid-column:auto}
+  .alist{grid-template-columns:1fr}
+  .sgrid{grid-template-columns:1fr 1fr}
+  .stat{border-right:none}
+}
+@media(max-width:600px){
+  .tbody{font-size:.68rem;min-height:0;padding:1rem}
+}
+@media(max-width:480px){
+  .hact{flex-direction:column}
+  .bpri,.bsec{justify-content:center}
+  .hop{grid-template-columns:44px 1fr;gap:1rem}
+  .hop-n{width:44px;height:44px;font-size:var(--text-xs)}
+  .hops::before{left:21px}.hops::after{left:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .js .rv{opacity:1;transform:none}
+}
 </style>
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
 </head>
 <body>
+<div id="progress"></div>
 <div class="mouse-glow" id="mouse-glow"></div>
-
 <a href="#main" class="sr-only">Skip to content</a>
 
 <!-- NAV -->
 <nav>
   <div class="ni">
-    <div class="nlogo">
-      <img src="assets/img/ms97.png" alt="ms97.live logo" width="85" height="85" style="object-fit: contain;">
-      ms97.live
-    </div>
+    <a href="#hero" class="nlogo">
+      <img src="assets/img/ms97.png" alt="ms97.live logo" width="85" height="85">
+      <span>ms97<b>.live</b></span>
+    </a>
     <ul class="nlinks">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -300,11 +351,9 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nact">
-      <button class="ttoggle" data-theme-toggle aria-label="Switch theme">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+      <button class="icon-btn" data-theme-toggle aria-label="Switch theme"></button>
       <a href="#contact" class="bnav">Hire Me</a>
-      <button class="ham" id="ham" aria-label="Open menu">
+      <button class="icon-btn ham" id="ham" aria-label="Open menu">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
@@ -312,115 +361,110 @@
 </nav>
 
 <div class="mmenu" id="mmenu">
-  <a href="#about" onclick="cmenu()">About</a>
-  <a href="#skills" onclick="cmenu()">Skills</a>
-  <a href="#services" onclick="cmenu()">Services</a>
-  <a href="#experience" onclick="cmenu()">Experience</a>
-  <a href="#education" onclick="cmenu()">Education</a>
-  <a href="#contact" onclick="cmenu()">Contact</a>
+  <a href="#about"><span>01</span>About</a>
+  <a href="#skills"><span>02</span>Skills</a>
+  <a href="#services"><span>03</span>Services</a>
+  <a href="#experience"><span>04</span>Experience</a>
+  <a href="#education"><span>05</span>Education</a>
+  <a href="#contact"><span>06</span>Contact</a>
 </div>
 
 <main id="main">
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hbg"></div>
-  <div class="hgrid"></div>
-  <div class="c hc">
-    <div class="hbadge"><span class="hdot"></span>Freelance Available</div>
-    <h1 class="hname">Manula<br><span>Haputhanthrie</span></h1>
-    <p class="htitle">Senior Network Engineer</p>
-    <div class="typed-wrap" id="typed-out"></div>
-    <p class="hdesc">BSc (Hons) Computer Systems &amp; Network Engineering · Senior Network Engineer at SLT-Mobitel PEOTV · Specialising in IPTV infrastructure, enterprise LAN/WAN, VMware vCenter, and ISO 27001/PCI DSS compliance.</p>
-    <div class="hact">
-      <a href="#experience" class="bpri">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        View Experience
-      </a>
-      <a href="#contact" class="bsec">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-        Get in Touch
-      </a>
-    </div>
-    <div class="socials">
-      <a href="https://linkedin.com/in/manula97" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="LinkedIn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
-      <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="GitHub">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-      </a>
-      <a href="https://wa.me/94717435584" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="WhatsApp">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-      </a>
-      <a href="https://twitter.com/manula97" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="Twitter">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
-      </a>
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="hfade"></div>
+  <div class="c hero-g">
+    <div>
+      <div class="hbadge"><span class="hdot"></span>STATUS: FREELANCE AVAILABLE</div>
+      <p class="whoami"><span class="kl">┌──(</span><span class="ku">manula㉿kali</span><span class="kl">)-[</span><span class="kd">~</span><span class="kl">]</span><br><span class="kl">└─</span><span class="ku">$</span> whoami</p>
+      <h1 class="hname" id="hname">
+        <span class="scr" data-text="Manula">Manula</span><br>
+        <span class="scr grad" data-text="Haputhanthrie">Haputhanthrie</span>
+      </h1>
+      <p class="htitle">Senior Network &amp; Security Engineer</p>
+      <div class="typed-wrap"><span class="pfx">&gt; </span><span id="typed-out"></span></div>
+      <p class="hdesc">BSc (Hons) Computer Systems &amp; Network Engineering · Senior Network &amp; Security Engineer at SLT-Mobitel PEOTV · Focused on network security — NGFW, IDS/IPS, Kali Linux, and ISO 27001/PCI DSS compliance — backed by deep experience in IPTV infrastructure and VMware vCenter.</p>
+      <div class="hact">
+        <a href="#experience" class="bpri">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          View Experience
+        </a>
+        <a href="#contact" class="bsec">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          Get in Touch
+        </a>
+      </div>
+      <div class="socials">
+        <a href="https://linkedin.com/in/manula97" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="https://wa.me/94717435584" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        <a href="https://twitter.com/manula97" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+      </div>
     </div>
 
-    <!-- TERMINAL -->
-    <div class="hterm">
+    <div class="term rv">
       <div class="tbar">
         <span class="td tr"></span><span class="td ty"></span><span class="td tg"></span>
-        <span class="ttl">Cisco IOS - Terminal</span>
+        <span class="ttl">manula@kali: ~ — zsh</span>
       </div>
-      <div class="tbody">
-        <div><span style="color:var(--pri); font-weight:bold;">Manula97#</span> <span class="tc">show privilege</span></div>
-        <div class="to">Current privilege level is 15<br>User: manula | Role: Senior Network Engineer</div>
-        <div style="margin-top:.5rem"><span style="color:var(--pri); font-weight:bold;">Manula97#</span> <span class="tc">show tech-support | include skills</span></div>
-        <div class="to">→ <span class="thi">Cisco/Brocade</span> LAN/WAN · VMware vCenter (250+ VMs)</div>
-        <div class="to">→ <span class="thi">IPTV Platform</span> · Satellite · STB · Multicast</div>
-        <div class="to">→ <span class="tac">ISO 27001</span> · PCI DSS · NGFW · IDS/IPS</div>
-        <div class="to">→ <span class="tac">IoT · AWS · Arduino · Python · Robotics</span></div>
-        <div style="margin-top:.5rem"><span style="color:var(--pri); font-weight:bold;">Manula97#</span> <span class="tcur"></span></div>
-      </div>
+      <div class="tbody" id="tbody" aria-live="polite"></div>
     </div>
   </div>
+  <div class="scroll-cue">scroll<i></i></div>
 </section>
 
 <!-- STATS -->
 <section id="stats">
   <div class="c">
     <div class="sgrid">
-      <div class="fi"><div class="snum">5+</div><div class="slbl">Years Experience</div></div>
-      <div class="fi"><div class="snum">5</div><div class="slbl">Companies</div></div>
-	  <div class="fi"><div class="snum">300+</div><div class="slbl">Networks Managed</div></div>
-      <div class="fi"><div class="snum">250+</div><div class="slbl">VMs Managing</div></div>
-      <div class="fi"><div class="snum">100+</div><div class="slbl">Projects Done</div></div>
+      <div class="stat rv"><div class="snum" data-count="5" data-suffix="+">0</div><div class="slbl">Years Experience</div></div>
+      <div class="stat rv"><div class="snum" data-count="5">0</div><div class="slbl">Companies</div></div>
+      <div class="stat rv"><div class="snum" data-count="300" data-suffix="+">0</div><div class="slbl">Networks Managed</div></div>
+      <div class="stat rv"><div class="snum" data-count="250" data-suffix="+">0</div><div class="slbl">VMs Managing</div></div>
+      <div class="stat rv"><div class="snum" data-count="100" data-suffix="+">0</div><div class="slbl">Projects Done</div></div>
     </div>
   </div>
 </section>
+
+<!-- TECH MARQUEE -->
+<div class="mq" aria-label="Tech stack"><div class="mq-track" id="mq"></div></div>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="c">
     <div class="about-g">
-      <div class="avisual fi">
-        <div class="avbg"></div>
-        <img src="assets/img/profile-img.jpg" alt="Manula Pamod Haputhanthrie" class="avatar" style="object-fit: cover;" width="600" height="600">
-        <div class="acard">
-          <div class="acname">Manula Pamod Haputhanthrie</div>
-          <div class="acrole">// Senior Network Engineer</div>
-          <div class="acloc">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Colombo, Sri Lanka
-          </div>
+      <div class="card avisual rv">
+        <div class="gridbg"></div>
+        <div class="av-wrap">
+          <img src="assets/img/profile-img.jpg" alt="Manula Pamod Haputhanthrie" width="600" height="600">
+          <span class="av-status" title="Online"></span>
+        </div>
+        <div class="acname">Manula Pamod Haputhanthrie</div>
+        <div class="acrole">// Senior Network &amp; Security Engineer</div>
+        <div class="acmeta">
+          <span>location : <b>Colombo, LK</b></span>
+          <span>timezone : <b>UTC+05:30</b></span>
+          <span>os&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <b>Kali GNU/Linux</b></span>
+          <span>status&nbsp;&nbsp; : <b class="pri">● online</b></span>
         </div>
       </div>
-      <div class="atxt fi">
-        <p class="slabel">// About Me</p>
-        <h2 class="stitle">Network Engineer &amp; IoT Innovator</h2>
-        <p>Welcome to my ePortfolio! I'm Manula Pamod Haputhanthrie. I hold a BSc (Hons) in Computer Systems &amp; Network Engineering from SLIIT. Currently serving as <strong>Senior Network Engineer at SLT-Mobitel PEOTV</strong>, I oversee enterprise IPTV platform operations, scalable LAN/WAN architectures, and VMware vCenter infrastructure with 250+ VMs.</p>
+      <div class="atxt rv">
+        <p class="slabel">01 // About Me</p>
+        <h2 class="stitle">Network Security Engineer &amp; IoT Innovator</h2>
+        <p>Welcome to my ePortfolio! I'm Manula Pamod Haputhanthrie. I hold a BSc (Hons) in Computer Systems &amp; Network Engineering from SLIIT. Currently serving as <strong>Senior Network &amp; Security Engineer at SLT-Mobitel PEOTV</strong>, my main focus is network security and compliance, alongside enterprise IPTV platform operations, scalable LAN/WAN architectures, and VMware vCenter infrastructure with 250+ VMs.</p>
         <p>My career spans telecom giants (Dialog Axiata), banking (Commercial Bank of Ceylon), IoT (N-able), and network engineering (NextEn) — giving me a uniquely broad perspective across industries.</p>
         <div class="alist">
           <div class="aitem"><span class="albl">Birthday</span><span class="aval">22 November 1997</span></div>
-          <div class="aitem"><span class="albl">Age</span><span class="aval">29</span></div>
+          <div class="aitem"><span class="albl">Age</span><span class="aval" id="age">—</span></div>
           <div class="aitem"><span class="albl">Phone</span><span class="aval"><a href="tel:+94717435584">(+94) 71 743 5584</a></span></div>
           <div class="aitem"><span class="albl">Email</span><span class="aval"><a href="mailto:manulasapu2016@gmail.com">manulasapu2016@gmail.com</a></span></div>
           <div class="aitem"><span class="albl">Work Email</span><span class="aval"><a href="mailto:manula.pamod@slt.com.lk">manula.pamod@slt.com.lk</a></span></div>
           <div class="aitem"><span class="albl">Website</span><span class="aval"><a href="https://www.ms97.live" target="_blank" rel="noopener noreferrer">www.ms97.live</a></span></div>
           <div class="aitem"><span class="albl">City</span><span class="aval">Colombo, Sri Lanka</span></div>
           <div class="aitem"><span class="albl">Degree</span><span class="aval">BSc (Hons) — SLIIT</span></div>
-          <div class="aitem"><span class="albl">Freelance</span><span class="aval" style="color:var(--pri);">Available</span></div>
+          <div class="aitem"><span class="albl">Freelance</span><span class="aval pri">Available</span></div>
         </div>
       </div>
     </div>
@@ -430,77 +474,75 @@
 <!-- SKILLS -->
 <section id="skills">
   <div class="c">
-    <p class="slabel fi">// Proficiency</p>
-    <h2 class="stitle fi">Technical Skills</h2>
-    <p class="sdesc fi">A blend of networking, software, electronics, and creative skills built across enterprise environments and academic projects.</p>
-    <div class="sk-cols fi" id="skillsArea">
+    <div class="sh rv">
+      <p class="slabel">02 // Proficiency</p>
+      <h2 class="stitle">Technical Skills</h2>
+      <p class="sdesc">A blend of network security, infrastructure, software, and electronics skills built across enterprise environments and academic projects.</p>
+    </div>
+    <div class="sk-term rv"><span><span class="kl">└─</span><span class="ku">$</span> sudo ./audit.sh --profile skills</span><span class="st">[+] 10/10 checks passed</span></div>
+    <div class="sk-cols rv">
       <div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">Routing</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.95"></div></div></div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">Firewalling</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.90"></div></div></div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">Mail Security</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.80"></div></div></div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">Windows Server</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.75"></div></div></div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">Load-Balancer</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.75"></div></div></div>
+        <div class="sk" data-v="90"><div class="sk-h"><span><span class="sk-if">[01]</span>Firewalling</span><span class="sk-p">90%</span></div><div class="seg"></div></div>
+        <div class="sk" data-v="90"><div class="sk-h"><span><span class="sk-if">[02]</span>Web Security — Proxy</span><span class="sk-p">90%</span></div><div class="seg"></div></div>
+        <div class="sk" data-v="85"><div class="sk-h"><span><span class="sk-if">[03]</span>E-Mail Encryption</span><span class="sk-p">85%</span></div><div class="seg"></div></div>
+        <div class="sk" data-v="80"><div class="sk-h"><span><span class="sk-if">[04]</span>Mail Security</span><span class="sk-p">80%</span></div><div class="seg"></div></div>
+        <div class="sk" data-v="75"><div class="sk-h"><span><span class="sk-if">[05]</span>Linux Server</span><span class="sk-p">75%</span></div><div class="seg"></div></div>
       </div>
       <div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">Switching</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.95"></div></div></div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">Web Security - Proxy</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.90"></div></div></div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">E-Mail Encryption</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.85"></div></div></div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">Linux Server</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.75"></div></div></div>
-        <div class="sk-item"><div class="sk-header"><span class="sk-name">Virtualisation</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="--w:.85"></div></div></div>
+        <div class="sk" data-v="95"><div class="sk-h"><span><span class="sk-if">[06]</span>Routing</span><span class="sk-p">95%</span></div><div class="seg"></div></div>
+        <div class="sk" data-v="95"><div class="sk-h"><span><span class="sk-if">[07]</span>Switching</span><span class="sk-p">95%</span></div><div class="seg"></div></div>
+        <div class="sk" data-v="85"><div class="sk-h"><span><span class="sk-if">[08]</span>Virtualisation</span><span class="sk-p">85%</span></div><div class="seg"></div></div>
+        <div class="sk" data-v="75"><div class="sk-h"><span><span class="sk-if">[09]</span>Load-Balancer</span><span class="sk-p">75%</span></div><div class="seg"></div></div>
+        <div class="sk" data-v="75"><div class="sk-h"><span><span class="sk-if">[10]</span>Windows Server</span><span class="sk-p">75%</span></div><div class="seg"></div></div>
       </div>
-</div>
-    <!-- Tech stack chips -->
-    <div class="tech-row fi">
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/linux/white" width="16" height="16" alt="Linux logo" style="flex-shrink:0;">Linux</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" width="16" height="16" alt="Windows Server logo" style="flex-shrink:0; filter: brightness(0) invert(1);">Windows Server</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/python/white" width="16" height="16" alt="Python logo" style="flex-shrink:0;">Python</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="16" height="16" alt="Java logo" style="flex-shrink:0; filter: brightness(0) invert(1);">Java</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/cisco/white" width="16" height="16" alt="Cisco IOS/NX-OS logo" style="flex-shrink:0;">Cisco IOS/NX-OS</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/broadcom/white" width="16" height="16" alt="Brocade logo" style="flex-shrink:0;">Brocade</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/vmware/white" width="16" height="16" alt="VMware vCenter logo" style="flex-shrink:0;">VMware vCenter</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/huawei/white" width="16" height="16" alt="Huawei logo" style="flex-shrink:0;">Huawei</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="16" height="16" alt="AWS logo" style="flex-shrink:0; filter: brightness(0) invert(1);">AWS</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" width="16" height="16" alt="Azure logo" style="flex-shrink:0; filter: brightness(0) invert(1);">Azure</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/fortinet/white" width="16" height="16" alt="Fortinet NGFW logo" style="flex-shrink:0;">Fortinet NGFW</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/networkx/networkx-original.svg" width="16" height="16" alt="Check Point logo" style="flex-shrink:0; filter: brightness(0) invert(1);">Check Point</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/pfsense/white" width="16" height="16" alt="pfSense logo" style="flex-shrink:0;">pfSense</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/espressif/white" width="16" height="16" alt="ESP32/ESP8266 logo" style="flex-shrink:0;">ESP32/ESP8266</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/raspberrypi/white" width="16" height="16" alt="Raspberry Pi logo" style="flex-shrink:0;">Raspberry Pi</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/mqtt/white" width="16" height="16" alt="MQTT/IoT logo" style="flex-shrink:0;">MQTT/IoT</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/tensorflow/white" width="16" height="16" alt="TensorFlow logo" style="flex-shrink:0;">TensorFlow</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/opencv/white" width="16" height="16" alt="OpenCV logo" style="flex-shrink:0;">OpenCV</span><span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/ros/white" width="16" height="16" alt="ROS logo" style="flex-shrink:0;">ROS</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;">Radware</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/nginx/white" width="16" height="16" alt="NGINX logo" style="flex-shrink:0;">NGINX</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/docker/white" width="16" height="16" alt="Docker logo" style="flex-shrink:0;">Docker</span>
-      <span class="tech-chip" style="display:inline-flex; align-items:center; gap:8px;"><img src="https://cdn.simpleicons.org/kalilinux/white" width="16" height="16" alt="Kali Linux logo" style="flex-shrink:0;">Kali Linux</span></div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services">
   <div class="c">
-    <p class="slabel fi">// What I Offer</p>
-    <h2 class="stitle fi">Services</h2>
-    <p class="sdesc fi">Comprehensive engineering services across network infrastructure, IPTV, security, cloud, IoT, and cutting-edge research.</p>
-    <div class="svc-grid">
-      <div class="svc-card fi">
-        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg></div>
-        <div class="svc-name">Enterprise Network Engineering</div>
-        <div class="svc-desc">Extensive experience designing and managing complex LAN/WAN architectures across hundreds of branches. Proficient in advanced routing protocols (OSPF, BGP, EIGRP) and switching using enterprise equipment from Cisco, Huawei, Brocade, and Aruba.</div>
-      </div>
-      <div class="svc-card fi">
-        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-        <div class="svc-name">IPTV &amp; Multicast Infrastructure</div>
-        <div class="svc-desc">Specialized in overseeing IPTV platform operations, including satellite signal acquisition, robust content distribution, and Set-Top Box (STB) management. Skilled in handling multicast networking for continuous, high-quality media delivery.</div>
-      </div>
-      <div class="svc-card fi">
-        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div class="sh rv">
+      <p class="slabel">03 // What I Offer</p>
+      <h2 class="stitle">Services</h2>
+      <p class="sdesc">Comprehensive engineering services across network security, infrastructure, IPTV, cloud, IoT, and cutting-edge research.</p>
+    </div>
+    <div class="bento">
+      <div class="card b-wide rv">
+        <div class="svc-top"><div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="svc-num">0x01</span></div>
         <div class="svc-name">Network Security &amp; Compliance</div>
-        <div class="svc-desc">Dedicated to securing enterprise boundaries using Next-Generation Firewalls (Fortinet, Check Point, pfSense) and IDS/IPS systems. Proven track record of maintaining rigorous compliance frameworks such as ISO 27001 and PCI DSS.</div>
+        <div class="svc-desc">Dedicated to securing enterprise boundaries using Next-Generation Firewalls (Fortinet, Check Point, pfSense) and IDS/IPS systems, with Kali Linux in the toolkit. Proven track record of maintaining rigorous compliance frameworks such as ISO 27001 and PCI DSS.</div>
+        <div class="tags"><span>Kali Linux</span><span>NGFW</span><span>IDS/IPS</span><span>Fortinet</span><span>Check Point</span><span>pfSense</span><span>ISO 27001</span><span>PCI DSS</span></div>
       </div>
-      <div class="svc-card fi">
-        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div>
+      <div class="card rv">
+        <div class="svc-top"><div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><span class="svc-num">0x02</span></div>
+        <div class="svc-name">IPTV &amp; Multicast</div>
+        <div class="svc-desc">IPTV platform operations including satellite signal acquisition, content distribution, STB management, and multicast networking for continuous, high-quality delivery.</div>
+        <div class="tags"><span>Multicast</span><span>STB</span><span>Satellite</span></div>
+      </div>
+      <div class="card rv">
+        <div class="svc-top"><div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg></div><span class="svc-num">0x03</span></div>
+        <div class="svc-name">Enterprise Networking</div>
+        <div class="svc-desc">Designing and managing LAN/WAN architectures across hundreds of branches, with advanced routing and switching on Cisco, Huawei, Brocade, and Aruba.</div>
+        <div class="tags"><span>OSPF</span><span>BGP</span><span>EIGRP</span></div>
+      </div>
+      <div class="card b-wide rv">
+        <div class="svc-top"><div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div><span class="svc-num">0x04</span></div>
         <div class="svc-name">Virtualization &amp; Cloud Services</div>
-        <div class="svc-desc">Expertise in administering highly available virtualized environments. Manages massive infrastructure setups utilizing VMware vCenter (250+ VMs), Microsoft Hyper-V, alongside AWS and Azure cloud platforms.</div>
+        <div class="svc-desc">Expertise in administering highly available virtualized environments. Manages large infrastructure setups utilizing VMware vCenter (250+ VMs) and Microsoft Hyper-V, alongside AWS and Azure cloud platforms.</div>
+        <div class="tags"><span>vCenter</span><span>ESXi</span><span>Hyper-V</span><span>AWS</span><span>Azure</span><span>Docker</span></div>
       </div>
-      <div class="svc-card fi">
-        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="card b-wide rv">
+        <div class="svc-top"><div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><span class="svc-num">0x05</span></div>
         <div class="svc-name">Internet of Things (IoT) Solutions</div>
-        <div class="svc-desc">Hands-on experience deploying enterprise-grade IoT architectures. Successfully implemented real-time hazard detection systems, such as a dangerous gas monitoring IoT solution for CICT — the biggest port terminal in Sri Lanka.</div>
+        <div class="svc-desc">Hands-on experience deploying enterprise-grade IoT architectures, including a real-time dangerous gas monitoring solution for CICT — the biggest port terminal in Sri Lanka.</div>
+        <div class="tags"><span>MQTT</span><span>ESP32</span><span>Zigbee</span><span>AWS IoT</span><span>Advantech ADAM</span></div>
       </div>
-      <div class="svc-card fi">
-        <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
-        <div class="svc-name">Robotics &amp; Computer Vision</div>
-        <div class="svc-desc">Developed an advanced Computer Vision–based Navigation Robot utilizing ROS and TensorFlow. Research successfully presented at University of Moratuwa and formally published in IEEE (ICITR 2022).</div>
+      <div class="card rv">
+        <div class="svc-top"><div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div><span class="svc-num">0x06</span></div>
+        <div class="svc-name">Robotics &amp; Vision</div>
+        <div class="svc-desc">Computer Vision–based Navigation Robot using ROS and TensorFlow, presented at University of Moratuwa and published in IEEE (ICITR 2022).</div>
+        <div class="tags"><span>ROS</span><span>TensorFlow</span><span>OpenCV</span></div>
       </div>
     </div>
   </div>
@@ -509,35 +551,36 @@
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="c">
-    <p class="slabel fi">// Career History</p>
-    <h2 class="stitle fi">Professional Experience</h2>
-    <p class="sdesc fi">A progressive career spanning telecommunications, banking, IoT, and enterprise networking across leading Sri Lankan organizations.</p>
-    <div class="exp-tl">
+    <div class="sh rv">
+      <p class="slabel">04 // Career History</p>
+      <h2 class="stitle">Professional Experience</h2>
+      <p class="sdesc">A progressive career spanning telecommunications, banking, IoT, and enterprise networking across leading Sri Lankan organizations.</p>
+    </div>
+    <div class="trh rv"><span class="kl">└─</span><span class="ku">$</span> tac /var/log/career.log</div>
+    <div class="hops">
 
-      <!-- SLT PEOTV -->
-      <div class="exp-item fi">
-        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-        <div class="econt">
-          <div class="eperiod">Present</div>
-          <div class="erole">Senior Network Engineer</div>
-          <div class="eco">SLT-Mobitel PEOTV <span>· No. 148/15, Lesley Ranagala Mawatha, Colombo 08</span></div>
+      <div class="hop current rv">
+        <div class="hop-n">05</div>
+        <div class="card">
+          <div class="hop-head"><div class="erole">Senior Network &amp; Security Engineer</div><span class="pill live">● CURRENT</span></div>
+          <div class="eco">SLT-Mobitel PEOTV</div>
+          <div class="eaddr">No. 148/15, Lesley Ranagala Mawatha, Colombo 08</div>
           <ul class="elist">
+            <li>Ensure compliance with ISO 27001 and PCI DSS standards by enforcing security controls, conducting audits, and maintaining up-to-date network and system documentation</li>
+            <li>Perform configuration, optimization, and troubleshooting of application delivery controllers and network security appliances to ensure high availability and traffic efficiency</li>
             <li>Oversee end-to-end IPTV platform operations, including satellite signal acquisition, stream ingestion, encoding/decoding workflows, content distribution, and STB lifecycle management</li>
             <li>Design, implement, and manage scalable enterprise LAN/WAN architectures utilizing Cisco and Brocade switching and routing platforms</li>
-            <li>Perform configuration, optimization, and troubleshooting of application delivery controllers and network security appliances to ensure high availability and traffic efficiency</li>
             <li>Administer and maintain VMware vCenter infrastructure, managing 250+ virtual machines with a focus on resource optimization, high availability, and performance tuning</li>
-            <li>Ensure compliance with ISO 27001 and PCI DSS standards by enforcing security controls, conducting audits, and maintaining up-to-date network and system documentation</li>
           </ul>
         </div>
       </div>
 
-      <!-- COMMERCIAL BANK -->
-      <div class="exp-item fi">
-        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-        <div class="econt">
-          <div class="eperiod">Network Engineer</div>
-          <div class="erole">Commercial Bank of Ceylon PLC</div>
-          <div class="eco">Islandwide Branch Network <span>· No 21, Sir Razik Fareed Mawatha, P.O. Box 856, Colombo 01</span></div>
+      <div class="hop rv">
+        <div class="hop-n">04</div>
+        <div class="card">
+          <div class="hop-head"><div class="erole">Network Engineer</div><span class="pill">Banking</span></div>
+          <div class="eco">Commercial Bank of Ceylon PLC</div>
+          <div class="eaddr">Islandwide Branch Network · No 21, Sir Razik Fareed Mawatha, Colombo 01</div>
           <ul class="elist">
             <li>Upgrading, designing, installing, maintaining, and supporting LAN, WAN, and VoIP infrastructure across all islandwide branches</li>
             <li>Administration, configuration, troubleshooting, and support of Office 365 cloud apps, Exchange Online, Active Directory Federation Services</li>
@@ -548,13 +591,12 @@
         </div>
       </div>
 
-      <!-- N-ABLE IoT -->
-      <div class="exp-item fi">
-        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-        <div class="econt">
-          <div class="eperiod">IoT Engineer</div>
-          <div class="erole">N-able (Pvt) Ltd</div>
-          <div class="eco">Industrial IoT <span>· No: 36 Bristol St, Colombo 00100</span></div>
+      <div class="hop rv">
+        <div class="hop-n">03</div>
+        <div class="card">
+          <div class="hop-head"><div class="erole">IoT Engineer</div><span class="pill">Industrial IoT</span></div>
+          <div class="eco">N-able (Pvt) Ltd</div>
+          <div class="eaddr">No: 36 Bristol St, Colombo 00100</div>
           <ul class="elist">
             <li>As site engineer, implemented the Dangerous Gas Monitoring end-to-end IoT solution at CICT — the biggest port terminal in Sri Lanka</li>
             <li>Developed Smart Office architecture utilizing Image Processing and Zigbee communication protocol</li>
@@ -565,13 +607,12 @@
         </div>
       </div>
 
-      <!-- NEXTEN -->
-      <div class="exp-item fi">
-        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-        <div class="econt">
-          <div class="eperiod">Associate Network Engineer</div>
-          <div class="erole">NextEn (Pvt) Ltd</div>
-          <div class="eco">Department of Engineering <span>· No: 719/1 Ethulkotte, Sri Jayawardenepura Kotte 10100</span></div>
+      <div class="hop rv">
+        <div class="hop-n">02</div>
+        <div class="card">
+          <div class="hop-head"><div class="erole">Associate Network Engineer</div><span class="pill">Engineering</span></div>
+          <div class="eco">NextEn (Pvt) Ltd</div>
+          <div class="eaddr">No: 719/1 Ethulkotte, Sri Jayawardenepura Kotte 10100</div>
           <ul class="elist">
             <li>Completed the routing and switching component of the ICTA Public Library Project — establishment of 18 public libraries across Sri Lanka</li>
             <li>Built a Unifi Wireless Controller using Raspberry Pi 3</li>
@@ -581,13 +622,12 @@
         </div>
       </div>
 
-      <!-- DIALOG AXIATA -->
-      <div class="exp-item fi">
-        <div class="edot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-        <div class="econt">
-          <div class="eperiod">Trainee Network/Telecom Engineer (Internship — Distinction)</div>
-          <div class="erole">Dialog Axiata PLC</div>
-          <div class="eco">Network Operations &amp; Service Assurance <span>· T.B. Jaya MW, 110 Akbar Brothers' Rd, Colombo</span></div>
+      <div class="hop rv">
+        <div class="hop-n">01</div>
+        <div class="card">
+          <div class="hop-head"><div class="erole">Trainee Network/Telecom Engineer</div><span class="pill">Internship · Distinction</span></div>
+          <div class="eco">Dialog Axiata PLC</div>
+          <div class="eaddr">Network Operations &amp; Service Assurance · 110 Akbar Brothers' Rd, Colombo</div>
           <ul class="elist">
             <li>Subsea Cable Systems and IPLC &amp; ITMC Operations</li>
             <li>International Voice Service and International Frame Relay operations</li>
@@ -604,32 +644,31 @@
 <!-- EDUCATION -->
 <section id="education">
   <div class="c">
-    <p class="slabel fi">// Academic Background</p>
-    <h2 class="stitle fi">Education</h2>
-    <p class="sdesc fi">From secondary school through to a full engineering honours degree, with hands-on research published at IEEE.</p>
+    <div class="sh rv">
+      <p class="slabel">05 // Academic Background</p>
+      <h2 class="stitle">Education</h2>
+      <p class="sdesc">From secondary school through to a full engineering honours degree, with hands-on research published at IEEE.</p>
+    </div>
     <div class="edu-grid">
-
-      <div class="edu-card fi">
-        <div class="edu-year">2003 — 2016</div>
+      <div class="card rv">
+        <div class="edu-year">2003 — 2016 <span>[school]</span></div>
         <div class="edu-name">Mahinda College, Galle</div>
         <div class="edu-deg">Biological Science Stream</div>
         <div class="edu-notes">G.C.E. O/L 2013 — 8 A passes, 1 C pass · G.C.E. A/L 2018 — 2 C passes, 2 S passes</div>
       </div>
-
-      <div class="edu-card fi">
-        <div class="edu-year">2018 — 2019</div>
+      <div class="card rv">
+        <div class="edu-year">2018 — 2019 <span>[diploma]</span></div>
         <div class="edu-name">ESOFT Metro Campus</div>
         <div class="edu-deg">Diploma in IT (International)</div>
         <div class="edu-notes">Successfully completed the DiTec half-year Dip.IT at ESOFT Galle.</div>
       </div>
-
-      <div class="edu-card fi">
-        <div class="edu-year">2019 — 2022</div>
+      <div class="card rv">
+        <div class="edu-year">2019 — 2022 <span>[degree]</span></div>
         <div class="edu-name">SLIIT — Sri Lanka Institute of Information Technology</div>
         <div class="edu-deg">BSc (Hons) Computer Systems &amp; Network Engineering</div>
-        <div class="edu-notes">Final-year research: Computer Vision–Based Navigation Robot — exhibited at University of Moratuwa &amp; published in IEEE (ICITR 2022). Projects included robotics, face recognition, IoT systems, and full-stack web development.</div>
+        <div class="edu-notes">Final-year research: Computer Vision–Based Navigation Robot — exhibited at University of Moratuwa. Projects included robotics, face recognition, IoT systems, and full-stack web development.</div>
+        <span class="ieee">IEEE · ICITR 2022</span>
       </div>
-
     </div>
   </div>
 </section>
@@ -637,34 +676,20 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="cglow"></div>
-  <div class="c cinn">
-    <p class="slabel fi" style="text-align:center;">// Get In Touch</p>
-    <h2 class="ctitle fi">Let's Work Together</h2>
-    <p class="cdesc fi">Available for freelance work, consulting engagements, and full-time opportunities. Reach out via email, phone, or LinkedIn.</p>
-    <div class="clinks fi">
-      <a href="mailto:manulasapu2016@gmail.com" class="clink pri">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-        manulasapu2016@gmail.com
-      </a>
-      <a href="tel:+94717435584" class="clink">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        (+94) 71 743 5584
-      </a>
-      <a href="https://linkedin.com/in/manula97" target="_blank" rel="noopener noreferrer" class="clink">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        LinkedIn
-      </a>
-      <a href="https://wa.me/94717435584" target="_blank" rel="noopener noreferrer" class="clink">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-        WhatsApp
-      </a>
-      <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" class="clink">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        GitHub
-      </a>
+  <div class="c">
+    <p class="slabel rv" style="justify-content:center">06 // Get In Touch</p>
+    <p class="ssh rv"><span class="kl">└─</span><span class="ku">$</span> nc -lvnp 443</p>
+    <p class="ssh rv" style="font-size:var(--text-xs);margin-top:-.5rem">listening on [any] 443 … waiting for your connection <span class="typed-cursor">▋</span></p>
+    <h2 class="ctitle rv">Let's <span class="grad">Work Together</span></h2>
+    <p class="cdesc rv">Available for freelance work, consulting engagements, and full-time opportunities. Reach out via email, phone, or LinkedIn.</p>
+    <div class="clinks rv">
+      <a href="mailto:manulasapu2016@gmail.com" class="clink main"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>manulasapu2016@gmail.com</a>
+      <a href="tel:+94717435584" class="clink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(+94) 71 743 5584</a>
+      <a href="https://linkedin.com/in/manula97" target="_blank" rel="noopener noreferrer" class="clink">LinkedIn</a>
+      <a href="https://wa.me/94717435584" target="_blank" rel="noopener noreferrer" class="clink">WhatsApp</a>
+      <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" class="clink">GitHub</a>
     </div>
-    <!-- Map embed -->
-    <div class="cmap fi">
+    <div class="cmap rv">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15846.86680951098!2d79.90803035!3d6.80427675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1775027380849!5m2!1sen!2slk" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Colombo, Sri Lanka map" allowfullscreen></iframe>
     </div>
   </div>
@@ -672,84 +697,235 @@
 
 </main>
 
-<!-- FOOTER -->
 <footer>
-  <span class="flogo">MPH · Manula Pamod Haputhanthrie ™</span>
-  <div class="fstat"><span class="fdot"></span><span>All Rights Reserved</span></div>
-  <span>© ms97.live · <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" style="color:var(--pri);">GitHub</a></span>
+  <div class="fi-in">
+    <span class="flogo">MPH · Manula Pamod Haputhanthrie ™</span>
+    <div class="fstat"><span class="fdot"></span><span>all systems operational · session uptime <span id="uptime">00:00:00</span></span></div>
+    <span>© <span id="yr"></span> ms97.live · <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" class="pri">GitHub</a></span>
+  </div>
 </footer>
 
 <script>
-// Theme toggle
-(function(){
-  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
-  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
-  r.setAttribute('data-theme',d);
-  if(t) t.addEventListener('click',()=>{
-    d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);
-    t.innerHTML=d==='dark'
-      ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
-      :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
-  });
+const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const root=document.documentElement;
+
+/* ---------- Theme ---------- */
+const tbtn=$('[data-theme-toggle]');
+const moon='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+const sun='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+const setIcon=()=>tbtn.innerHTML=root.dataset.theme==='dark'?moon:sun;
+setIcon();
+tbtn.addEventListener('click',()=>{
+  root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';
+  localStorage.setItem('theme',root.dataset.theme);
+  setIcon(); readColors();
+});
+
+/* ---------- Mobile menu ---------- */
+const ham=$('#ham'),mm=$('#mmenu');
+ham.addEventListener('click',()=>mm.classList.toggle('open'));
+$$('#mmenu a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('open')));
+
+/* ---------- Scroll progress + active nav ---------- */
+const prog=$('#progress');
+addEventListener('scroll',()=>{
+  const h=document.documentElement;
+  prog.style.transform=`scaleX(${h.scrollTop/(h.scrollHeight-h.clientHeight)})`;
+},{passive:true});
+const navLinks=$$('.nlinks a');
+const nio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting) navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));
+}),{rootMargin:'-45% 0px -50% 0px'});
+$$('main section[id]').forEach(s=>nio.observe(s));
+
+/* ---------- Reveal ---------- */
+const rio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target);}
+}),{threshold:.12});
+$$('.rv').forEach(el=>rio.observe(el));
+
+/* ---------- Age & year ---------- */
+(()=>{const n=new Date();let a=n.getFullYear()-1997;if(n<new Date(n.getFullYear(),10,22))a--;$('#age').textContent=a;$('#yr').textContent=n.getFullYear();})();
+
+/* ---------- Name decode effect ---------- */
+const glyphs='!<>-_\\/[]{}=+*^?#01ABCDEF';
+function scramble(el){
+  const final=el.dataset.text; let f=0; const total=final.length*3+6;
+  cancelAnimationFrame(el._r);
+  (function step(){
+    let out='';
+    for(let i=0;i<final.length;i++) out+= i<(f-6)/3 ? final[i] : glyphs[Math.random()*glyphs.length|0];
+    el.textContent=out; f++;
+    if(f<=total) el._r=requestAnimationFrame(step); else el.textContent=final;
+  })();
+}
+if(!RM){ $$('.scr').forEach((el,i)=>setTimeout(()=>scramble(el),i*250)); }
+$('#hname').addEventListener('mouseenter',()=>{ if(!RM) $$('.scr').forEach(scramble); });
+
+/* ---------- Typed roles ---------- */
+const roles=['Network Security Engineer','Network Engineer','Web Developer','Electronics Developer','IoT Developer','Designer','Content Creator','Photographer','Google Local Guide L08'];
+let ri=0,ci=0,del=false; const tout=$('#typed-out');
+(function type(){
+  const r=roles[ri];
+  ci+=del?-1:1;
+  tout.innerHTML=r.substring(0,ci)+'<span class="typed-cursor">|</span>';
+  if(!del&&ci===r.length){del=true;return setTimeout(type,2000);}
+  if(del&&ci===0){del=false;ri=(ri+1)%roles.length;}
+  setTimeout(type,del?50:90);
 })();
 
-// Mobile menu
-const h=document.getElementById('ham'),m=document.getElementById('mmenu');
-h.addEventListener('click',()=>m.classList.toggle('open'));
-function cmenu(){m.classList.remove('open');}
-document.addEventListener('click',(e)=>{if(!h.contains(e.target)&&!m.contains(e.target))m.classList.remove('open');});
-
-// Typed effect
-const roles=['Network Engineer','Web Developer','Electronics Developer','IoT Developer','Designer','Content Creator','Photographer','Google Local Guide L08'];
-let ri=0,ci=0,del=false,tout=document.getElementById('typed-out');
-function type(){
-  const r=roles[ri];
-  if(!del){
-    tout.innerHTML=r.substring(0,ci+1)+'<span class="typed-cursor">|</span>';
-    ci++;
-    if(ci===r.length){del=true;setTimeout(type,2000);return;}
-  } else {
-    tout.innerHTML=r.substring(0,ci-1)+'<span class="typed-cursor">|</span>';
-    ci--;
-    if(ci===0){del=false;ri=(ri+1)%roles.length;}
+/* ---------- Live terminal (Kali) ---------- */
+const tb=$('#tbody');
+const kp=(path='~')=>`<div><span class="kl">┌──(</span><span class="ku">manula㉿kali</span><span class="kl">)-[</span><span class="kd">${path}</span><span class="kl">]</span></div><div><span class="kl">└─</span><span class="ku">$</span> <span class="tc"></span></div>`;
+const seq=[
+  {p:'~',c:'whoami && id',o:[
+    'manula',
+    'uid=1000(manula) gid=1000(manula) groups=27(sudo),1001(netsec)',
+    '<span class="tinfo">[*]</span> Role: Senior Network &amp; Security Engineer']},
+  {p:'~/recon',c:'nmap -sV --script=skills manula.local',o:[
+    'Nmap scan report for manula.local (10.0.0.97)',
+    'PORT      STATE SERVICE     VERSION',
+    '<span class="thi">443/tcp</span>   <span class="tok">open</span>  <span class="tac">ngfw</span>        Fortinet · Check Point · pfSense',
+    '<span class="thi">8080/tcp</span>  <span class="tok">open</span>  <span class="tac">web-proxy</span>   Web &amp; Mail Security',
+    '<span class="thi">4433/tcp</span>  <span class="tok">open</span>  <span class="tac">ids-ips</span>     IDS/IPS · Threat Monitoring',
+    '<span class="thi">27001/tcp</span> <span class="tok">open</span>  <span class="tac">compliance</span>  ISO 27001 · PCI DSS',
+    '<span class="thi">902/tcp</span>   <span class="tok">open</span>  <span class="tac">vmware</span>      vCenter · 250+ VMs',
+    '<span class="thi">1883/tcp</span>  <span class="tok">open</span>  <span class="tac">mqtt</span>        IoT · AWS · Python',
+    'Nmap done: 1 IP address (1 host up) scanned']},
+  {p:'~',c:'echo $STATUS',o:[
+    '<span class="tok">[+]</span> Open to network security &amp; freelance work',
+    '<span class="tinfo">[*]</span> Scroll to #contact to connect']}
+];
+(async function runTerm(){
+  await sleep(RM?0:700);
+  for(const s of seq){
+    const line=document.createElement('div'); line.className='cmd';
+    line.innerHTML=kp(s.p); tb.appendChild(line);
+    const c=line.querySelector('.tc');
+    for(const ch of s.c){ c.textContent+=ch; if(!RM) await sleep(30+Math.random()*40); }
+    await sleep(RM?0:350);
+    for(const o of s.o){ const d=document.createElement('div'); d.className='to'; d.innerHTML=o; tb.appendChild(d); await sleep(RM?0:90); }
+    await sleep(RM?0:600);
   }
-  setTimeout(type,del?60:90);
+  const last=document.createElement('div'); last.className='cmd';
+  last.innerHTML=kp('~').replace('<span class="tc"></span>','<span class="tcur"></span>');
+  tb.appendChild(last);
+})();
+
+/* ---------- Counters ---------- */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  const el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||'',t0=performance.now(),dur=RM?1:1600;
+  (function f(t){const p=Math.min((t-t0)/dur,1);el.textContent=Math.round(end*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(f);})(t0);
+  cio.unobserve(el);
+}),{threshold:.5});
+$$('[data-count]').forEach(el=>cio.observe(el));
+
+/* ---------- Skill LED bars ---------- */
+$$('.sk').forEach(sk=>{
+  const seg=$('.seg',sk),n=20,on=Math.round(+sk.dataset.v/100*n);
+  for(let i=0;i<n;i++){const s=document.createElement('i');s.style.setProperty('--k',i/(n-1));if(i<on)s.dataset.on='';seg.appendChild(s);}
+});
+const sio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  $$('.seg i[data-on]',e.target).forEach((s,i)=>setTimeout(()=>s.classList.add('on'),RM?0:i*45));
+  sio.unobserve(e.target);
+}),{threshold:.4});
+$$('.sk').forEach(s=>sio.observe(s));
+
+/* ---------- Spotlight cards ---------- */
+$$('.card').forEach(c=>c.addEventListener('pointermove',e=>{
+  const r=c.getBoundingClientRect();
+  c.style.setProperty('--mx',(e.clientX-r.left)+'px');
+  c.style.setProperty('--my',(e.clientY-r.top)+'px');
+}));
+
+/* ---------- Tech marquee (security first) ---------- */
+const SI='https://cdn.simpleicons.org/', DI='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/';
+const tech=[['Kali Linux',SI+'kalilinux'],['Fortinet NGFW',SI+'fortinet'],['Check Point',null],['pfSense',SI+'pfsense'],['Linux',SI+'linux'],
+['Docker',SI+'docker'],['NGINX',SI+'nginx'],['Radware',null],['Python',SI+'python'],['VMware vCenter',SI+'vmware'],
+['AWS',DI+'amazonwebservices/amazonwebservices-original-wordmark.svg'],['Azure',DI+'azure/azure-original.svg'],
+['Cisco IOS/NX-OS',SI+'cisco'],['Huawei',SI+'huawei'],['Brocade',SI+'broadcom'],['Windows Server',DI+'windows8/windows8-original.svg'],
+['Java',DI+'java/java-original.svg'],['ESP32/ESP8266',SI+'espressif'],['Raspberry Pi',SI+'raspberrypi'],['MQTT/IoT',SI+'mqtt'],
+['TensorFlow',SI+'tensorflow'],['OpenCV',SI+'opencv'],['ROS',SI+'ros']];
+const set=()=>'<div class="mq-set">'+tech.map(([n,u])=>`<span class="chip">${u?`<img class="ico" src="${u}" alt="" loading="lazy">`:''}${n}</span>`).join('')+'</div>';
+$('#mq').innerHTML=set()+set().replace('class="mq-set"','class="mq-set" aria-hidden="true"');
+
+/* ---------- Mouse glow (desktop only) ---------- */
+const glow=$('#mouse-glow');
+if(matchMedia('(pointer:fine)').matches){
+  document.addEventListener('mousemove',e=>{glow.style.opacity='1';glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';});
+  document.addEventListener('mouseleave',()=>glow.style.opacity='0');
 }
-type();
 
-// Skill bar animation
-function animSkills(){
-  const fills=document.querySelectorAll('.sk-fill');
-  fills.forEach(f=>{
-    f.style.width=(parseFloat(f.style.getPropertyValue('--w'))*100)+'%';
-    f.classList.add('animated');
-  });
+/* ---------- Footer uptime ---------- */
+const tStart=Date.now();
+setInterval(()=>{const s=Math.floor((Date.now()-tStart)/1000);$('#uptime').textContent=[s/3600|0,(s/60|0)%60,s%60].map(x=>String(x).padStart(2,'0')).join(':');},1000);
+
+/* ---------- Network topology canvas (with blocked threats) ---------- */
+const cv=$('#net'),cx=cv.getContext('2d'),hero=$('#hero');
+let W=0,H=0,nodes=[],packets=[],mouse={x:-9999,y:-9999},running=true,C1='0,212,170',C2='108,99,255',C3='255,77,109';
+const LINK=140,LINK2=LINK*LINK;
+function hexVar(v){const h=getComputedStyle(root).getPropertyValue(v).trim().replace('#','');return [0,2,4].map(i=>parseInt(h.slice(i,i+2),16)).join(',');}
+function readColors(){C1=hexVar('--pri');C2=hexVar('--acc');C3=hexVar('--danger');}
+function resize(){
+  const r=cv.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);
+  W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);
+  const n=Math.round(Math.min(95,W*H/13000));
+  nodes=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.6+.9,hub:Math.random()<.08}));
+  packets=[];
 }
-const so=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){animSkills();so.disconnect();}});
-},{threshold:0.2});
-const sa=document.getElementById('skillsArea');
-if(sa) so.observe(sa);
-</script>
-
-<script>
-  // Mouse Highlight Effect Script
-  const mouseGlow = document.getElementById('mouse-glow');
-
-  document.addEventListener('mousemove', (e) => {
-    if (mouseGlow) {
-      mouseGlow.style.opacity = '1';
-      mouseGlow.style.left = e.clientX + 'px';
-      mouseGlow.style.top = e.clientY + 'px';
+function frame(){
+  cx.clearRect(0,0,W,H);
+  for(const p of nodes){
+    if(!RM){p.x+=p.vx;p.y+=p.vy;}
+    if(p.x<0||p.x>W)p.vx*=-1; if(p.y<0||p.y>H)p.vy*=-1;
+    const dx=mouse.x-p.x,dy=mouse.y-p.y,d=dx*dx+dy*dy;
+    if(d<25000){p.x-=dx*.004;p.y-=dy*.004;}
+  }
+  for(let i=0;i<nodes.length;i++){
+    const a=nodes[i];
+    for(let j=i+1;j<nodes.length;j++){
+      const b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=dx*dx+dy*dy;
+      if(d<LINK2){cx.strokeStyle=`rgba(${C1},${(1-d/LINK2)*.22})`;cx.lineWidth=1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke();}
     }
-  });
-
-  document.addEventListener('mouseleave', () => {
-    if (mouseGlow) {
-      mouseGlow.style.opacity = '0';
+    const mx=mouse.x-a.x,my=mouse.y-a.y,md=mx*mx+my*my;
+    if(md<32000){cx.strokeStyle=`rgba(${C2},${(1-md/32000)*.5})`;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(mouse.x,mouse.y);cx.stroke();}
+  }
+  for(const p of nodes){
+    cx.fillStyle=p.hub?`rgba(${C2},.9)`:`rgba(${C1},.75)`;
+    cx.beginPath();cx.arc(p.x,p.y,p.hub?p.r+1.5:p.r,0,Math.PI*2);cx.fill();
+    if(p.hub){cx.strokeStyle=`rgba(${C2},.25)`;cx.beginPath();cx.arc(p.x,p.y,p.r+6,0,Math.PI*2);cx.stroke();}
+  }
+  if(!RM&&packets.length<28&&Math.random()<.12){
+    const a=nodes[Math.random()*nodes.length|0];
+    const near=nodes.filter(b=>b!==a&&(a.x-b.x)**2+(a.y-b.y)**2<LINK2);
+    if(near.length) packets.push({a,b:near[Math.random()*near.length|0],t:0,s:.012+Math.random()*.02,bad:Math.random()<.18});
+  }
+  packets=packets.filter(k=>{
+    const stop=k.bad?.55:1;
+    if(k.t<stop) k.t=Math.min(k.t+k.s,stop); else if(!k.bad) return false;
+    const x=k.a.x+(k.b.x-k.a.x)*k.t,y=k.a.y+(k.b.y-k.a.y)*k.t;
+    if(k.bad&&k.t>=stop){ // blocked by firewall
+      k.h=(k.h||0)+.05;
+      cx.strokeStyle=`rgba(${C3},${Math.max(0,1-k.h)})`;cx.lineWidth=1.5;
+      cx.beginPath();cx.arc(x,y,3+k.h*16,0,Math.PI*2);cx.stroke();cx.lineWidth=1;
+      return k.h<1;
     }
+    const col=k.bad?C3:C1;
+    cx.fillStyle=`rgba(${col},1)`;cx.shadowColor=`rgba(${col},1)`;cx.shadowBlur=10;
+    cx.beginPath();cx.arc(x,y,2,0,Math.PI*2);cx.fill();cx.shadowBlur=0;
+    return true;
   });
+  if(running&&!RM) requestAnimationFrame(frame);
+}
+readColors(); resize(); frame();
+addEventListener('resize',()=>{resize();if(RM)frame();});
+hero.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top;});
+hero.addEventListener('pointerleave',()=>{mouse.x=mouse.y=-9999;});
+new IntersectionObserver(([e])=>{const was=running;running=e.isIntersecting;if(running&&!was&&!RM)requestAnimationFrame(frame);}).observe(hero);
 </script>
-
 </body>
 </html>
