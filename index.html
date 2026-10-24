@@ -4,13 +4,13 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Manula Pamod Haputhanthrie — Senior Network &amp; Security Engineer</title>
-<meta name="description" content="Senior Network & Security Engineer at SLT-Mobitel PEOTV. Specializing in NGFW, WAF (Radware & SafeLine), IDS/IPS, Kali Linux, ISO 27001/PCI DSS, IPTV & VMware. Colombo, Sri Lanka."/>
+<meta name="description" content="Portfolio of Manula Pamod Haputhanthrie — Senior Network & Security Engineer at SLT-Mobitel PEOTV. Certified in Cisco Ethical Hacking & Fortinet Cybersecurity. Specialized in NGFW, Radware & SafeLine WAF, IPTV, and VMware."/>
 <meta property="og:title" content="Manula Pamod Haputhanthrie — Senior Network & Security Engineer"/>
-<meta property="og:description" content="Senior Network & Security Engineer specializing in network security, NGFW, Radware & SafeLine WAF, IDS/IPS, Kali Linux, ISO 27001/PCI DSS compliance, IPTV infrastructure and VMware — Colombo, Sri Lanka."/>
-<meta name="theme-color" content="#06080d">
+<meta property="og:description" content="Senior Network & Security Engineer specializing in Enterprise Network Security, NGFW, Radware & SafeLine WAF, ISO 27001/PCI DSS compliance, IPTV Infrastructure, and VMware Virtualization."/>
+<meta name="theme-color" content="#070a12">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&display=swap" rel="stylesheet">
 <link href="assets/img/favicon.png" rel="icon">
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -20,676 +20,553 @@
 </script>
 <style>
 :root{
-  --text-xs:clamp(.72rem,.68rem + .2vw,.84rem);
-  --text-sm:clamp(.84rem,.78rem + .3vw,.96rem);
-  --text-base:clamp(.98rem,.93rem + .25vw,1.1rem);
-  --text-lg:clamp(1.125rem,1rem + .65vw,1.45rem);
-  --text-xl:clamp(1.45rem,1.15rem + 1.2vw,2.15rem);
-  --text-2xl:clamp(1.9rem,1.2rem + 2.4vw,3.25rem);
-  --text-3xl:clamp(2.4rem,1rem + 3.8vw,4.75rem);
-  --text-hero:clamp(2.6rem,.6rem + 5.8vw,5.8rem);
-  --r-md:.5rem;--r-lg:.75rem;--r-xl:1rem;--r-2xl:1.5rem;--r-full:9999px;
+  --text-xs:clamp(.75rem,.7rem + .2vw,.84rem);
+  --text-sm:clamp(.86rem,.8rem + .25vw,.96rem);
+  --text-base:clamp(.98rem,.94rem + .2vw,1.08rem);
+  --text-lg:clamp(1.15rem,1.05rem + .5vw,1.4rem);
+  --text-xl:clamp(1.45rem,1.2rem + 1vw,2rem);
+  --text-2xl:clamp(1.9rem,1.3rem + 2.2vw,3rem);
+  --text-hero:clamp(2.5rem,1.2rem + 4.2vw,4.5rem);
+  --r-sm:.5rem;--r-md:.75rem;--r-lg:1rem;--r-xl:1.35rem;--r-2xl:1.75rem;--r-full:9999px;
   --ease:cubic-bezier(.16,1,.3,1);
   --content:1200px;
   --font-display:'Cabinet Grotesk','Space Grotesk',sans-serif;
-  --font-body:'Space Grotesk',system-ui,sans-serif;
-  --font-mono:'JetBrains Mono','Courier New',monospace;
+  --font-body:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
 }
 [data-theme="dark"]{
-  --bg:#06080d;--bg2:#0a0e17;--surf:#0d121d;--surfo:#141b2b;--surfd:#1c2539;
-  --div:#172033;--brd:#23304c;
-  --tx:#ecf0fa;--txm:#8e9bb5;--txf:#4e5c78;--txi:#05080d;
-  --pri:#00f5c4;--prih:#38ffd8;--prih2:rgba(0,245,196,.11);
-  --acc:#7c5cff;--acc2:rgba(124,92,255,.14);
-  --ok:#10b981;--warn:#f59e0b;--danger:#ff3b6b;--kblue:#38bdf8;
-  --glow:0 0 36px rgba(0,245,196,.28);
-  --glow-acc:0 0 36px rgba(124,92,255,.25);
-  --card:rgba(13,18,29,.76);
-  --grid-line:rgba(0,245,196,.035);
+  --bg:#070a12;--bg-alt:#0b101d;--surf:#101726;--surfo:#162033;--surfd:#1f2c46;
+  --div:#1a2438;--brd:#24324d;
+  --tx:#f1f5f9;--txm:#94a3b8;--txf:#64748b;--txi:#060911;
+  --pri:#00e5b8;--prih:#2bffd4;--prih2:rgba(0,229,184,.12);
+  --acc:#6366f1;--acc2:rgba(99,102,241,.14);
+  --ok:#10b981;--warn:#f59e0b;--danger:#f43f5e;--kblue:#38bdf8;
+  --glow:0 10px 35px -5px rgba(0,229,184,.28);
+  --shadow:0 20px 50px -15px rgba(0,0,0,.55);
+  --card:rgba(16,23,38,.78);
 }
 [data-theme="light"]{
-  --bg:#f2f5fa;--bg2:#e8edf6;--surf:#ffffff;--surfo:#edf1f8;--surfd:#dde3f0;
-  --div:#d8e0ef;--brd:#c5d0e6;
-  --tx:#0f172a;--txm:#475569;--txf:#8594ad;--txi:#ffffff;
-  --pri:#008a6e;--prih:#006e57;--prih2:rgba(0,138,110,.09);
-  --acc:#5b3df5;--acc2:rgba(91,61,245,.09);
-  --ok:#15803d;--warn:#b45309;--danger:#e11d48;--kblue:#0284c7;
-  --glow:0 8px 28px rgba(0,138,110,.2);
-  --glow-acc:0 8px 28px rgba(91,61,245,.15);
-  --card:rgba(255,255,255,.88);
-  --grid-line:rgba(0,138,110,.045);
+  --bg:#f8fafc;--bg-alt:#f1f5f9;--surf:#ffffff;--surfo:#f1f5f9;--surfd:#e2e8f0;
+  --div:#e2e8f0;--brd:#cbd5e1;
+  --tx:#0f172a;--txm:#475569;--txf:#64748b;--txi:#ffffff;
+  --pri:#0d9488;--prih:#0f766e;--prih2:rgba(13,148,136,.10);
+  --acc:#4f46e5;--acc2:rgba(79,70,229,.10);
+  --ok:#16a34a;--warn:#d97706;--danger:#e11d48;--kblue:#0284c7;
+  --glow:0 10px 30px -5px rgba(13,148,136,.22);
+  --shadow:0 18px 45px -15px rgba(15,23,42,.10);
+  --card:rgba(255,255,255,.90);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-top:6.5rem}
+html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-top:5.5rem}
 body{
   min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);
-  color:var(--tx);background-color:var(--bg);
-  background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size:48px 48px;background-attachment:fixed;
-  line-height:1.65;overflow-x:hidden;transition:background-color .3s,color .3s;
+  color:var(--tx);background:var(--bg);line-height:1.68;overflow-x:hidden;
+  transition:background .3s,color .3s;
 }
 img,svg{display:block;max-width:100%;height:auto}
-h1,h2,h3{line-height:1.08;font-family:var(--font-display);text-wrap:balance}
+h1,h2,h3,h4{line-height:1.15;font-family:var(--font-display);text-wrap:balance}
 p,li{text-wrap:pretty}
 a{color:inherit;text-decoration:none}
 button,input,textarea{font:inherit;color:inherit;background:none;border:none}
 button{cursor:pointer}
-::selection{background:rgba(0,245,196,.28);color:var(--tx)}
+::selection{background:rgba(0,229,184,.25);color:var(--tx)}
 :focus-visible{outline:2px solid var(--pri);outline-offset:3px;border-radius:6px}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 .mono{font-family:var(--font-mono)}
 .pri{color:var(--pri)}
-.acc{color:var(--acc)}
-.ok{color:var(--ok)}
-.warn{color:var(--warn)}
-.danger{color:var(--danger)}
 .c{max-width:var(--content);margin-inline:auto;padding-inline:1.5rem}
-section{padding-block:clamp(4.5rem,9vw,7.5rem);position:relative}
+section{padding-block:clamp(4.5rem,8vw,7rem);position:relative}
 
-/* Kali & Terminal syntax colors */
-.kl{color:var(--pri)}
-.ku{color:var(--kblue);font-weight:700}
-.kd{color:var(--tx);font-weight:700}
-.tbad{color:var(--danger)}
-.tinfo{color:var(--kblue)}
-.twarn{color:var(--warn)}
-
-/* Scroll Reveal */
-.js .rv{opacity:0;transform:translateY(28px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+/* Reveal Animations */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .js .rv.in{opacity:1;transform:none}
 
-/* Top Scroll Progress & Ambient Cursor Glow */
-#progress{position:fixed;top:0;left:0;height:2px;width:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--pri),var(--acc),var(--kblue));z-index:400;box-shadow:0 0 12px var(--pri)}
-.mouse-glow{position:fixed;top:0;left:0;width:650px;height:650px;background:radial-gradient(circle,rgba(0,245,196,.065) 0%,rgba(124,92,255,.03) 35%,transparent 65%);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);z-index:1;opacity:0;transition:opacity .3s}
+/* Top Progress & Soft Ambient Cursor Glow */
+#progress{position:fixed;top:0;left:0;height:3px;width:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--pri),var(--acc));z-index:300}
+.mouse-glow{position:fixed;top:0;left:0;width:600px;height:600px;background:radial-gradient(circle,rgba(0,229,184,.06) 0%,rgba(99,102,241,.03) 35%,transparent 65%);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);z-index:1;opacity:0;transition:opacity .3s}
 [data-theme="light"] .mouse-glow{display:none}
 
-/* TOP NOC TELEMETRY BAR */
-.noc-bar{
-  position:fixed;top:0;left:0;right:0;height:30px;z-index:102;
-  background:color-mix(in oklab,var(--bg2) 92%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--div);
-  font:500 .7rem var(--font-mono);color:var(--txm);
-  display:flex;align-items:center;
-}
-.noc-in{
-  max-width:1360px;width:100%;margin-inline:auto;padding-inline:1.5rem;
-  display:flex;align-items:center;justify-content:space-between;gap:1rem;overflow-x:auto;scrollbar-width:none;
-}
-.noc-in::-webkit-scrollbar{display:none}
-.noc-grp{display:flex;align-items:center;gap:1.1rem;white-space:nowrap}
-.noc-item{display:inline-flex;align-items:center;gap:.4rem}
-.noc-dot{width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok)}
-.noc-dot.pulse{animation:ping 2s infinite}
-.noc-kbd{
-  padding:.1rem .45rem;border-radius:4px;border:1px solid var(--brd);
-  background:var(--surfo);color:var(--pri);font-size:.66rem;cursor:pointer;
-  transition:all .2s;
-}
-.noc-kbd:hover{border-color:var(--pri);box-shadow:var(--glow)}
-
-/* NAVBAR */
+/* NAVIGATION */
 nav{
-  position:fixed;top:30px;left:0;right:0;z-index:100;
-  background:color-mix(in oklab,var(--bg) 78%,transparent);
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:color-mix(in oklab,var(--bg) 82%,transparent);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
   border-bottom:1px solid var(--div);
 }
-.ni{max-width:1360px;margin-inline:auto;padding:.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
-.nlogo{display:flex;align-items:center;gap:.65rem;font-family:var(--font-mono);font-weight:700;font-size:var(--text-sm);position:relative}
-.nlogo img{width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(0,245,196,.25))}
+.ni{max-width:var(--content);margin-inline:auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nlogo{display:flex;align-items:center;gap:.7rem;font-weight:800;font-size:var(--text-base);letter-spacing:-.02em}
+.nlogo img{width:40px;height:40px;object-fit:contain;border-radius:8px}
 .nlogo b{color:var(--pri)}
-.nlogo-sub{font-size:.65rem;color:var(--txf);display:block;font-weight:400;line-height:1}
-.nlinks{display:flex;gap:1.35rem;list-style:none;font-size:var(--text-sm);font-weight:500}
-.nlinks a{color:var(--txm);position:relative;transition:color .2s;padding:.25rem 0;display:inline-flex;align-items:center;gap:.25rem}
-.nlinks a .nidx{font:400 .66rem var(--font-mono);color:var(--pri);opacity:.75}
-.nlinks a::after{content:'';position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:linear-gradient(90deg,var(--pri),var(--acc));transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease);box-shadow:0 0 8px var(--pri)}
+.nlogo-role{font-size:.7rem;font-family:var(--font-mono);color:var(--txf);font-weight:500;display:block;line-height:1.1}
+.nlinks{display:flex;gap:1.65rem;list-style:none;font-size:var(--text-sm);font-weight:600}
+.nlinks a{color:var(--txm);position:relative;transition:color .2s;padding:.25rem 0}
+.nlinks a::after{content:'';position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:var(--pri);transform:scaleX(0);transition:transform .25s var(--ease);border-radius:2px}
 .nlinks a:hover,.nlinks a.active{color:var(--tx)}
 .nlinks a.active::after,.nlinks a:hover::after{transform:scaleX(1)}
-.nact{display:flex;align-items:center;gap:.6rem}
-.icon-btn{width:38px;height:38px;border-radius:var(--r-lg);border:1px solid var(--brd);background:var(--surfo);display:flex;align-items:center;justify-content:center;color:var(--txm);transition:all .2s}
-.icon-btn:hover{color:var(--pri);border-color:var(--pri);box-shadow:var(--glow)}
-.cmd-btn{
-  display:inline-flex;align-items:center;gap:.45rem;height:38px;padding:0 .8rem;
-  border-radius:var(--r-lg);border:1px solid var(--brd);background:var(--surfo);
-  font:500 var(--text-xs) var(--font-mono);color:var(--txm);transition:all .2s;
+.nact{display:flex;align-items:center;gap:.65rem}
+.icon-btn{
+  width:40px;height:40px;border-radius:var(--r-full);border:1px solid var(--brd);
+  background:var(--surfo);display:flex;align-items:center;justify-content:center;
+  color:var(--txm);transition:all .2s;
 }
-.cmd-btn:hover{border-color:var(--pri);color:var(--pri)}
-.cmd-btn kbd{font:inherit;font-size:.68rem;padding:.1rem .35rem;border-radius:4px;background:var(--surf);border:1px solid var(--brd);color:var(--pri)}
+.icon-btn:hover{color:var(--pri);border-color:var(--pri)}
 .bnav{
-  font-size:var(--text-xs);font-family:var(--font-mono);font-weight:700;
-  padding:.55rem 1.15rem;background:var(--pri);color:var(--txi);
-  border-radius:var(--r-lg);transition:all .25s;letter-spacing:.03em;
+  font-size:var(--text-xs);font-weight:700;padding:.6rem 1.25rem;
+  background:var(--pri);color:var(--txi);border-radius:var(--r-full);
+  transition:all .25s;box-shadow:var(--glow);
 }
-.bnav:hover{box-shadow:var(--glow);transform:translateY(-1px);background:var(--prih)}
+.bnav:hover{transform:translateY(-1px);background:var(--prih)}
 .ham{display:none}
-.mmenu{display:none;position:fixed;inset:0;z-index:99;background:color-mix(in oklab,var(--bg) 96%,transparent);backdrop-filter:blur(20px);padding:6.5rem 1.5rem 2rem;flex-direction:column;gap:1rem;overflow-y:auto}
+.mmenu{
+  display:none;position:fixed;inset:0;z-index:99;
+  background:color-mix(in oklab,var(--bg) 97%,transparent);backdrop-filter:blur(18px);
+  padding:6rem 1.5rem 2rem;flex-direction:column;gap:1rem;overflow-y:auto;
+}
 .mmenu.open{display:flex}
-.mmenu a{font-size:var(--text-xl);font-weight:800;font-family:var(--font-display);color:var(--txm);border-bottom:1px solid var(--div);padding-bottom:.75rem}
+.mmenu a{font-size:var(--text-xl);font-weight:800;font-family:var(--font-display);color:var(--tx);border-bottom:1px solid var(--div);padding-bottom:.8rem}
 .mmenu a span{font-family:var(--font-mono);font-size:var(--text-sm);color:var(--pri);margin-right:.75rem}
 
-/* HERO */
-#hero{min-height:100svh;display:flex;align-items:center;padding-top:8.25rem;padding-bottom:4rem;overflow:hidden}
-#net{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+/* HERO SECTION */
+#hero{min-height:100svh;display:flex;align-items:center;padding-top:6.5rem;padding-bottom:3.5rem;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.65}
 .hfade{
   position:absolute;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(ellipse 55% 50% at 75% 42%,var(--prih2),transparent 70%),
-    radial-gradient(ellipse 45% 45% at 15% 78%,var(--acc2),transparent 70%),
+    radial-gradient(ellipse 60% 55% at 75% 35%,var(--prih2),transparent 70%),
+    radial-gradient(ellipse 50% 50% at 15% 80%,var(--acc2),transparent 70%),
     linear-gradient(to bottom,transparent 70%,var(--bg));
 }
-.c.hero-g{
+.hero-g{
   position:relative;z-index:2;display:grid;
-  grid-template-columns:minmax(0,1.02fr) minmax(0,1.08fr);
-  gap:3rem;align-items:center;width:100%;max-width:1360px;
+  grid-template-columns:1.08fr .92fr;gap:3.25rem;align-items:center;
 }
-.hbadge-row{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem;margin-bottom:1.25rem}
+.hbadge-wrap{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.25rem}
 .hbadge{
   display:inline-flex;align-items:center;gap:.5rem;
-  font:600 var(--text-xs) var(--font-mono);padding:.38rem .9rem;
-  border:1px solid color-mix(in oklab,var(--pri) 50%,transparent);
-  background:var(--prih2);border-radius:var(--r-full);color:var(--pri);letter-spacing:.04em;
+  font:600 var(--text-xs) var(--font-body);padding:.38rem .95rem;
+  border:1px solid color-mix(in oklab,var(--pri) 45%,transparent);
+  background:var(--prih2);border-radius:var(--r-full);color:var(--pri);
 }
-.hbadge.sec{
-  border-color:color-mix(in oklab,var(--danger) 45%,transparent);
-  background:color-mix(in oklab,var(--danger) 10%,transparent);
-  color:var(--danger);
+.hbadge-sec{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font:600 var(--text-xs) var(--font-mono);padding:.38rem .85rem;
+  border:1px solid var(--brd);background:var(--surfo);
+  border-radius:var(--r-full);color:var(--txm);
 }
-.hdot{width:7px;height:7px;border-radius:50%;background:var(--pri);animation:ping 2s infinite}
-@keyframes ping{0%{box-shadow:0 0 0 0 rgba(0,245,196,.65)}70%{box-shadow:0 0 0 9px rgba(0,245,196,0)}100%{box-shadow:0 0 0 0 rgba(0,245,196,0)}}
-.whoami{font-family:var(--font-mono);font-size:var(--text-sm);color:var(--txm);margin-bottom:.75rem;line-height:1.55}
-.hname{font-weight:900;font-size:clamp(2.5rem,.5rem + 4.8vw,5.1rem);letter-spacing:-.035em;line-height:.94;margin-bottom:1.1rem;cursor:default}
+.hdot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(16,185,129,.7);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(16,185,129,.65)}70%{box-shadow:0 0 0 8px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+
+.hgreeting{font-size:var(--text-sm);font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
+.hname{font-weight:900;font-size:var(--text-hero);letter-spacing:-.03em;line-height:1.02;margin-bottom:.85rem}
 .grad{
-  background:linear-gradient(90deg,var(--pri),var(--kblue),var(--acc),var(--pri));
+  background:linear-gradient(95deg,var(--pri),var(--kblue),var(--acc),var(--pri));
   background-size:250% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
-  animation:shine 7s linear infinite;
+  animation:shine 8s linear infinite;
 }
 @keyframes shine{to{background-position:250% center}}
-.htitle{font-size:var(--text-xl);font-weight:800;color:var(--tx);font-family:var(--font-display);margin-bottom:.35rem;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
-.htitle-tag{font:600 .72rem var(--font-mono);padding:.2rem .55rem;border-radius:6px;background:var(--acc2);color:var(--acc);border:1px solid color-mix(in oklab,var(--acc) 35%,transparent)}
-.typed-wrap{font-family:var(--font-mono);font-size:var(--text-base);color:var(--txm);margin-bottom:1.35rem;min-height:1.65em}
-.typed-wrap .pfx{color:var(--pri);font-weight:700}
+.htitle{font-size:var(--text-xl);font-weight:700;color:var(--tx);margin-bottom:.35rem}
+.typed-wrap{font-family:var(--font-mono);font-size:var(--text-sm);color:var(--txm);margin-bottom:1.25rem;min-height:1.6em}
+.typed-wrap .pfx{color:var(--pri);font-weight:600}
 .typed-cursor{color:var(--pri);animation:blink 1s step-end infinite}
 @keyframes blink{50%{opacity:0}}
-.hdesc{color:var(--txm);max-width:56ch;line-height:1.75;margin-bottom:1.75rem}
+.hdesc{color:var(--txm);font-size:var(--text-base);max-width:56ch;line-height:1.75;margin-bottom:1.75rem}
 .hdesc strong{color:var(--tx);font-weight:600}
-.hact{display:flex;gap:.85rem;flex-wrap:wrap}
+
+/* Quick Value Pills for Recruiters */
+.hpills{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.85rem}
+.hpill{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-size:var(--text-xs);font-weight:600;padding:.38rem .8rem;
+  border-radius:var(--r-md);background:var(--surfo);border:1px solid var(--brd);color:var(--tx);
+}
+.hpill svg{color:var(--pri);flex-shrink:0}
+
+.hact{display:flex;gap:.8rem;flex-wrap:wrap}
 .bpri,.bsec{
   display:inline-flex;align-items:center;gap:.55rem;
-  font-size:var(--text-sm);font-weight:600;padding:.8rem 1.55rem;
-  border-radius:var(--r-lg);transition:all .25s var(--ease);
+  font-size:var(--text-sm);font-weight:700;padding:.82rem 1.6rem;
+  border-radius:var(--r-full);transition:all .25s var(--ease);
 }
-.bpri{background:var(--pri);color:var(--txi);box-shadow:0 4px 20px rgba(0,245,196,.2)}
-.bpri:hover{transform:translateY(-2px);box-shadow:var(--glow);background:var(--prih)}
-.bsec{border:1px solid var(--brd);color:var(--tx);background:color-mix(in oklab,var(--surf) 75%,transparent);backdrop-filter:blur(8px)}
+.bpri{background:var(--pri);color:var(--txi);box-shadow:var(--glow)}
+.bpri:hover{transform:translateY(-2px);background:var(--prih)}
+.bsec{border:1px solid var(--brd);color:var(--tx);background:color-mix(in oklab,var(--surf) 80%,transparent);backdrop-filter:blur(8px)}
 .bsec:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px)}
-.socials{display:flex;align-items:center;gap:.65rem;margin-top:1.6rem;flex-wrap:wrap}
+
+.socials{display:flex;align-items:center;gap:.65rem;margin-top:1.75rem;flex-wrap:wrap}
 .socials a{
-  width:42px;height:42px;border:1px solid var(--brd);border-radius:10px;
+  width:42px;height:42px;border:1px solid var(--brd);border-radius:var(--r-full);
   display:flex;align-items:center;justify-content:center;color:var(--txm);
-  background:color-mix(in oklab,var(--surf) 70%,transparent);transition:all .25s var(--ease);
+  background:var(--surf);transition:all .25s var(--ease);
 }
 .socials a:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-3px);box-shadow:var(--glow)}
-.soc-divider{height:22px;width:1px;background:var(--brd);margin-inline:.25rem}
-.soc-stat{font:500 var(--text-xs) var(--font-mono);color:var(--txf)}
-.soc-stat b{color:var(--pri)}
 
-/* UPGRADED INTERACTIVE TERMINAL */
-.term{
-  width:100%;background:color-mix(in oklab,var(--surf) 90%,transparent);
-  backdrop-filter:blur(16px);border:1px solid var(--brd);
-  border-radius:var(--r-xl);overflow:hidden;
-  box-shadow:0 30px 90px rgba(0,0,0,.55),var(--glow);position:relative;
+/* RIGHT HERO: DUAL-MODE SHOWCASE CARD (Executive View + Terminal View) */
+.showcase{
+  background:var(--card);backdrop-filter:blur(16px);
+  border:1px solid var(--brd);border-radius:var(--r-2xl);
+  overflow:hidden;box-shadow:var(--shadow);position:relative;
 }
-.term::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:1px;
-  background:linear-gradient(90deg,transparent,var(--pri),var(--acc),transparent);
+.showcase::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--pri),var(--acc),var(--kblue));
 }
-.term::after{
-  content:'';position:absolute;inset:0;pointer-events:none;
-  background:repeating-linear-gradient(0deg,rgba(255,255,255,.018) 0 1px,transparent 1px 3px);
+.sc-bar{
+  padding:.75rem 1.15rem;background:var(--surfo);border-bottom:1px solid var(--brd);
+  display:flex;align-items:center;justify-content:space-between;gap:.5rem;
 }
-[data-theme="light"] .term::after{display:none}
-[data-theme="light"] .term{box-shadow:0 20px 55px rgba(15,23,42,.12)}
-.tbar{
-  padding:.65rem 1rem;background:var(--surfo);border-bottom:1px solid var(--brd);
-  display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap;
+.sc-dots{display:flex;gap:.45rem}
+.sc-dot{width:11px;height:11px;border-radius:50%}
+.sc-dot.r{background:#ff5f56}.sc-dot.y{background:#ffbd2e}.sc-dot.g{background:#27c93f}
+.sc-tabs{display:flex;background:var(--surf);padding:.22rem;border-radius:var(--r-full);border:1px solid var(--brd)}
+.sc-tab{
+  font-size:var(--text-xs);font-weight:700;padding:.35rem .9rem;
+  border-radius:var(--r-full);color:var(--txm);transition:all .2s;
+  display:inline-flex;align-items:center;gap:.4rem;
 }
-.tdots{display:flex;align-items:center;gap:.45rem}
-.td{width:11px;height:11px;border-radius:50%}
-.tr{background:#ff5f56}.ty{background:#ffbd2e}.tg{background:#27c93f}
-.ttabs{display:flex;gap:.35rem}
-.ttab{
-  font:500 .7rem var(--font-mono);padding:.28rem .7rem;border-radius:6px;
-  color:var(--txm);border:1px solid transparent;transition:all .2s;
-  display:inline-flex;align-items:center;gap:.35rem;
+.sc-tab.active{background:var(--pri);color:var(--txi)}
+.sc-tab:hover:not(.active){color:var(--tx)}
+
+/* View 1: Executive Summary Card (Default for HR/Recruiters) */
+.sc-pane{display:none;padding:1.6rem}
+.sc-pane.active{display:block;animation:fadeIn .3s var(--ease)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.exec-head{display:flex;align-items:center;gap:1.15rem;margin-bottom:1.35rem}
+.exec-av{position:relative;width:78px;height:78px;flex-shrink:0}
+.exec-av::before{
+  content:'';position:absolute;inset:-3px;border-radius:50%;
+  background:conic-gradient(var(--pri),var(--acc),var(--pri));
+  animation:spin 6s linear infinite;
 }
-.ttab.active{background:var(--surf);color:var(--pri);border-color:var(--brd)}
-.ttab:hover:not(.active){color:var(--tx)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.exec-av img{position:relative;width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid var(--surf);background:var(--surfo)}
+.exec-status{position:absolute;bottom:2px;right:2px;width:16px;height:16px;border-radius:50%;background:var(--ok);border:3px solid var(--surf)}
+.exec-name{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800}
+.exec-role{font-size:var(--text-xs);color:var(--pri);font-weight:700;margin-top:.15rem}
+.exec-loc{font-size:var(--text-xs);color:var(--txm);display:flex;align-items:center;gap:.35rem;margin-top:.25rem}
+
+.exec-highlights{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.25rem}
+.exec-box{
+  padding:.85rem 1rem;border-radius:var(--r-lg);
+  background:var(--surfo);border:1px solid var(--brd);
+}
+.exec-box-lbl{font-size:.7rem;font-family:var(--font-mono);color:var(--txf);text-transform:uppercase;letter-spacing:.05em}
+.exec-box-val{font-size:var(--text-sm);font-weight:700;color:var(--tx);margin-top:.2rem}
+
+.exec-certs{
+  padding:1rem;border-radius:var(--r-lg);
+  background:color-mix(in oklab,var(--pri) 6%,var(--surfo));
+  border:1px solid color-mix(in oklab,var(--pri) 25%,var(--brd));
+  margin-bottom:1.25rem;
+}
+.exec-certs-title{font-size:.72rem;font-family:var(--font-mono);color:var(--pri);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.6rem;display:flex;align-items:center;justify-content:space-between}
+.exec-cert-list{display:grid;gap:.45rem}
+.exec-cert-item{display:flex;align-items:center;justify-content:space-between;font-size:var(--text-xs);font-weight:600}
+.exec-cert-item span:last-child{font-family:var(--font-mono);font-size:.7rem;color:var(--txm);background:var(--surf);padding:.1rem .45rem;border-radius:4px;border:1px solid var(--brd)}
+
+.exec-foot{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding-top:.9rem;border-top:1px solid var(--div);font-size:var(--text-xs);color:var(--txm)}
+.exec-switch-hint{color:var(--pri);font-weight:700;font-family:var(--font-mono);cursor:pointer}
+.exec-switch-hint:hover{text-decoration:underline}
+
+/* View 2: Interactive Terminal (For Engineers) */
 .tchips{
-  padding:.45rem 1rem;background:color-mix(in oklab,var(--bg2) 85%,transparent);
-  border-bottom:1px solid var(--div);display:flex;align-items:center;gap:.4rem;
-  overflow-x:auto;scrollbar-width:none;font:500 .68rem var(--font-mono);
+  padding:.5rem 1rem;background:var(--bg-alt);border-bottom:1px solid var(--div);
+  display:flex;align-items:center;gap:.4rem;overflow-x:auto;scrollbar-width:none;
+  font:500 .7rem var(--font-mono);margin:-1.6rem -1.6rem 1rem -1.6rem;
 }
 .tchips::-webkit-scrollbar{display:none}
-.tchips span{color:var(--txf);margin-right:.2rem;white-space:nowrap}
 .tchip{
-  padding:.18rem .55rem;border-radius:5px;border:1px solid var(--brd);
-  background:var(--surfo);color:var(--txm);white-space:nowrap;transition:all .18s;
+  padding:.2rem .6rem;border-radius:6px;border:1px solid var(--brd);
+  background:var(--surfo);color:var(--txm);white-space:nowrap;transition:all .2s;
 }
-.tchip:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-1px)}
+.tchip:hover{border-color:var(--pri);color:var(--pri)}
 .tbody{
-  padding:1.1rem 1.35rem;font-family:var(--font-mono);
-  font-size:clamp(.72rem,.64rem + .26vw,.84rem);line-height:1.78;
-  height:450px;overflow-y:auto;overflow-x:auto;
-  scrollbar-width:thin;scrollbar-color:var(--brd) transparent;
+  font-family:var(--font-mono);font-size:.78rem;line-height:1.75;
+  height:320px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--brd) transparent;
 }
-.tbody .cmd{white-space:nowrap}
-.tbody .cmd:not(:first-child){margin-top:.55rem}
-.tbody .to{white-space:pre-wrap;word-break:break-word}
-.tc{color:var(--tx)}
-.to{color:var(--txm)}
-.thi{color:var(--pri)}
-.tac{color:var(--acc)}
-.tok{color:var(--ok)}
-.tcur{display:inline-block;width:8px;height:15px;background:var(--pri);animation:blink 1s step-end infinite;vertical-align:middle;margin-left:2px}
+.tbody .cmd{margin-top:.45rem}
+.tbody .to{color:var(--txm);white-space:pre-wrap}
+.kl{color:var(--pri)}.ku{color:var(--kblue);font-weight:700}.thi{color:var(--pri)}.tok{color:var(--ok)}.tac{color:var(--acc)}
 .tinput-row{
-  display:flex;align-items:center;gap:.5rem;padding:.6rem 1.25rem;
-  border-top:1px solid var(--brd);background:var(--surfo);
-  font-family:var(--font-mono);font-size:var(--text-xs);
+  display:flex;align-items:center;gap:.5rem;padding-top:.75rem;margin-top:.75rem;
+  border-top:1px solid var(--brd);font-family:var(--font-mono);font-size:var(--text-xs);
 }
-.tinput-row label{color:var(--pri);font-weight:700;white-space:nowrap}
-.tinput{
-  flex:1;background:transparent;border:none;color:var(--tx);
-  font-family:var(--font-mono);font-size:var(--text-xs);outline:none;
-}
-.tinput::placeholder{color:var(--txf)}
+.tinput-row label{color:var(--pri);font-weight:700}
+.tinput{flex:1;color:var(--tx);outline:none;font-family:var(--font-mono)}
 
-/* STATS TELEMETRY CARDS */
-#stats{padding-block:2.25rem;border-block:1px solid var(--div);background:var(--surf);position:relative;z-index:2}
+/* STATS BAR */
+#stats{padding-block:2.25rem;border-block:1px solid var(--div);background:var(--surf)}
 .sgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem}
 .stat{
-  position:relative;padding:1.15rem 1rem;border-radius:var(--r-lg);
-  background:var(--bg2);border:1px solid var(--brd);
-  display:flex;flex-direction:column;justify-content:space-between;
-  transition:border-color .25s,transform .25s;
+  text-align:center;padding:1rem .75rem;border-radius:var(--r-lg);
+  background:var(--bg-alt);border:1px solid var(--brd);transition:transform .25s,border-color .25s;
 }
-.stat:hover{border-color:var(--pri);transform:translateY(-2px)}
-.stat-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.35rem}
-.stat-tag{font:500 .65rem var(--font-mono);color:var(--txf);letter-spacing:.08em}
-.stat-spark{width:38px;height:14px;stroke:var(--pri);fill:none;stroke-width:1.8;opacity:.75}
+.stat:hover{transform:translateY(-3px);border-color:var(--pri)}
 .snum{
   font-family:var(--font-display);font-size:var(--text-2xl);font-weight:900;line-height:1;
   background:linear-gradient(180deg,var(--tx),var(--pri));
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
-.slbl{font:500 var(--text-xs) var(--font-mono);color:var(--txm);margin-top:.45rem;letter-spacing:.04em;text-transform:uppercase}
+.slbl{font-size:var(--text-xs);font-weight:600;color:var(--txm);margin-top:.4rem}
 
 /* TECH MARQUEE */
 .mq{
-  overflow:hidden;padding-block:1.35rem;border-bottom:1px solid var(--div);
-  background:color-mix(in oklab,var(--bg2) 65%,transparent);
+  overflow:hidden;padding-block:1.25rem;border-bottom:1px solid var(--div);
+  background:var(--bg-alt);
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
 }
-.mq-track{display:flex;width:max-content;animation:mq 45s linear infinite}
+.mq-track{display:flex;width:max-content;animation:mq 42s linear infinite}
 .mq:hover .mq-track{animation-play-state:paused}
 .mq-set{display:flex;gap:.75rem;padding-right:.75rem}
 @keyframes mq{to{transform:translateX(-50%)}}
 .chip{
-  display:inline-flex;align-items:center;gap:.55rem;
-  font:500 var(--text-xs) var(--font-mono);padding:.48rem 1rem;
-  border:1px solid var(--brd);border-radius:var(--r-lg);
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:var(--text-xs);font-weight:600;padding:.45rem 1rem;
+  border:1px solid var(--brd);border-radius:var(--r-full);
   background:var(--surf);color:var(--txm);white-space:nowrap;transition:all .2s;
 }
-.chip:hover{border-color:var(--pri);color:var(--pri);box-shadow:var(--glow);transform:translateY(-1px)}
+.chip:hover{border-color:var(--pri);color:var(--pri)}
 .ico{width:16px;height:16px;filter:brightness(0) invert(1);opacity:.85}
 [data-theme="light"] .ico{filter:brightness(0);opacity:.75}
 
-/* SECTION HEADERS */
-.sh{margin-bottom:3rem;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem}
-.sh-left{max-width:640px}
+/* SECTION HEADINGS */
+.sh{margin-bottom:3rem;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.25rem}
+.sh-left{max-width:650px}
 .slabel{
-  font:600 var(--text-xs) var(--font-mono);color:var(--pri);
-  letter-spacing:.14em;text-transform:uppercase;
-  display:inline-flex;align-items:center;gap:.65rem;margin-bottom:.65rem;
-  padding:.25rem .7rem;border-radius:6px;background:var(--prih2);
-  border:1px solid color-mix(in oklab,var(--pri) 30%,transparent);
+  font:700 var(--text-xs) var(--font-mono);color:var(--pri);
+  letter-spacing:.1em;text-transform:uppercase;
+  display:inline-flex;align-items:center;gap:.5rem;margin-bottom:.6rem;
+  padding:.25rem .75rem;border-radius:var(--r-full);background:var(--prih2);
 }
-.stitle{font-size:var(--text-2xl);font-weight:900;letter-spacing:-.025em;margin-bottom:.75rem}
+.stitle{font-size:var(--text-2xl);font-weight:900;letter-spacing:-.025em;margin-bottom:.65rem}
 .sdesc{color:var(--txm);line-height:1.75}
-.sh-meta{font:500 var(--text-xs) var(--font-mono);color:var(--txf);border:1px dashed var(--brd);padding:.55rem .9rem;border-radius:var(--r-lg);background:var(--surf)}
 
-/* CYBER SPOTLIGHT + HUD BRACKET CARDS */
+/* CARDS WITH SUBTLE SPOTLIGHT */
 .card{
   position:relative;isolation:isolate;background:var(--card);
   backdrop-filter:blur(12px);border:1px solid var(--brd);
   border-radius:var(--r-xl);padding:1.75rem;
   transition:transform .35s var(--ease),border-color .3s,box-shadow .3s;
-  transform-style:preserve-3d;
 }
 .card::before{
   content:'';position:absolute;inset:-1px;border-radius:inherit;padding:1px;
-  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),var(--pri),var(--acc) 35%,transparent 65%);
+  background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),var(--pri),transparent 50%);
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
   -webkit-mask-composite:xor;mask-composite:exclude;
   opacity:0;transition:opacity .35s;pointer-events:none;
 }
-.card::after{
-  content:'';position:absolute;inset:0;border-radius:inherit;
-  background:radial-gradient(340px circle at var(--mx,50%) var(--my,50%),var(--prih2),transparent 65%);
-  opacity:0;transition:opacity .35s;z-index:-1;pointer-events:none;
-}
-.card:hover{transform:translateY(-4px);border-color:color-mix(in oklab,var(--pri) 45%,var(--brd))}
-.card:hover::before,.card:hover::after{opacity:1}
-
-/* HUD corner reticles inside cards */
-.hud-c{
-  position:absolute;width:10px;height:10px;border-color:var(--pri);
-  opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;
-}
-.card:hover .hud-c{opacity:.85}
-.hud-tl{top:8px;left:8px;border-top:2px solid;border-left:2px solid}
-.hud-tr{top:8px;right:8px;border-top:2px solid;border-right:2px solid}
-.hud-bl{bottom:8px;left:8px;border-bottom:2px solid;border-left:2px solid}
-.hud-br{bottom:8px;right:8px;border-bottom:2px solid;border-right:2px solid}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card:hover::before{opacity:1}
 
 /* ABOUT SECTION */
-.about-g{display:grid;grid-template-columns:.92fr 1.28fr;gap:3.5rem;align-items:stretch}
-.avisual{text-align:center;padding:2.25rem 1.75rem 1.75rem;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
-.avisual .gridbg{
-  position:absolute;inset:0;z-index:-1;opacity:.08;
-  background-image:linear-gradient(var(--pri) 1px,transparent 1px),linear-gradient(90deg,var(--pri) 1px,transparent 1px);
-  background-size:24px 24px;
-  -webkit-mask-image:radial-gradient(circle at 50% 32%,#000,transparent 72%);
-  mask-image:radial-gradient(circle at 50% 32%,#000,transparent 72%);
-}
-.id-top{display:flex;justify-content:space-between;align-items:center;font:600 .68rem var(--font-mono);color:var(--txf);margin-bottom:1.25rem;padding-bottom:.65rem;border-bottom:1px dashed var(--brd)}
-.id-badge{color:var(--pri);background:var(--prih2);padding:.15rem .5rem;border-radius:4px}
-.av-wrap{position:relative;width:176px;height:176px;margin:0 auto 1.35rem}
+.about-g{display:grid;grid-template-columns:.88fr 1.22fr;gap:3.25rem;align-items:center}
+.avisual{text-align:center;padding:2.25rem 1.75rem}
+.av-wrap{position:relative;width:168px;height:168px;margin:0 auto 1.35rem}
 .av-wrap::before{
-  content:'';position:absolute;inset:-6px;border-radius:50%;
+  content:'';position:absolute;inset:-5px;border-radius:50%;
   background:conic-gradient(var(--pri),var(--acc),transparent 55%,var(--pri));
-  animation:spin 5s linear infinite;
-}
-.av-wrap::after{
-  content:'';position:absolute;inset:-12px;border-radius:50%;
-  border:1px dashed color-mix(in oklab,var(--pri) 40%,transparent);
-  animation:spin 14s linear infinite reverse;
+  animation:spin 6s linear infinite;
 }
 .av-wrap img{position:relative;width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid var(--surf);background:var(--surfo)}
-.av-status{position:absolute;bottom:10px;right:10px;width:22px;height:22px;border-radius:50%;background:var(--ok);border:4px solid var(--surf);z-index:2;box-shadow:0 0 10px var(--ok)}
-@keyframes spin{to{transform:rotate(360deg)}}
-.acname{font-family:var(--font-display);font-weight:900;font-size:var(--text-lg)}
-.acrole{font:600 var(--text-xs) var(--font-mono);color:var(--pri);margin:.25rem 0 1.15rem}
+.av-status{position:absolute;bottom:10px;right:10px;width:20px;height:20px;border-radius:50%;background:var(--ok);border:4px solid var(--surf)}
+.acname{font-family:var(--font-display);font-weight:800;font-size:var(--text-lg)}
+.acrole{font-size:var(--text-sm);color:var(--pri);font-weight:600;margin:.2rem 0 1.15rem}
 .acmeta{
-  display:grid;gap:.45rem;font:var(--text-xs) var(--font-mono);color:var(--txm);
+  display:grid;gap:.5rem;font-size:var(--text-xs);color:var(--txm);
   text-align:left;background:var(--surfo);border:1px solid var(--brd);
-  border-radius:var(--r-lg);padding:.95rem 1.05rem;
+  border-radius:var(--r-lg);padding:1rem 1.15rem;
 }
 .acmeta-row{display:flex;justify-content:space-between;gap:.5rem}
 .acmeta-row b{color:var(--tx);font-weight:600}
 .atxt p{color:var(--txm);line-height:1.8;margin-bottom:1.15rem}
 .atxt strong{color:var(--tx)}
 .alist{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;
-  margin-top:1.5rem;padding-top:1.5rem;border-top:1px dashed var(--brd);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;
+  margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--div);
 }
 .aitem{
-  display:flex;flex-direction:column;gap:3px;padding:.75rem .9rem;
-  border-radius:var(--r-lg);background:var(--surfo);border:1px solid var(--brd);
-  transition:border-color .2s;
+  display:flex;flex-direction:column;gap:2px;padding:.75rem .9rem;
+  border-radius:var(--r-md);background:var(--surfo);border:1px solid var(--brd);
 }
-.aitem:hover{border-color:var(--pri)}
-.albl{font:500 .66rem var(--font-mono);color:var(--txf);text-transform:uppercase;letter-spacing:.08em}
-.aval{font-size:var(--text-xs);font-weight:600;word-break:break-word}
+.albl{font-size:.68rem;font-family:var(--font-mono);color:var(--txf);text-transform:uppercase;letter-spacing:.06em}
+.aval{font-size:var(--text-xs);font-weight:700;word-break:break-word}
 .aval a{color:var(--pri)}
 .aval a:hover{text-decoration:underline}
 
-/* SKILLS DIAGNOSTICS MATRIX */
-.sk-bar-top{
-  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;
-  padding:.85rem 1.15rem;border:1px solid var(--brd);border-radius:var(--r-lg);
-  background:var(--surf);margin-bottom:1.75rem;font:var(--text-xs) var(--font-mono);
-}
-.sk-filters{display:flex;flex-wrap:wrap;gap:.45rem}
-.sk-flt{
-  padding:.35rem .8rem;border-radius:6px;border:1px solid var(--brd);
-  background:var(--surfo);color:var(--txm);font:500 var(--text-xs) var(--font-mono);
-  transition:all .2s;
-}
-.sk-flt.active,.sk-flt:hover{border-color:var(--pri);color:var(--pri);background:var(--prih2)}
-.sk-cols{display:grid;grid-template-columns:1fr 1fr;gap:1.15rem}
-.sk{
-  padding:1.1rem 1.25rem;border-radius:var(--r-lg);
-  background:var(--card);border:1px solid var(--brd);
-  transition:border-color .25s,transform .25s;
-}
-.sk:hover{border-color:var(--pri);transform:translateY(-2px)}
-.sk.hidden{display:none}
-.sk-h{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--font-mono);font-size:var(--text-sm);margin-bottom:.4rem}
-.sk-if{color:var(--pri);margin-right:.55rem;font-size:var(--text-xs);font-weight:700}
-.sk-p{color:var(--pri);font-size:var(--text-xs);font-weight:700}
-.sk-sub{font:400 .7rem var(--font-mono);color:var(--txf);margin-bottom:.65rem}
-.seg{display:grid;grid-template-columns:repeat(20,1fr);gap:3px}
-.seg i{height:9px;border-radius:2px;background:var(--surfd);transition:background .25s,box-shadow .25s}
-.seg i.on{
-  background:color-mix(in oklab,var(--pri),var(--acc) calc(var(--k)*100%));
-  box-shadow:0 0 8px color-mix(in oklab,var(--pri),var(--acc) calc(var(--k)*100%));
-}
-[data-theme="light"] .seg i.on{box-shadow:none}
-
-/* SERVICES BENTO */
-#services{background:color-mix(in oklab,var(--surf) 75%,transparent);border-block:1px solid var(--div)}
-.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.b-wide{grid-column:span 2}
-.svc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.15rem}
-.svc-icon{
-  width:50px;height:50px;border-radius:12px;background:var(--prih2);
-  display:flex;align-items:center;justify-content:center;color:var(--pri);
-  border:1px solid color-mix(in oklab,var(--pri) 35%,transparent);
-  box-shadow:inset 0 0 14px rgba(0,245,196,.12);
-}
-.svc-meta{display:flex;align-items:center;gap:.5rem}
-.svc-status{
-  font:600 .65rem var(--font-mono);padding:.18rem .5rem;border-radius:4px;
-  background:color-mix(in oklab,var(--ok) 12%,transparent);color:var(--ok);
-  border:1px solid color-mix(in oklab,var(--ok) 35%,transparent);
-}
-.svc-num{font:700 var(--text-xs) var(--font-mono);color:var(--txf)}
-.svc-name{font-family:var(--font-display);font-weight:800;font-size:var(--text-lg);margin-bottom:.5rem}
-.svc-desc{font-size:var(--text-sm);color:var(--txm);line-height:1.72}
-.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.15rem}
-.tags span{
-  font:500 var(--text-xs) var(--font-mono);padding:.22rem .65rem;
-  border-radius:6px;background:var(--surfo);color:var(--txm);border:1px solid var(--brd);
-  transition:border-color .2s,color .2s;
-}
-.card:hover .tags span{border-color:color-mix(in oklab,var(--pri) 30%,var(--brd))}
-
-/* EXPERIENCE TRACEROUTE */
-.trh{
-  font:var(--text-xs) var(--font-mono);color:var(--txm);margin-bottom:2.25rem;
-  padding:.75rem 1.15rem;border:1px dashed var(--brd);border-radius:var(--r-lg);
-  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;
-  background:var(--surf);
-}
-.hops{position:relative}
-.hops::before{content:'';position:absolute;left:27px;top:0;bottom:0;width:2px;background:linear-gradient(var(--pri),var(--acc),transparent)}
-.hops::after{content:'';position:absolute;left:24px;top:0;width:8px;height:8px;border-radius:50%;background:var(--pri);box-shadow:0 0 14px var(--pri);animation:pkt 5s linear infinite}
-@keyframes pkt{0%{top:0;opacity:0}5%{opacity:1}90%{opacity:1}100%{top:100%;opacity:0}}
-.hop{display:grid;grid-template-columns:56px 1fr;gap:1.5rem;margin-bottom:1.5rem}
-.hop-n{
-  width:56px;height:56px;border-radius:14px;background:var(--surfo);
-  border:1px solid var(--pri);display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  font:700 var(--text-sm) var(--font-mono);color:var(--pri);position:relative;z-index:1;
-}
-.hop-n small{font-size:.55rem;color:var(--txf);font-weight:400}
-.hop.current .hop-n{background:var(--pri);color:var(--txi);box-shadow:0 0 0 6px var(--prih2),var(--glow)}
-.hop.current .hop-n small{color:var(--txi);opacity:.8}
-.hop-head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap;margin-bottom:.25rem}
-.erole{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800}
-.pill-grp{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap}
-.pill{font:500 var(--text-xs) var(--font-mono);padding:.2rem .7rem;border-radius:var(--r-full);border:1px solid var(--brd);color:var(--txm);white-space:nowrap}
-.pill.live{border-color:color-mix(in oklab,var(--ok) 50%,transparent);color:var(--ok);background:color-mix(in oklab,var(--ok) 10%,transparent)}
-.pill.rtt{color:var(--pri);border-color:color-mix(in oklab,var(--pri) 30%,transparent);background:var(--prih2)}
-.eco{font-size:var(--text-sm);color:var(--pri);font-weight:700}
-.eaddr{font:var(--text-xs) var(--font-mono);color:var(--txf);margin:.2rem 0 1rem}
-.elist{list-style:none;display:flex;flex-direction:column;gap:.5rem}
-.elist li{font-size:var(--text-sm);color:var(--txm);padding-left:1.25rem;position:relative}
-.elist li::before{content:"▸";position:absolute;left:0;color:var(--pri)}
-
-/* CERTIFICATIONS SECTION */
-#certifications{background:color-mix(in oklab,var(--surf) 75%,transparent);border-top:1px solid var(--div)}
+/* CERTIFICATIONS SECTION (Recruiter & LinkedIn Friendly) */
+#certifications{background:var(--surf);border-block:1px solid var(--div)}
 .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.35rem}
 .cert-card{display:flex;flex-direction:column;justify-content:space-between}
-.cert-top{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:1.15rem}
+.cert-top{display:flex;justify-content:space-between;align-items:flex-start;gap:.75rem;margin-bottom:1.15rem}
 .cert-issuer-wrap{display:flex;align-items:center;gap:.85rem}
-.cert-logo{
-  width:48px;height:48px;border-radius:12px;
+.cert-badge-ico{
+  width:50px;height:50px;border-radius:14px;
   display:flex;align-items:center;justify-content:center;
-  font:800 var(--text-xs) var(--font-mono);
-  border:1px solid var(--brd);background:var(--surfo);
-  flex-shrink:0;
+  font:800 var(--text-xs) var(--font-mono);flex-shrink:0;
 }
-.cert-logo.cisco{background:rgba(56,189,248,.12);border-color:rgba(56,189,248,.4);color:var(--kblue)}
-.cert-logo.fortinet{background:rgba(255,59,107,.12);border-color:rgba(255,59,107,.4);color:var(--danger)}
-.cert-logo.oneaccess{background:rgba(245,158,11,.12);border-color:rgba(245,158,11,.4);color:var(--warn)}
-.cert-issuer{font:700 var(--text-xs) var(--font-mono);color:var(--pri);text-transform:uppercase;letter-spacing:.06em}
-.cert-date{font:500 .72rem var(--font-mono);color:var(--txf);margin-top:.15rem}
-.cert-verified{
-  display:inline-flex;align-items:center;gap:.35rem;
-  font:600 .65rem var(--font-mono);padding:.2rem .55rem;border-radius:var(--r-full);
+.cert-badge-ico.cisco{background:rgba(56,189,248,.14);border:1px solid rgba(56,189,248,.4);color:var(--kblue)}
+.cert-badge-ico.fortinet{background:rgba(244,63,94,.14);border:1px solid rgba(244,63,94,.4);color:var(--danger)}
+.cert-badge-ico.oneaccess{background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.4);color:var(--warn)}
+.cert-issuer{font-size:var(--text-xs);font-weight:700;color:var(--pri)}
+.cert-date{font-size:.75rem;color:var(--txf);margin-top:.1rem}
+.cert-pill{
+  font-size:.68rem;font-weight:700;padding:.22rem .6rem;border-radius:var(--r-full);
   background:color-mix(in oklab,var(--ok) 12%,transparent);color:var(--ok);
   border:1px solid color-mix(in oklab,var(--ok) 35%,transparent);white-space:nowrap;
 }
-.cert-title{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;margin-bottom:.5rem;color:var(--tx)}
-.cert-desc{font-size:var(--text-sm);color:var(--txm);line-height:1.68;margin-bottom:1.1rem}
-.cert-cred{
+.cert-title{font-size:var(--text-lg);font-weight:800;margin-bottom:.5rem}
+.cert-desc{font-size:var(--text-sm);color:var(--txm);line-height:1.68;margin-bottom:1.15rem}
+.cert-id-box{
   display:flex;align-items:center;justify-content:space-between;gap:.5rem;
-  padding:.55rem .8rem;border-radius:var(--r-md);
-  background:var(--surfo);border:1px dashed var(--brd);
-  font:500 .72rem var(--font-mono);color:var(--txm);margin-bottom:.9rem;
+  padding:.55rem .85rem;border-radius:var(--r-md);
+  background:var(--surfo);border:1px solid var(--brd);
+  font-size:.75rem;font-family:var(--font-mono);color:var(--txm);margin-bottom:.9rem;
 }
-.cert-cred code{color:var(--tx);font-weight:700}
+.cert-id-box code{color:var(--tx);font-weight:700}
 .cert-copy{
-  padding:.2rem .5rem;border-radius:4px;background:var(--surf);
-  border:1px solid var(--brd);color:var(--pri);font:600 .65rem var(--font-mono);
+  padding:.22rem .55rem;border-radius:6px;background:var(--surf);
+  border:1px solid var(--brd);color:var(--pri);font-size:.68rem;font-weight:700;
   transition:all .2s;
 }
-.cert-copy:hover{border-color:var(--pri);box-shadow:var(--glow)}
+.cert-copy:hover{border-color:var(--pri);background:var(--prih2)}
+
+/* SKILLS SECTION */
+.sk-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}
+.sk-flt{
+  padding:.45rem 1rem;border-radius:var(--r-full);border:1px solid var(--brd);
+  background:var(--surf);color:var(--txm);font-size:var(--text-xs);font-weight:700;
+  transition:all .2s;
+}
+.sk-flt.active,.sk-flt:hover{border-color:var(--pri);color:var(--txi);background:var(--pri)}
+.sk-cols{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.sk{
+  padding:1.15rem 1.35rem;border-radius:var(--r-lg);
+  background:var(--card);border:1px solid var(--brd);transition:border-color .25s,transform .25s;
+}
+.sk:hover{border-color:var(--pri);transform:translateY(-2px)}
+.sk.hidden{display:none}
+.sk-h{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;font-size:var(--text-base);margin-bottom:.25rem}
+.sk-p{font-family:var(--font-mono);color:var(--pri);font-size:var(--text-xs);font-weight:700}
+.sk-sub{font-size:var(--text-xs);color:var(--txm);margin-bottom:.75rem}
+.bar-bg{height:8px;width:100%;background:var(--surfd);border-radius:var(--r-full);overflow:hidden}
+.bar-fill{height:100%;width:0;border-radius:var(--r-full);background:linear-gradient(90deg,var(--pri),var(--acc));transition:width 1.1s var(--ease)}
+
+/* SERVICES BENTO */
+#services{background:var(--surf);border-block:1px solid var(--div)}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.b-wide{grid-column:span 2}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.1rem}
+.svc-icon{
+  width:48px;height:48px;border-radius:12px;background:var(--prih2);
+  display:flex;align-items:center;justify-content:center;color:var(--pri);
+  border:1px solid color-mix(in oklab,var(--pri) 35%,transparent);
+}
+.svc-tag{
+  font:600 .68rem var(--font-mono);padding:.22rem .6rem;border-radius:var(--r-full);
+  background:var(--surfo);color:var(--txm);border:1px solid var(--brd);
+}
+.svc-name{font-size:var(--text-lg);font-weight:800;margin-bottom:.45rem}
+.svc-desc{font-size:var(--text-sm);color:var(--txm);line-height:1.7}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.1rem}
+.tags span{
+  font:600 .72rem var(--font-mono);padding:.24rem .65rem;
+  border-radius:6px;background:var(--surfo);color:var(--txm);border:1px solid var(--brd);
+}
+
+/* EXPERIENCE TIMELINE */
+.hops{position:relative}
+.hops::before{content:'';position:absolute;left:27px;top:0;bottom:0;width:2px;background:linear-gradient(var(--pri),var(--acc),transparent)}
+.hop{display:grid;grid-template-columns:56px 1fr;gap:1.5rem;margin-bottom:1.5rem}
+.hop-n{
+  width:56px;height:56px;border-radius:16px;background:var(--surf);
+  border:2px solid var(--pri);display:grid;place-items:center;
+  font:700 var(--text-sm) var(--font-mono);color:var(--pri);position:relative;z-index:1;
+}
+.hop.current .hop-n{background:var(--pri);color:var(--txi);box-shadow:0 0 0 6px var(--prih2)}
+.hop-head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap;margin-bottom:.25rem}
+.erole{font-size:var(--text-lg);font-weight:800}
+.pill-grp{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap}
+.pill{font-size:var(--text-xs);font-weight:600;padding:.22rem .75rem;border-radius:var(--r-full);border:1px solid var(--brd);background:var(--surfo);color:var(--txm)}
+.pill.live{border-color:color-mix(in oklab,var(--ok) 50%,transparent);color:var(--ok);background:color-mix(in oklab,var(--ok) 10%,transparent);font-weight:700}
+.eco{font-size:var(--text-base);color:var(--pri);font-weight:700}
+.eaddr{font-size:var(--text-xs);color:var(--txf);margin:.2rem 0 1rem}
+.elist{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.elist li{font-size:var(--text-sm);color:var(--txm);padding-left:1.25rem;position:relative}
+.elist li::before{content:"▸";position:absolute;left:0;color:var(--pri);font-weight:700}
 
 /* EDUCATION */
-#education{border-top:1px solid var(--div)}
+#education{background:var(--surf);border-top:1px solid var(--div)}
 .edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.edu-year{font:600 var(--text-xs) var(--font-mono);color:var(--pri);letter-spacing:.05em;margin-bottom:.9rem;display:flex;justify-content:space-between}
-.edu-year span{color:var(--txf)}
-.edu-name{font-family:var(--font-display);font-size:var(--text-base);font-weight:800;margin-bottom:.3rem}
-.edu-deg{font-size:var(--text-sm);color:var(--tx);font-weight:600;margin-bottom:.75rem}
+.edu-year{font:700 var(--text-xs) var(--font-mono);color:var(--pri);margin-bottom:.8rem;display:flex;justify-content:space-between}
+.edu-year span{color:var(--txf);font-weight:500}
+.edu-name{font-size:var(--text-base);font-weight:800;margin-bottom:.3rem}
+.edu-deg{font-size:var(--text-sm);color:var(--tx);font-weight:600;margin-bottom:.7rem}
 .edu-notes{font-size:var(--text-xs);color:var(--txm);line-height:1.7}
 .ieee{
   display:inline-flex;align-items:center;gap:.4rem;margin-top:.95rem;
-  font:600 var(--text-xs) var(--font-mono);color:var(--acc);
+  font:700 var(--text-xs) var(--font-mono);color:var(--acc);
   border:1px solid color-mix(in oklab,var(--acc) 45%,transparent);
-  background:var(--acc2);padding:.25rem .65rem;border-radius:6px;
+  background:var(--acc2);padding:.28rem .7rem;border-radius:6px;
 }
 
-/* CONTACT & PACKET TRANSMITTER */
-#contact{overflow:hidden;background:color-mix(in oklab,var(--surf) 75%,transparent);border-top:1px solid var(--div)}
+/* CONTACT SECTION */
+#contact{overflow:hidden;border-top:1px solid var(--div)}
 .cglow{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 60% 55% at 50% 40%,var(--prih2),transparent 70%)}
-.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:start;margin-top:2rem}
-.ssh-box{
-  font:var(--text-xs) var(--font-mono);color:var(--txm);
-  padding:.9rem 1.15rem;border-radius:var(--r-lg);
-  background:var(--surfo);border:1px solid var(--brd);margin-bottom:1.25rem;
-}
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:2.25rem;align-items:start}
 .clinks{display:flex;flex-wrap:wrap;gap:.65rem;margin-bottom:1.5rem}
 .clink{
   display:inline-flex;align-items:center;gap:.55rem;
-  font-size:var(--text-xs);font-family:var(--font-mono);font-weight:600;
-  padding:.7rem 1.15rem;border:1px solid var(--brd);border-radius:var(--r-lg);
-  background:var(--surf);color:var(--txm);transition:all .25s var(--ease);
+  font-size:var(--text-xs);font-weight:700;
+  padding:.75rem 1.2rem;border:1px solid var(--brd);border-radius:var(--r-full);
+  background:var(--surf);color:var(--tx);transition:all .25s var(--ease);
 }
 .clink:hover{border-color:var(--pri);color:var(--pri);transform:translateY(-2px);box-shadow:var(--glow)}
 .clink.main{background:var(--pri);color:var(--txi);border-color:var(--pri)}
 .clink.main:hover{background:var(--prih)}
-.cmap{border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--brd);box-shadow:0 20px 50px rgba(0,0,0,.35)}
-.cmap iframe{display:block;width:100%;height:250px;border:0}
+.cmap{border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--brd);box-shadow:var(--shadow)}
+.cmap iframe{display:block;width:100%;height:260px;border:0}
 [data-theme="dark"] .cmap iframe{filter:invert(.92) hue-rotate(180deg) saturate(.85) contrast(.92)}
 
-/* Interactive Packet Transmitter Form */
-.pkt-form{display:flex;flex-direction:column;gap:.9rem}
-.pkt-head{display:flex;justify-content:space-between;align-items:center;font:600 var(--text-xs) var(--font-mono);color:var(--pri);padding-bottom:.65rem;border-bottom:1px solid var(--div)}
+/* Friendly Direct Message Form */
+.msg-form{display:flex;flex-direction:column;gap:1rem}
+.msg-head{font-size:var(--text-lg);font-weight:800;margin-bottom:.2rem}
+.msg-sub{font-size:var(--text-xs);color:var(--txm);margin-bottom:.4rem}
 .fgrp{display:flex;flex-direction:column;gap:.35rem}
-.fgrp label{font:500 .7rem var(--font-mono);color:var(--txm);text-transform:uppercase;letter-spacing:.06em}
+.fgrp label{font-size:var(--text-xs);font-weight:700;color:var(--tx)}
 .finput{
-  width:100%;padding:.75rem .95rem;border-radius:var(--r-md);
+  width:100%;padding:.8rem 1rem;border-radius:var(--r-md);
   border:1px solid var(--brd);background:var(--surfo);color:var(--tx);
-  font-family:var(--font-mono);font-size:var(--text-xs);transition:border-color .2s,box-shadow .2s;
+  font-size:var(--text-sm);transition:border-color .2s,box-shadow .2s;
 }
 .finput:focus{outline:none;border-color:var(--pri);box-shadow:0 0 0 3px var(--prih2)}
 .fbtns{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:.25rem}
 .fbtns button{flex:1;justify-content:center}
 
-/* COMMAND PALETTE MODAL (Ctrl+K) */
-.cmd-modal{
-  position:fixed;inset:0;z-index:500;background:rgba(4,6,12,.78);
-  backdrop-filter:blur(10px);display:none;align-items:flex-start;
-  justify-content:center;padding:12vh 1rem 2rem;
-}
-.cmd-modal.open{display:flex}
-.cmd-dialog{
-  width:100%;max-width:580px;background:var(--surf);border:1px solid var(--pri);
-  border-radius:var(--r-xl);box-shadow:0 25px 80px rgba(0,0,0,.65),var(--glow);
-  overflow:hidden;animation:cmdIn .2s var(--ease);
-}
-@keyframes cmdIn{from{opacity:0;transform:scale(.96) translateY(-10px)}to{opacity:1;transform:none}}
-.cmd-search{
-  display:flex;align-items:center;gap:.75rem;padding:.95rem 1.15rem;
-  border-bottom:1px solid var(--brd);background:var(--surfo);
-}
-.cmd-search input{
-  flex:1;font-family:var(--font-mono);font-size:var(--text-sm);
-  color:var(--tx);background:transparent;border:none;outline:none;
-}
-.cmd-list{max-height:340px;overflow-y:auto;padding:.5rem}
-.cmd-item{
-  width:100%;display:flex;align-items:center;justify-content:space-between;
-  padding:.7rem .9rem;border-radius:var(--r-md);font-family:var(--font-mono);
-  font-size:var(--text-xs);color:var(--txm);text-align:left;transition:all .15s;
-}
-.cmd-item:hover,.cmd-item:focus{background:var(--prih2);color:var(--pri);outline:none}
-.cmd-item span:last-child{font-size:.66rem;color:var(--txf);border:1px solid var(--brd);padding:.1rem .4rem;border-radius:4px}
-
 /* TOAST NOTIFICATION */
 .toast{
   position:fixed;bottom:1.5rem;right:1.5rem;z-index:450;
-  font:500 var(--text-xs) var(--font-mono);padding:.75rem 1.15rem;
-  border-radius:var(--r-lg);background:var(--surf);border:1px solid var(--pri);
+  font-size:var(--text-xs);font-weight:700;padding:.8rem 1.25rem;
+  border-radius:var(--r-full);background:var(--surf);border:1px solid var(--pri);
   color:var(--pri);box-shadow:var(--glow);transform:translateY(120%);
   opacity:0;transition:all .3s var(--ease);pointer-events:none;
 }
 .toast.show{transform:translateY(0);opacity:1}
 
 /* FOOTER */
-footer{border-top:1px solid var(--div);background:var(--bg2)}
+footer{border-top:1px solid var(--div);background:var(--bg-alt)}
 .fi-in{
   max-width:var(--content);margin-inline:auto;padding:2rem 1.5rem;
   display:flex;align-items:center;justify-content:space-between;
-  flex-wrap:wrap;gap:1rem;font:var(--text-xs) var(--font-mono);color:var(--txf);
+  flex-wrap:wrap;gap:1rem;font-size:var(--text-xs);color:var(--txf);
 }
-.flogo{color:var(--txm);font-weight:700}
+.flogo{color:var(--tx);font-weight:700}
 .fstat{display:flex;align-items:center;gap:.5rem}
-.fdot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok)}
+.fdot{width:8px;height:8px;border-radius:50%;background:var(--ok)}
 
-/* RESPONSIVE BREAKPOINTS */
-@media(max-width:1240px){
-  .c.hero-g{grid-template-columns:1fr;max-width:var(--content)}
-  .term{max-width:860px}
-}
-@media(max-width:1024px){
+/* RESPONSIVE */
+@media(max-width:1120px){
+  .hero-g{grid-template-columns:1fr;gap:2.5rem}
+  .showcase{max-width:680px}
   .sgrid{grid-template-columns:repeat(3,1fr)}
   .cert-grid{grid-template-columns:1fr 1fr}
 }
@@ -700,23 +577,19 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
   .alist{grid-template-columns:1fr 1fr}
 }
 @media(max-width:820px){
-  .nlinks,.bnav,.cmd-btn span{display:none}
+  .nlinks,.bnav{display:none}
   .ham{display:flex}
   .sk-cols,.bento,.edu-grid,.cert-grid{grid-template-columns:1fr}
   .b-wide{grid-column:auto}
   .sgrid{grid-template-columns:1fr 1fr}
   .alist{grid-template-columns:1fr}
 }
-@media(max-width:600px){
-  .tbody{font-size:.7rem;height:360px;padding:.9rem}
-  .noc-grp.hide-sm{display:none}
-}
 @media(max-width:480px){
-  .hact{flex-direction:column}
+  .hact,.exec-highlights{grid-template-columns:1fr;flex-direction:column}
   .bpri,.bsec{justify-content:center}
   .hop{grid-template-columns:44px 1fr;gap:1rem}
   .hop-n{width:44px;height:44px;font-size:var(--text-xs)}
-  .hops::before{left:21px}.hops::after{left:18px}
+  .hops::before{left:21px}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -730,23 +603,6 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <a href="#main" class="sr-only">Skip to content</a>
 
-<!-- TOP NOC TELEMETRY STRIP -->
-<div class="noc-bar" role="region" aria-label="Network Operations Telemetry">
-  <div class="noc-in">
-    <div class="noc-grp">
-      <span class="noc-item"><i class="noc-dot pulse"></i>SOC STATUS: <b class="pri">DEFCON 5 // NOMINAL</b></span>
-      <span class="noc-item">NGFW &amp; WAF: <b class="ok">RADWARE + SAFELINE ACTIVE</b></span>
-      <span class="noc-item">BGP: <b class="pri">ESTABLISHED</b></span>
-      <span class="noc-item">THREATS DROPPED: <b class="danger" id="noc-drops">0</b></span>
-    </div>
-    <div class="noc-grp hide-sm">
-      <span class="noc-item">LOC: <b>COLOMBO, LK</b></span>
-      <span class="noc-item">CLOCK: <b id="lk-clock">--:--:--</b> UTC+5:30</span>
-      <button class="noc-kbd" id="noc-cmd-trigger" title="Open Command Palette">⌘K / CTRL+K</button>
-    </div>
-  </div>
-</div>
-
 <!-- NAVBAR -->
 <nav>
   <div class="ni">
@@ -754,24 +610,19 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
       <img src="assets/img/ms97.png" alt="ms97.live logo" width="85" height="85" onerror="this.style.display='none'">
       <div>
         <span>ms97<b>.live</b></span>
-        <span class="nlogo-sub">AS45489 // SEC-OPS</span>
+        <span class="nlogo-role">Manula Haputhanthrie</span>
       </div>
     </a>
     <ul class="nlinks">
-      <li><a href="#about"><span class="nidx">01.</span>About</a></li>
-      <li><a href="#skills"><span class="nidx">02.</span>Skills</a></li>
-      <li><a href="#services"><span class="nidx">03.</span>Services</a></li>
-      <li><a href="#experience"><span class="nidx">04.</span>Experience</a></li>
-      <li><a href="#certifications"><span class="nidx">05.</span>Certifications</a></li>
-      <li><a href="#education"><span class="nidx">06.</span>Education</a></li>
-      <li><a href="#contact"><span class="nidx">07.</span>Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Expertise</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nact">
-      <button class="cmd-btn" id="cmd-btn" aria-label="Open Command Palette">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-        <span>Console</span>
-        <kbd>⌘K</kbd>
-      </button>
       <button class="icon-btn" data-theme-toggle aria-label="Switch theme"></button>
       <a href="#contact" class="bnav">Hire Me</a>
       <button class="icon-btn ham" id="ham" aria-label="Open menu">
@@ -783,37 +634,12 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
 
 <div class="mmenu" id="mmenu">
   <a href="#about"><span>01</span>About</a>
-  <a href="#skills"><span>02</span>Skills</a>
-  <a href="#services"><span>03</span>Services</a>
-  <a href="#experience"><span>04</span>Experience</a>
-  <a href="#certifications"><span>05</span>Certifications</a>
+  <a href="#certifications"><span>02</span>Certifications</a>
+  <a href="#skills"><span>03</span>Skills</a>
+  <a href="#services"><span>04</span>Expertise</a>
+  <a href="#experience"><span>05</span>Experience</a>
   <a href="#education"><span>06</span>Education</a>
   <a href="#contact"><span>07</span>Contact</a>
-</div>
-
-<!-- COMMAND PALETTE MODAL -->
-<div class="cmd-modal" id="cmd-modal" role="dialog" aria-modal="true" aria-label="Command Palette">
-  <div class="cmd-dialog">
-    <div class="cmd-search">
-      <span class="pri mono">&gt;_</span>
-      <input type="text" id="cmd-input" placeholder="Type a command or jump to section (ESC to close)..." autocomplete="off">
-    </div>
-    <div class="cmd-list" id="cmd-list">
-      <button class="cmd-item" data-action="goto:#about"><span>01 // Jump to About Profile</span><span>#about</span></button>
-      <button class="cmd-item" data-action="goto:#skills"><span>02 // Run Technical Skills Audit</span><span>#skills</span></button>
-      <button class="cmd-item" data-action="goto:#services"><span>03 // Inspect Engineering Services (NGFW / WAF)</span><span>#services</span></button>
-      <button class="cmd-item" data-action="goto:#experience"><span>04 // Execute Career Traceroute</span><span>#experience</span></button>
-      <button class="cmd-item" data-action="goto:#certifications"><span>05 // Verify Cybersecurity Certifications (Cisco / Fortinet)</span><span>#certifications</span></button>
-      <button class="cmd-item" data-action="goto:#education"><span>06 // View Academic Credentials &amp; IEEE</span><span>#education</span></button>
-      <button class="cmd-item" data-action="goto:#contact"><span>07 // Open Port 443 Contact Channel</span><span>#contact</span></button>
-      <button class="cmd-item" data-action="term:certs"><span>Terminal: Verify Cybersecurity Certifications</span><span>CLI</span></button>
-      <button class="cmd-item" data-action="term:neofetch"><span>Terminal: Execute neofetch system info</span><span>CLI</span></button>
-      <button class="cmd-item" data-action="term:soc"><span>Terminal: Stream Live NGFW / SafeLine &amp; Radware WAF Logs</span><span>SIEM</span></button>
-      <button class="cmd-item" data-action="copy-email"><span>Copy Email (manulasapu2016@gmail.com)</span><span>CLIPBOARD</span></button>
-      <button class="cmd-item" data-action="vcard"><span>Download Engineer vCard (.vcf)</span><span>DOWNLOAD</span></button>
-      <button class="cmd-item" data-action="theme"><span>Toggle Dark / Light Cyber Theme</span><span>UI</span></button>
-    </div>
-  </div>
 </div>
 
 <main id="main">
@@ -824,75 +650,137 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
   <div class="hfade"></div>
   <div class="c hero-g">
     <div>
-      <div class="hbadge-row">
-        <div class="hbadge"><span class="hdot"></span>STATUS: FREELANCE AVAILABLE</div>
-        <div class="hbadge sec" title="Live packets blocked on canvas">WAF &amp; NGFW SHIELD: <span id="hero-drops">0</span> BLOCKED</div>
+      <div class="hbadge-wrap">
+        <div class="hbadge"><span class="hdot"></span>Available for Opportunities &amp; Consulting</div>
+        <div class="hbadge-sec">Colombo, Sri Lanka</div>
       </div>
-      <p class="whoami"><span class="kl">┌──(</span><span class="ku">manula㉿kali</span><span class="kl">)-[</span><span class="kd">~/sec-ops</span><span class="kl">]</span><br><span class="kl">└─</span><span class="ku">$</span> whoami --verbose</p>
-      <h1 class="hname" id="hname">
-        <span class="scr" data-text="Manula">Manula</span><br>
-        <span class="scr grad" data-text="Haputhanthrie">Haputhanthrie</span>
+      <p class="hgreeting">Hello, I'm</p>
+      <h1 class="hname">
+        Manula<br>
+        <span class="grad">Haputhanthrie</span>
       </h1>
-      <div class="htitle">
-        <span>Senior Network &amp; Security Engineer</span>
-        <span class="htitle-tag">NGFW · WAF · ISO 27001</span>
+      <p class="htitle">Senior Network &amp; Security Engineer</p>
+      <div class="typed-wrap"><span class="pfx">Specializing in &gt; </span><span id="typed-out"></span></div>
+      <p class="hdesc">
+        <strong>BSc (Hons) in Computer Systems &amp; Network Engineering</strong> and <strong>Senior Network &amp; Security Engineer at SLT-Mobitel PEOTV</strong>. I design, secure, and operate mission-critical enterprise networks — combining <strong>Next-Gen Firewalls (Fortinet, Check Point)</strong>, <strong>Web Application Firewalls (Radware &amp; SafeLine WAF)</strong>, and <strong>ISO 27001 / PCI DSS compliance</strong> with large-scale IPTV broadcast and 250+ VMware virtualized systems.
+      </p>
+
+      <div class="hpills">
+        <span class="hpill"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Cisco &amp; Fortinet Certified</span>
+        <span class="hpill"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Radware &amp; SafeLine WAF</span>
+        <span class="hpill"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>ISO 27001 &amp; PCI DSS</span>
       </div>
-      <div class="typed-wrap"><span class="pfx">root@ms97:~# </span><span id="typed-out"></span></div>
-      <p class="hdesc"><strong>BSc (Hons) Computer Systems &amp; Network Engineering</strong> · Senior Network &amp; Security Engineer at <strong>SLT-Mobitel PEOTV</strong> · Architecting multi-layered defense with <strong>NGFW (Fortinet, Check Point), Web Application Firewalls (Radware &amp; SafeLine WAF), ADC</strong>, IDS/IPS, Kali Linux, and ISO 27001/PCI DSS compliance — backed by mission-critical IPTV multicast and 250+ VMware vCenter operations.</p>
+
       <div class="hact">
         <a href="#experience" class="bpri">
+          View Track Record
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          View Experience
-        </a>
-        <a href="#certifications" class="bsec">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l2-1l2 1l-2-5z"/><circle cx="12" cy="8" r="6"/></svg>
-          Certifications
         </a>
         <a href="#contact" class="bsec">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
           Get in Touch
         </a>
-        <button class="bsec" id="hero-vcard" type="button" title="Save Contact Card">
+        <button class="bsec" id="hero-vcard" type="button" title="Download Contact vCard">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          vCard
+          Save Contact
         </button>
       </div>
+
       <div class="socials">
         <a href="https://linkedin.com/in/manula97" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
         <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
         <a href="https://wa.me/94717435584" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
         <a href="https://twitter.com/manula97" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-        <span class="soc-divider"></span>
-        <span class="soc-stat">CERTIFIED: <b>CISCO EH · FORTINET NSE 3 · FFA</b></span>
       </div>
     </div>
 
-    <!-- INTERACTIVE TERMINAL -->
-    <div class="term rv">
-      <div class="tbar">
-        <div class="tdots">
-          <span class="td tr"></span><span class="td ty"></span><span class="td tg"></span>
+    <!-- DUAL-MODE SHOWCASE WIDGET (Recruiter Snapshot + Engineer Terminal) -->
+    <div class="showcase rv">
+      <div class="sc-bar">
+        <div class="sc-dots">
+          <span class="sc-dot r"></span><span class="sc-dot y"></span><span class="sc-dot g"></span>
         </div>
-        <div class="ttabs">
-          <button class="ttab active" data-tab="zsh" type="button">manula@kali: ~ (zsh)</button>
-          <button class="ttab" data-tab="siem" type="button">tail -f /var/log/waf-ngfw.log</button>
+        <div class="sc-tabs" role="tablist">
+          <button class="sc-tab active" data-view="exec" role="tab" aria-selected="true" type="button">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Executive Snapshot
+          </button>
+          <button class="sc-tab" data-view="term" role="tab" aria-selected="false" type="button">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            Terminal View
+          </button>
         </div>
       </div>
-      <div class="tchips">
-        <span>EXEC:</span>
-        <button class="tchip" data-cmd="help" type="button">help</button>
-        <button class="tchip" data-cmd="certs" type="button">certs</button>
-        <button class="tchip" data-cmd="waf" type="button">waf --status</button>
-        <button class="tchip" data-cmd="neofetch" type="button">neofetch</button>
-        <button class="tchip" data-cmd="nmap" type="button">nmap --skills</button>
-        <button class="tchip" data-cmd="bgp" type="button">show ip bgp</button>
-        <button class="tchip" data-cmd="clear" type="button">clear</button>
+
+      <!-- TAB 1: EXECUTIVE SNAPSHOT (DEFAULT FOR HR & RECRUITERS) -->
+      <div class="sc-pane active" id="pane-exec">
+        <div class="exec-head">
+          <div class="exec-av">
+            <img src="assets/img/profile-img.jpg" alt="Manula Pamod Haputhanthrie" width="160" height="160" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect width=%22200%22 height=%22200%22 fill=%22%23101726%22/><text x=%2250%25%22 y=%2254%25%22 font-family=%22sans-serif%22 font-weight=%22bold%22 font-size=%2252%22 fill=%22%2300e5b8%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>MPH</text></svg>'">
+            <span class="exec-status" title="Available"></span>
+          </div>
+          <div>
+            <div class="exec-name">Manula Haputhanthrie</div>
+            <div class="exec-role">Senior Network &amp; Security Engineer</div>
+            <div class="exec-loc">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              SLT-Mobitel PEOTV · Colombo, Sri Lanka
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-highlights">
+          <div class="exec-box">
+            <div class="exec-box-lbl">Security &amp; WAF</div>
+            <div class="exec-box-val">Fortinet · Check Point · Radware &amp; SafeLine WAF</div>
+          </div>
+          <div class="exec-box">
+            <div class="exec-box-lbl">Compliance &amp; Audit</div>
+            <div class="exec-box-val">ISO 27001 &amp; PCI DSS</div>
+          </div>
+          <div class="exec-box">
+            <div class="exec-box-lbl">Core Infrastructure</div>
+            <div class="exec-box-val">300+ Networks · IPTV</div>
+          </div>
+          <div class="exec-box">
+            <div class="exec-box-lbl">Virtualization</div>
+            <div class="exec-box-val">VMware vCenter (250+ VMs)</div>
+          </div>
+        </div>
+
+        <div class="exec-certs">
+          <div class="exec-certs-title">
+            <span>✓ Verified Cybersecurity Credentials</span>
+            <a href="#certifications" class="pri">View All →</a>
+          </div>
+          <div class="exec-cert-list">
+            <div class="exec-cert-item"><span>Cisco — Ethical Hacker</span><span>Sep 2026</span></div>
+            <div class="exec-cert-item"><span>Fortinet — NSE 3 Certified in Cybersecurity</span><span>ID: 2677797821MH</span></div>
+            <div class="exec-cert-item"><span>OneAccess — Fortinet Firewall Administrator</span><span>Dec 2025</span></div>
+          </div>
+        </div>
+
+        <div class="exec-foot">
+          <span>BSc (Hons) SLIIT · IEEE Published Author</span>
+          <span class="exec-switch-hint" id="try-term-btn">&gt;_ Try Interactive CLI</span>
+        </div>
       </div>
-      <div class="tbody" id="tbody" aria-live="polite"></div>
-      <form class="tinput-row" id="tform" autocomplete="off">
-        <label for="tinput">manula㉿kali:~$ </label>
-        <input class="tinput" id="tinput" type="text" placeholder="Type 'certs', 'waf', 'help', 'neofetch', 'bgp', 'clear'..." />
-      </form>
+
+      <!-- TAB 2: INTERACTIVE TERMINAL (FOR TECHNICAL VISITORS) -->
+      <div class="sc-pane" id="pane-term">
+        <div class="tchips">
+          <button class="tchip" data-cmd="certs" type="button">certs</button>
+          <button class="tchip" data-cmd="waf" type="button">waf --status</button>
+          <button class="tchip" data-cmd="skills" type="button">skills</button>
+          <button class="tchip" data-cmd="career" type="button">career</button>
+          <button class="tchip" data-cmd="clear" type="button">clear</button>
+        </div>
+        <div class="tbody" id="tbody" aria-live="polite"></div>
+        <form class="tinput-row" id="tform" autocomplete="off">
+          <label for="tinput">manula@kali:~$ </label>
+          <input class="tinput" id="tinput" type="text" placeholder="Type 'certs', 'waf', 'skills', 'help'..." />
+        </form>
+      </div>
     </div>
   </div>
 </section>
@@ -901,86 +789,150 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
 <section id="stats">
   <div class="c">
     <div class="sgrid">
-      <div class="stat rv">
-        <div class="stat-top"><span class="stat-tag">SYS.EXP</span><svg class="stat-spark" viewBox="0 0 40 14"><polyline points="0,12 8,10 16,7 24,8 32,3 40,1"/></svg></div>
-        <div class="snum" data-count="5" data-suffix="+">0</div>
-        <div class="slbl">Years Experience</div>
-      </div>
-      <div class="stat rv">
-        <div class="stat-top"><span class="stat-tag">ORG.OPS</span><svg class="stat-spark" viewBox="0 0 40 14"><polyline points="0,11 10,9 20,6 30,4 40,2"/></svg></div>
-        <div class="snum" data-count="5">0</div>
-        <div class="slbl">Companies</div>
-      </div>
-      <div class="stat rv">
-        <div class="stat-top"><span class="stat-tag">WAN.LAN</span><svg class="stat-spark" viewBox="0 0 40 14"><polyline points="0,13 8,9 16,11 24,5 32,4 40,1"/></svg></div>
-        <div class="snum" data-count="300" data-suffix="+">0</div>
-        <div class="slbl">Networks Managed</div>
-      </div>
-      <div class="stat rv">
-        <div class="stat-top"><span class="stat-tag">VCENTER</span><svg class="stat-spark" viewBox="0 0 40 14"><polyline points="0,10 10,8 20,9 30,3 40,2"/></svg></div>
-        <div class="snum" data-count="250" data-suffix="+">0</div>
-        <div class="slbl">VMs Managing</div>
-      </div>
-      <div class="stat rv">
-        <div class="stat-top"><span class="stat-tag">SEC.CERTS</span><svg class="stat-spark" viewBox="0 0 40 14"><polyline points="0,12 12,9 24,5 40,1"/></svg></div>
-        <div class="snum" data-count="3">0</div>
-        <div class="slbl">Cybersecurity Certs</div>
-      </div>
-      <div class="stat rv">
-        <div class="stat-top"><span class="stat-tag">DEPLOYED</span><svg class="stat-spark" viewBox="0 0 40 14"><polyline points="0,12 10,10 20,5 30,6 40,1"/></svg></div>
-        <div class="snum" data-count="100" data-suffix="+">0</div>
-        <div class="slbl">Projects Done</div>
-      </div>
+      <div class="stat rv"><div class="snum" data-count="5" data-suffix="+">0</div><div class="slbl">Years Experience</div></div>
+      <div class="stat rv"><div class="snum" data-count="5">0</div><div class="slbl">Leading Companies</div></div>
+      <div class="stat rv"><div class="snum" data-count="300" data-suffix="+">0</div><div class="slbl">Networks Managed</div></div>
+      <div class="stat rv"><div class="snum" data-count="250" data-suffix="+">0</div><div class="slbl">VMs Administered</div></div>
+      <div class="stat rv"><div class="snum" data-count="3">0</div><div class="slbl">Cybersecurity Certs</div></div>
+      <div class="stat rv"><div class="snum" data-count="100" data-suffix="+">0</div><div class="slbl">Projects Delivered</div></div>
     </div>
   </div>
 </section>
 
 <!-- TECH MARQUEE -->
-<div class="mq" aria-label="Tech stack"><div class="mq-track" id="mq"></div></div>
+<div class="mq" aria-label="Technology Stack"><div class="mq-track" id="mq"></div></div>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="c">
     <div class="about-g">
-      <div class="card avisual rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
-        <div class="gridbg"></div>
-        <div>
-          <div class="id-top">
-            <span>CLEARANCE: LEVEL-04 // SECOPS</span>
-            <span class="id-badge">ID #MS-1997</span>
-          </div>
-          <div class="av-wrap">
-            <img src="assets/img/profile-img.jpg" alt="Manula Pamod Haputhanthrie" width="600" height="600" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect width=%22200%22 height=%22200%22 fill=%22%23101522%22/><text x=%2250%25%22 y=%2254%25%22 font-family=%22monospace%22 font-size=%2252%22 fill=%22%2300f5c4%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>MPH</text></svg>'">
-            <span class="av-status" title="System Online"></span>
-          </div>
-          <div class="acname">Manula Pamod Haputhanthrie</div>
-          <div class="acrole">// Senior Network &amp; Security Engineer</div>
+      <div class="card avisual rv">
+        <div class="av-wrap">
+          <img src="assets/img/profile-img.jpg" alt="Manula Pamod Haputhanthrie" width="600" height="600" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect width=%22200%22 height=%22200%22 fill=%22%23101726%22/><text x=%2250%25%22 y=%2254%25%22 font-family=%22sans-serif%22 font-weight=%22bold%22 font-size=%2252%22 fill=%22%2300e5b8%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>MPH</text></svg>'">
+          <span class="av-status" title="Online"></span>
         </div>
+        <div class="acname">Manula Pamod Haputhanthrie</div>
+        <div class="acrole">Senior Network &amp; Security Engineer</div>
         <div class="acmeta">
-          <div class="acmeta-row"><span>location</span><b>Colombo, LK</b></div>
-          <div class="acmeta-row"><span>timezone</span><b>UTC+05:30</b></div>
-          <div class="acmeta-row"><span>workstation</span><b>Kali GNU/Linux (ms97)</b></div>
-          <div class="acmeta-row"><span>defense</span><b>NGFW · Radware · SafeLine WAF</b></div>
-          <div class="acmeta-row"><span>status</span><b class="pri">● ONLINE &amp; READY</b></div>
+          <div class="acmeta-row"><span>Current Organization</span><b>SLT-Mobitel PEOTV</b></div>
+          <div class="acmeta-row"><span>Education</span><b>BSc (Hons) — SLIIT</b></div>
+          <div class="acmeta-row"><span>Security Stack</span><b>NGFW · Radware · SafeLine</b></div>
+          <div class="acmeta-row"><span>Location</span><b>Colombo, Sri Lanka</b></div>
+          <div class="acmeta-row"><span>Availability</span><b class="pri">● Open to Offers</b></div>
         </div>
       </div>
 
       <div class="atxt rv">
-        <p class="slabel">01 // Identity &amp; Dossier</p>
-        <h2 class="stitle">Network Security Engineer &amp; IoT Innovator</h2>
-        <p>Welcome to my ePortfolio! I'm <strong>Manula Pamod Haputhanthrie</strong>. I hold a BSc (Hons) in Computer Systems &amp; Network Engineering from SLIIT. Currently serving as <strong>Senior Network &amp; Security Engineer at SLT-Mobitel PEOTV</strong>, my primary focus is enterprise network security, <strong>Web Application Firewalls (Radware &amp; SafeLine WAF)</strong>, and regulatory compliance (ISO 27001 / PCI DSS), alongside end-to-end IPTV broadcast operations, high-availability LAN/WAN fabrics, and VMware vCenter infrastructure hosting 250+ virtual machines.</p>
-        <p>Certified as a <strong>Cisco Ethical Hacker</strong>, <strong>Fortinet NSE 3 in Cybersecurity</strong>, and <strong>Fortinet Firewall Administrator</strong>, my career spans tier-1 telecommunications (<strong>Dialog Axiata</strong>), international banking networks (<strong>Commercial Bank of Ceylon</strong>), industrial IoT (<strong>N-able</strong>), and enterprise network integration (<strong>NextEn</strong>).</p>
+        <p class="slabel">01 // Executive Summary</p>
+        <h2 class="stitle">Bridging Enterprise Security, Broadcast Networks &amp; Cloud Infrastructure</h2>
+        <p>
+          Welcome to my portfolio! I am <strong>Manula Pamod Haputhanthrie</strong>, a Senior Network &amp; Security Engineer holding a BSc (Hons) in Computer Systems &amp; Network Engineering from SLIIT. At <strong>SLT-Mobitel PEOTV</strong>, I lead network security and regulatory compliance initiatives alongside national IPTV platform operations, enterprise LAN/WAN architectures, and VMware vCenter virtualization (250+ VMs).
+        </p>
+        <p>
+          My hands-on expertise spans <strong>Next-Generation Firewalls (Fortinet, Check Point, pfSense)</strong>, <strong>Web Application Firewalls &amp; Load Balancers (Radware WAF/ADC and SafeLine WAF)</strong>, offensive security diagnostics with Kali Linux, and maintaining <strong>ISO 27001 and PCI DSS</strong> standards. Previously, I engineered critical systems across telecommunications (<strong>Dialog Axiata</strong>), banking (<strong>Commercial Bank of Ceylon</strong>), industrial IoT (<strong>N-able</strong>), and enterprise networking (<strong>NextEn</strong>).
+        </p>
         <div class="alist">
-          <div class="aitem"><span class="albl">Birthday</span><span class="aval">22 November 1997</span></div>
-          <div class="aitem"><span class="albl">Age</span><span class="aval" id="age">—</span></div>
-          <div class="aitem"><span class="albl">Phone</span><span class="aval"><a href="tel:+94717435584">(+94) 71 743 5584</a></span></div>
+          <div class="aitem"><span class="albl">Birthday</span><span class="aval">22 November 1997 (<span id="age">—</span> yrs)</span></div>
+          <div class="aitem"><span class="albl">Phone / WhatsApp</span><span class="aval"><a href="tel:+94717435584">(+94) 71 743 5584</a></span></div>
           <div class="aitem"><span class="albl">Personal Email</span><span class="aval"><a href="mailto:manulasapu2016@gmail.com">manulasapu2016@gmail.com</a></span></div>
-          <div class="aitem"><span class="albl">Corporate Email</span><span class="aval"><a href="mailto:manula.pamod@slt.com.lk">manula.pamod@slt.com.lk</a></span></div>
+          <div class="aitem"><span class="albl">Work Email</span><span class="aval"><a href="mailto:manula.pamod@slt.com.lk">manula.pamod@slt.com.lk</a></span></div>
           <div class="aitem"><span class="albl">Website</span><span class="aval"><a href="https://www.ms97.live" target="_blank" rel="noopener noreferrer">www.ms97.live</a></span></div>
-          <div class="aitem"><span class="albl">Base Station</span><span class="aval">Colombo, Sri Lanka</span></div>
-          <div class="aitem"><span class="albl">Honours Degree</span><span class="aval">BSc (Hons) — SLIIT</span></div>
-          <div class="aitem"><span class="albl">Freelance / Consult</span><span class="aval pri">● Available</span></div>
+          <div class="aitem"><span class="albl">Consulting &amp; Roles</span><span class="aval pri">Available</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="c">
+    <div class="sh rv">
+      <div class="sh-left">
+        <p class="slabel">02 // Verified Credentials</p>
+        <h2 class="stitle">Cybersecurity Certifications</h2>
+        <p class="sdesc">Industry-recognized certifications validating offensive ethical hacking skills and enterprise Fortinet firewall engineering.</p>
+      </div>
+    </div>
+
+    <div class="cert-grid">
+      <!-- Cert 1: Cisco Ethical Hacker -->
+      <div class="card cert-card rv">
+        <div>
+          <div class="cert-top">
+            <div class="cert-issuer-wrap">
+              <div class="cert-badge-ico cisco">CISCO</div>
+              <div>
+                <div class="cert-issuer">Cisco Networking Academy</div>
+                <div class="cert-date">Issued Sep 2026</div>
+              </div>
+            </div>
+            <span class="cert-pill">✓ Verified</span>
+          </div>
+          <h3 class="cert-title">Ethical Hacker</h3>
+          <p class="cert-desc">Certificate of Completion for the Cisco Networking Academy Ethical Hacker course, validating hands-on skills in penetration testing, vulnerability assessment, social engineering analysis, and network defense.</p>
+        </div>
+        <div>
+          <div class="cert-id-box">
+            <span>Credential: <code>Cisco NetAcad Verified</code></span>
+          </div>
+          <div class="tags">
+            <span>Ethical Hacking</span><span>Penetration Testing</span><span>Vulnerability Assessment</span><span>Network Security</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cert 2: Fortinet NSE 3 -->
+      <div class="card cert-card rv">
+        <div>
+          <div class="cert-top">
+            <div class="cert-issuer-wrap">
+              <div class="cert-badge-ico fortinet">NSE 3</div>
+              <div>
+                <div class="cert-issuer">Fortinet</div>
+                <div class="cert-date">Issued Aug 2026 · Expires Aug 2028</div>
+              </div>
+            </div>
+            <span class="cert-pill">✓ Verified</span>
+          </div>
+          <h3 class="cert-title">Fortinet NSE 3 Certified in Cybersecurity</h3>
+          <p class="cert-desc">Validates high-level operational proficiency across key Fortinet cybersecurity solutions, including FortiGate core features, threat landscape awareness, VPN security, and zero-trust network access.</p>
+        </div>
+        <div>
+          <div class="cert-id-box">
+            <span>ID: <code>2677797821MH</code></span>
+            <button type="button" class="cert-copy" data-copy="2677797821MH">Copy ID</button>
+          </div>
+          <div class="tags">
+            <span>Network Security</span><span>Virtual Private Network (VPN)</span><span>FortiGate</span><span>Threat Defense</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cert 3: Fortinet Firewall Administrator -->
+      <div class="card cert-card rv">
+        <div>
+          <div class="cert-top">
+            <div class="cert-issuer-wrap">
+              <div class="cert-badge-ico oneaccess">FFA</div>
+              <div>
+                <div class="cert-issuer">OneAccess Technologies</div>
+                <div class="cert-date">Issued Dec 2025</div>
+              </div>
+            </div>
+            <span class="cert-pill">✓ Verified</span>
+          </div>
+          <h3 class="cert-title">Fortinet Firewall Administrator</h3>
+          <p class="cert-desc">Validates practical administration, security policy configuration, NAT/VPN deployment, high-availability clustering, and real-time traffic diagnostics on enterprise Fortinet firewall platforms.</p>
+        </div>
+        <div>
+          <div class="cert-id-box">
+            <span>ID: <code>OAT/FFA/000973271735</code></span>
+            <button type="button" class="cert-copy" data-copy="OAT/FFA/000973271735">Copy ID</button>
+          </div>
+          <div class="tags">
+            <span>Firewalls</span><span>Fortinet</span><span>NGFW Administration</span><span>Security Policies</span>
+          </div>
         </div>
       </div>
     </div>
@@ -992,148 +944,137 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
   <div class="c">
     <div class="sh rv">
       <div class="sh-left">
-        <p class="slabel">02 // Telemetry &amp; Proficiency</p>
-        <h2 class="stitle">Technical Capability Matrix</h2>
-        <p class="sdesc">A battle-tested blend of perimeter &amp; application security (NGFW, Radware, SafeLine WAF), core routing/switching, virtualization, and server administration.</p>
-      </div>
-      <div class="sh-meta"><span class="kl">└─$</span> ./audit.sh --verify-all <span class="ok">[10/10 PASS]</span></div>
-    </div>
-
-    <div class="sk-bar-top rv">
-      <span><span class="kl">[*]</span> FILTER SUBSYSTEMS:</span>
-      <div class="sk-filters">
-        <button class="sk-flt active" data-filter="all" type="button">All Systems (10)</button>
-        <button class="sk-flt" data-filter="sec" type="button">NetSec, NGFW &amp; WAF (4)</button>
-        <button class="sk-flt" data-filter="net" type="button">Routing, Switching &amp; Radware ADC (3)</button>
-        <button class="sk-flt" data-filter="sys" type="button">Virtualization &amp; OS (3)</button>
+        <p class="slabel">03 // Technical Proficiency</p>
+        <h2 class="stitle">Core Competencies</h2>
+        <p class="sdesc">Filterable overview of my technical proficiencies across cybersecurity, WAF/ADC, enterprise routing &amp; switching, and virtualization.</p>
       </div>
     </div>
 
-    <div class="sk-cols rv" id="sk-grid">
+    <div class="sk-filters rv">
+      <button class="sk-flt active" data-filter="all" type="button">All Skills (10)</button>
+      <button class="sk-flt" data-filter="sec" type="button">Cybersecurity &amp; WAF (4)</button>
+      <button class="sk-flt" data-filter="net" type="button">Networking &amp; Load Balancing (3)</button>
+      <button class="sk-flt" data-filter="sys" type="button">Virtualization &amp; Servers (3)</button>
+    </div>
+
+    <div class="sk-cols rv">
       <div class="sk" data-v="90" data-cat="sec">
-        <div class="sk-h"><span><span class="sk-if">[01]</span>Firewalling &amp; NGFW</span><span class="sk-p">90%</span></div>
-        <div class="sk-sub">Fortinet FortiGate · Check Point · pfSense · IPSec/SSL VPN · Policy Auditing</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>Next-Gen Firewalling (NGFW)</span><span class="sk-p">90%</span></div>
+        <div class="sk-sub">Fortinet FortiGate · Check Point · pfSense · VPN &amp; Policy Auditing</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
       <div class="sk" data-v="95" data-cat="net">
-        <div class="sk-h"><span><span class="sk-if">[06]</span>Enterprise Routing</span><span class="sk-p">95%</span></div>
-        <div class="sk-sub">BGP · OSPF · EIGRP · PIM Multicast · Policy-Based Routing · MPLS/WAN</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>Enterprise Routing</span><span class="sk-p">95%</span></div>
+        <div class="sk-sub">BGP · OSPF · EIGRP · PIM Multicast · MPLS &amp; Branch WAN</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
       <div class="sk" data-v="90" data-cat="sec">
-        <div class="sk-h"><span><span class="sk-if">[02]</span>Web Security — WAF &amp; Proxy</span><span class="sk-p">90%</span></div>
-        <div class="sk-sub">Radware WAF · SafeLine WAF · Reverse Proxy · OWASP Top 10 &amp; API Protection</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>Web Application Firewalls (WAF) &amp; Proxy</span><span class="sk-p">90%</span></div>
+        <div class="sk-sub">Radware WAF · SafeLine WAF · Reverse Proxy · OWASP Top-10 &amp; API Security</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
       <div class="sk" data-v="95" data-cat="net">
-        <div class="sk-h"><span><span class="sk-if">[07]</span>Core &amp; Campus Switching</span><span class="sk-p">95%</span></div>
-        <div class="sk-sub">Cisco Nexus/Catalyst · Brocade · Huawei · Aruba · VLAN/STP/LACP · IGMP Snooping</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>Core &amp; Campus Switching</span><span class="sk-p">95%</span></div>
+        <div class="sk-sub">Cisco Nexus/Catalyst · Brocade · Huawei · Aruba · VLAN/STP/LACP</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
       <div class="sk" data-v="85" data-cat="sec">
-        <div class="sk-h"><span><span class="sk-if">[03]</span>E-Mail Encryption &amp; PKI</span><span class="sk-p">85%</span></div>
-        <div class="sk-sub">S/MIME · PGP · Certificate Authorities · Cryptographic Key Management</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>E-Mail Encryption &amp; PKI</span><span class="sk-p">85%</span></div>
+        <div class="sk-sub">S/MIME · PGP · TLS/SSL Certificates · Cryptographic Key Management</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
       <div class="sk" data-v="85" data-cat="sys">
-        <div class="sk-h"><span><span class="sk-if">[08]</span>Datacenter Virtualisation</span><span class="sk-p">85%</span></div>
-        <div class="sk-sub">VMware vCenter &amp; ESXi (250+ VMs) · HA/DRS · Microsoft Hyper-V · Docker</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>Datacenter Virtualisation</span><span class="sk-p">85%</span></div>
+        <div class="sk-sub">VMware vCenter &amp; ESXi (250+ VMs) · High Availability · Hyper-V · Docker</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
       <div class="sk" data-v="80" data-cat="sec">
-        <div class="sk-h"><span><span class="sk-if">[04]</span>Mail Gateway Security</span><span class="sk-p">80%</span></div>
-        <div class="sk-sub">SPF / DKIM / DMARC Enforcement · Anti-Spam/Phishing · Exchange Protection</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>Mail Gateway Security</span><span class="sk-p">80%</span></div>
+        <div class="sk-sub">SPF / DKIM / DMARC · Anti-Phishing · Exchange Online Protection</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
       <div class="sk" data-v="80" data-cat="net">
-        <div class="sk-h"><span><span class="sk-if">[09]</span>Load-Balancer &amp; Radware ADC</span><span class="sk-p">80%</span></div>
-        <div class="sk-sub">Radware Alteon ADC · High Availability Server Pools · L4/L7 Traffic Steering · SSL Offload</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>Load Balancing &amp; ADC</span><span class="sk-p">80%</span></div>
+        <div class="sk-sub">Radware Alteon ADC · L4/L7 Traffic Steering · Server Pool High Availability</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
       <div class="sk" data-v="75" data-cat="sys">
-        <div class="sk-h"><span><span class="sk-if">[05]</span>Linux Server &amp; SecOps</span><span class="sk-p">75%</span></div>
-        <div class="sk-sub">Kali Linux · Ubuntu Server · Dockerized WAF · LVM · Packet Capture (tcpdump)</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>Linux Server &amp; Security Ops</span><span class="sk-p">75%</span></div>
+        <div class="sk-sub">Kali Linux · Ubuntu Server · Dockerized WAF · Zabbix Monitoring</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
       <div class="sk" data-v="75" data-cat="sys">
-        <div class="sk-h"><span><span class="sk-if">[10]</span>Windows Server &amp; Cloud Identity</span><span class="sk-p">75%</span></div>
-        <div class="sk-sub">Active Directory · ADFS · Exchange Online · Office 365 · DNS/DHCP</div>
-        <div class="seg"></div>
+        <div class="sk-h"><span>Windows Server &amp; Cloud Identity</span><span class="sk-p">75%</span></div>
+        <div class="sk-sub">Active Directory · ADFS · Office 365 · Exchange Online · DNS/DHCP</div>
+        <div class="bar-bg"><div class="bar-fill"></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- SERVICES / AREAS OF EXPERTISE -->
 <section id="services">
   <div class="c">
     <div class="sh rv">
       <div class="sh-left">
-        <p class="slabel">03 // Operational Capabilities</p>
-        <h2 class="stitle">Engineering Services</h2>
-        <p class="sdesc">End-to-end architecture, hardening, and operational assurance across enterprise network security, WAF/ADC, broadcast IPTV, cloud virtualization, and industrial IoT.</p>
+        <p class="slabel">04 // What I Deliver</p>
+        <h2 class="stitle">Areas of Expertise</h2>
+        <p class="sdesc">Comprehensive engineering solutions across cybersecurity, application protection, broadcast IPTV, enterprise networking, and cloud infrastructure.</p>
       </div>
-      <div class="sh-meta">SLA TARGET: <span class="pri">99.99% HIGH AVAILABILITY</span></div>
     </div>
     <div class="bento">
-      <div class="card b-wide rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+      <div class="card b-wide rv">
         <div class="svc-top">
           <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <div class="svc-meta"><span class="svc-status">● NGFW + WAF</span><span class="svc-num">0x01</span></div>
+          <span class="svc-tag">Core Specialty</span>
         </div>
         <div class="svc-name">Network Security, WAF &amp; Compliance</div>
-        <div class="svc-desc">Securing enterprise perimeters and web/API backends using Next-Generation Firewalls (Fortinet, Check Point, pfSense), Web Application Firewalls (<strong>Radware &amp; SafeLine WAF</strong>), Radware ADCs, and IDS/IPS systems, with Kali Linux in the offensive/diagnostic toolkit. Proven track record enforcing rigorous ISO 27001 and PCI DSS compliance controls.</div>
+        <div class="svc-desc">Securing enterprise perimeters and critical web/API applications using Next-Generation Firewalls (Fortinet, Check Point, pfSense), Web Application Firewalls (<strong>Radware &amp; SafeLine WAF</strong>), and IDS/IPS systems. Experienced in offensive security diagnostics with Kali Linux and maintaining strict compliance with <strong>ISO 27001 and PCI DSS</strong> frameworks.</div>
         <div class="tags"><span>Radware WAF &amp; ADC</span><span>SafeLine WAF</span><span>Fortinet NGFW</span><span>Check Point</span><span>pfSense</span><span>IDS/IPS</span><span>Kali Linux</span><span>ISO 27001</span><span>PCI DSS</span></div>
       </div>
-      <div class="card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+      <div class="card rv">
         <div class="svc-top">
           <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-          <div class="svc-meta"><span class="svc-status">● BROADCAST</span><span class="svc-num">0x02</span></div>
+          <span class="svc-tag">Broadcast</span>
         </div>
-        <div class="svc-name">IPTV &amp; Multicast</div>
-        <div class="svc-desc">End-to-end IPTV and OTT broadcast platform operations including satellite signal acquisition, headend encoding, content distribution, STB middleware management, and low-latency multicast networking.</div>
-        <div class="tags"><span>PIM Multicast</span><span>IGMP</span><span>STB</span><span>Satellite</span><span>SRT/OTT</span></div>
+        <div class="svc-name">IPTV &amp; Multicast Operations</div>
+        <div class="svc-desc">End-to-end IPTV platform management including satellite signal acquisition, encoding workflows, content distribution, STB lifecycle management, and multicast networking.</div>
+        <div class="tags"><span>Multicast</span><span>STB</span><span>Satellite</span><span>IPTV/OTT</span></div>
       </div>
-      <div class="card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+      <div class="card rv">
         <div class="svc-top">
           <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg></div>
-          <div class="svc-meta"><span class="svc-status">● CORE-FABRIC</span><span class="svc-num">0x03</span></div>
+          <span class="svc-tag">Infrastructure</span>
         </div>
         <div class="svc-name">Enterprise Networking</div>
-        <div class="svc-desc">Designing and managing resilient LAN/WAN architectures across 300+ branch locations, with high-availability dynamic routing and switching on Cisco, Huawei, Brocade, and Aruba platforms.</div>
-        <div class="tags"><span>OSPF</span><span>BGP</span><span>EIGRP</span><span>Cisco Nexus</span><span>Brocade</span></div>
+        <div class="svc-desc">Designing and managing high-availability LAN/WAN architectures across hundreds of branches using Cisco, Huawei, Brocade, and Aruba routing and switching platforms.</div>
+        <div class="tags"><span>BGP</span><span>OSPF</span><span>EIGRP</span><span>Cisco</span><span>Brocade</span></div>
       </div>
-      <div class="card b-wide rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+      <div class="card b-wide rv">
         <div class="svc-top">
           <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div>
-          <div class="svc-meta"><span class="svc-status">● 250+ VMS</span><span class="svc-num">0x04</span></div>
+          <span class="svc-tag">Datacenter &amp; Cloud</span>
         </div>
         <div class="svc-name">Virtualization &amp; Cloud Services</div>
-        <div class="svc-desc">Expertise in administering mission-critical virtualized datacenters. Manages large production clusters utilizing VMware vCenter (250+ VMs), ESXi, and Microsoft Hyper-V, alongside AWS, Azure, and containerized Docker workloads.</div>
-        <div class="tags"><span>VMware vCenter</span><span>ESXi</span><span>Hyper-V</span><span>AWS</span><span>Azure</span><span>Docker</span><span>Zabbix Telemetry</span></div>
+        <div class="svc-desc">Administering highly available virtualized datacenters with VMware vCenter (250+ VMs), ESXi, and Microsoft Hyper-V, alongside AWS, Azure, and containerized Docker deployments.</div>
+        <div class="tags"><span>VMware vCenter</span><span>ESXi</span><span>Hyper-V</span><span>AWS</span><span>Azure</span><span>Docker</span></div>
       </div>
-      <div class="card b-wide rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+      <div class="card b-wide rv">
         <div class="svc-top">
           <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-          <div class="svc-meta"><span class="svc-status">● INDUSTRIAL</span><span class="svc-num">0x05</span></div>
+          <span class="svc-tag">Industrial IoT</span>
         </div>
         <div class="svc-name">Internet of Things (IoT) Solutions</div>
-        <div class="svc-desc">Hands-on experience architecting and deploying industrial-grade IoT telemetry networks, including a real-time hazardous gas monitoring system for CICT — the largest deep-water port terminal in Sri Lanka.</div>
+        <div class="svc-desc">Architecting and deploying enterprise-grade IoT systems, including a real-time hazardous gas monitoring solution for CICT — the largest port terminal in Sri Lanka.</div>
         <div class="tags"><span>MQTT</span><span>ESP32</span><span>Zigbee</span><span>AWS IoT</span><span>Advantech ADAM</span></div>
       </div>
-      <div class="card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+      <div class="card rv">
         <div class="svc-top">
           <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
-          <div class="svc-meta"><span class="svc-status">● IEEE PUB</span><span class="svc-num">0x06</span></div>
+          <span class="svc-tag">Published Research</span>
         </div>
-        <div class="svc-name">Robotics &amp; Vision</div>
-        <div class="svc-desc">Computer Vision–based autonomous navigation robot built with ROS and TensorFlow, exhibited at the University of Moratuwa and published in IEEE (ICITR 2022).</div>
+        <div class="svc-name">Robotics &amp; Computer Vision</div>
+        <div class="svc-desc">Developed a Computer Vision–based Navigation Robot using ROS and TensorFlow, exhibited at the University of Moratuwa and published in IEEE (ICITR 2022).</div>
         <div class="tags"><span>ROS</span><span>TensorFlow</span><span>OpenCV</span><span>IEEE</span></div>
       </div>
     </div>
@@ -1145,30 +1086,25 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
   <div class="c">
     <div class="sh rv">
       <div class="sh-left">
-        <p class="slabel">04 // Career Packet Path</p>
+        <p class="slabel">05 // Career Progression</p>
         <h2 class="stitle">Professional Experience</h2>
-        <p class="sdesc">A progressive engineering trajectory spanning national telecommunications, commercial banking, industrial IoT, and enterprise networking.</p>
+        <p class="sdesc">A proven track record across Sri Lanka's foremost telecommunications, banking, industrial IoT, and network engineering organizations.</p>
       </div>
     </div>
-    <div class="trh rv">
-      <span><span class="kl">└─</span><span class="ku">$</span> traceroute -m 5 career.ms97.live &amp;&amp; tac /var/log/career.log</span>
-      <span class="pri">5 HOPS VERIFIED · 0% PACKET LOSS</span>
-    </div>
-    <div class="hops">
 
+    <div class="hops">
       <div class="hop current rv">
-        <div class="hop-n">05<small>0.3ms</small></div>
-        <div class="card" data-tilt>
-          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+        <div class="hop-n">05</div>
+        <div class="card">
           <div class="hop-head">
             <div class="erole">Senior Network &amp; Security Engineer</div>
-            <div class="pill-grp"><span class="pill rtt">ASN 45489</span><span class="pill live">● CURRENT</span></div>
+            <div class="pill-grp"><span class="pill">Telecommunications &amp; IPTV</span><span class="pill live">● Current Role</span></div>
           </div>
           <div class="eco">SLT-Mobitel PEOTV</div>
           <div class="eaddr">No. 148/15, Lesley Ranagala Mawatha, Colombo 08</div>
           <ul class="elist">
             <li>Ensure compliance with ISO 27001 and PCI DSS standards by enforcing security controls, conducting audits, and maintaining up-to-date network and system documentation</li>
-            <li>Deploy, configure, and optimize Web Application Firewalls (<strong>Radware &amp; SafeLine WAF</strong>), Radware application delivery controllers (ADC), and NGFW appliances to protect backend APIs and ensure high availability</li>
+            <li>Deploy, configure, and optimize Web Application Firewalls (<strong>Radware &amp; SafeLine WAF</strong>), Radware application delivery controllers (ADC), and NGFW appliances to secure backend APIs and ensure high availability</li>
             <li>Oversee end-to-end IPTV platform operations, including satellite signal acquisition, stream ingestion, encoding/decoding workflows, content distribution, and STB lifecycle management</li>
             <li>Design, implement, and manage scalable enterprise LAN/WAN architectures utilizing Cisco and Brocade switching and routing platforms</li>
             <li>Administer and maintain VMware vCenter infrastructure, managing 250+ virtual machines with a focus on resource optimization, high availability, and performance tuning</li>
@@ -1177,71 +1113,67 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
       </div>
 
       <div class="hop rv">
-        <div class="hop-n">04<small>1.1ms</small></div>
-        <div class="card" data-tilt>
-          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+        <div class="hop-n">04</div>
+        <div class="card">
           <div class="hop-head">
             <div class="erole">Network Engineer</div>
-            <div class="pill-grp"><span class="pill rtt">290+ Branches</span><span class="pill">Banking</span></div>
+            <div class="pill-grp"><span class="pill">Banking &amp; Finance</span></div>
           </div>
           <div class="eco">Commercial Bank of Ceylon PLC</div>
           <div class="eaddr">Islandwide Branch Network · No 21, Sir Razik Fareed Mawatha, Colombo 01</div>
           <ul class="elist">
             <li>Upgrading, designing, installing, maintaining, and supporting LAN, WAN, and VoIP infrastructure across all islandwide branches</li>
-            <li>Administration, configuration, troubleshooting, and support of Office 365 cloud apps, Exchange Online, Active Directory Federation Services</li>
-            <li>Capacity planning, health check monitoring, and management reports for data/voice network/messaging platform</li>
-            <li>Ensure Network Security with proactive monitoring and compliance with industry standards</li>
-            <li>Vendor management of services, implementation, maintenance, and support contracts/SLAs</li>
+            <li>Administration, configuration, troubleshooting, and support of Office 365 cloud apps, Exchange Online, and Active Directory Federation Services</li>
+            <li>Capacity planning, health check monitoring, and management reporting for data, voice, and messaging platforms</li>
+            <li>Ensured enterprise network security through proactive monitoring and strict compliance with banking industry standards</li>
+            <li>Managed vendor services, project implementations, maintenance schedules, and support contracts/SLAs</li>
           </ul>
         </div>
       </div>
 
       <div class="hop rv">
-        <div class="hop-n">03<small>1.8ms</small></div>
-        <div class="card" data-tilt>
-          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+        <div class="hop-n">03</div>
+        <div class="card">
           <div class="hop-head">
             <div class="erole">IoT Engineer</div>
-            <div class="pill-grp"><span class="pill rtt">CICT Port</span><span class="pill">Industrial IoT</span></div>
+            <div class="pill-grp"><span class="pill">Industrial IoT</span></div>
           </div>
           <div class="eco">N-able (Pvt) Ltd</div>
           <div class="eaddr">No: 36 Bristol St, Colombo 00100</div>
           <ul class="elist">
-            <li>As site engineer, implemented the Dangerous Gas Monitoring end-to-end IoT solution at CICT — the biggest port terminal in Sri Lanka</li>
-            <li>Developed Smart Office architecture utilizing Image Processing and Zigbee communication protocol</li>
-            <li>Built real-time temperature &amp; humidity monitor using MQTT, AWS IoT cloud, and ESP32</li>
-            <li>Obtained Advantech certification for IoT gateways of the ADAM 6300 and 6700 series</li>
-            <li>Developed vehicle monitoring system using Arduino microcontroller, GPS, and SMS for real-time location tracking</li>
+            <li>As site engineer, implemented the Dangerous Gas Monitoring end-to-end IoT solution at CICT — the largest port terminal in Sri Lanka</li>
+            <li>Developed Smart Office architecture utilizing Image Processing and Zigbee communication protocols</li>
+            <li>Built a real-time temperature &amp; humidity monitoring platform using MQTT, AWS IoT cloud, and ESP32</li>
+            <li>Obtained Advantech certification for industrial IoT gateways of the ADAM 6300 and 6700 series</li>
+            <li>Developed a vehicle monitoring system using Arduino microcontroller, GPS, and SMS for real-time location tracking</li>
           </ul>
         </div>
       </div>
 
       <div class="hop rv">
-        <div class="hop-n">02<small>2.4ms</small></div>
-        <div class="card" data-tilt>
-          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+        <div class="hop-n">02</div>
+        <div class="card">
           <div class="hop-head">
             <div class="erole">Associate Network Engineer</div>
-            <div class="pill-grp"><span class="pill rtt">18 Sites</span><span class="pill">Engineering</span></div>
+            <div class="pill-grp"><span class="pill">Network Integration</span></div>
           </div>
           <div class="eco">NextEn (Pvt) Ltd</div>
           <div class="eaddr">No: 719/1 Ethulkotte, Sri Jayawardenepura Kotte 10100</div>
           <ul class="elist">
-            <li>Completed the routing and switching component of the ICTA Public Library Project — establishment of 18 public libraries across Sri Lanka</li>
-            <li>Built a Unifi Wireless Controller using Raspberry Pi 3</li>
-            <li>Developed a wireless Wi-Fi extender and Wi-Fi jammer using ESP8266</li>
-            <li>Conducted site survey and developed heatmap for frequency, area, and headcount in Aruba Wi-Fi at Kelaniya University</li>
+            <li>Completed the routing and switching deployment for the ICTA Public Library Project across 18 public libraries in Sri Lanka</li>
+            <li>Built a dedicated UniFi Wireless Controller using Raspberry Pi 3</li>
+            <li>Developed a wireless Wi-Fi extender and wireless testing toolkit using ESP8266</li>
+            <li>Conducted wireless site surveys and heatmaps for frequency, area, and headcount on Aruba Wi-Fi at the University of Kelaniya</li>
           </ul>
         </div>
       </div>
 
       <div class="hop rv">
-        <div class="hop-n">01<small>3.0ms</small></div>
-        <div class="card" data-tilt>
-          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+        <div class="hop-n">01</div>
+        <div class="card">
           <div class="hop-head">
             <div class="erole">Trainee Network/Telecom Engineer</div>
-            <div class="pill-grp"><span class="pill rtt">Subsea &amp; Core</span><span class="pill">Internship · Distinction</span></div>
+            <div class="pill-grp"><span class="pill">Internship · Distinction</span></div>
           </div>
           <div class="eco">Dialog Axiata PLC</div>
           <div class="eaddr">Network Operations &amp; Service Assurance · 110 Akbar Brothers' Rd, Colombo</div>
@@ -1253,107 +1185,6 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
           </ul>
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="c">
-    <div class="sh rv">
-      <div class="sh-left">
-        <p class="slabel">05 // Cryptographic Credentials</p>
-        <h2 class="stitle">Cybersecurity Certifications</h2>
-        <p class="sdesc">Industry-verified credentials in ethical hacking, offensive security diagnostics, and enterprise Fortinet NGFW defense.</p>
-      </div>
-      <div class="sh-meta"><span class="kl">└─$</span> gpg --verify certs.asc <span class="ok">[3 VALID SIGNATURES]</span></div>
-    </div>
-
-    <div class="cert-grid">
-      <!-- Cert 1: Cisco Ethical Hacker -->
-      <div class="card cert-card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
-        <div>
-          <div class="cert-top">
-            <div class="cert-issuer-wrap">
-              <div class="cert-logo cisco" aria-hidden="true">CISCO</div>
-              <div>
-                <div class="cert-issuer">Cisco Networking Academy</div>
-                <div class="cert-date">Issued Sep 2026</div>
-              </div>
-            </div>
-            <span class="cert-verified">● VERIFIED</span>
-          </div>
-          <h3 class="cert-title">Ethical Hacker</h3>
-          <p class="cert-desc">Certificate of Completion for the Cisco Networking Academy Ethical Hacker course, validating hands-on proficiency in penetration testing, vulnerability assessment, social engineering analysis, and offensive security methodologies.</p>
-        </div>
-        <div>
-          <div class="cert-cred">
-            <span>STATUS: <code>ACTIVE CREDENTIAL</code></span>
-            <span class="pri">OFFENSIVE SEC</span>
-          </div>
-          <div class="tags">
-            <span>Ethical Hacking</span><span>Penetration Testing</span><span>Vulnerability Assessment</span><span>Network Security</span><span>Kali Linux</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cert 2: Fortinet NSE 3 -->
-      <div class="card cert-card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
-        <div>
-          <div class="cert-top">
-            <div class="cert-issuer-wrap">
-              <div class="cert-logo fortinet" aria-hidden="true">NSE 3</div>
-              <div>
-                <div class="cert-issuer">Fortinet</div>
-                <div class="cert-date">Issued Aug 2026 · Expires Aug 2028</div>
-              </div>
-            </div>
-            <span class="cert-verified">● VERIFIED</span>
-          </div>
-          <h3 class="cert-title">Fortinet NSE 3 Certified in Cybersecurity</h3>
-          <p class="cert-desc">Validates high-level operational proficiency across key Fortinet cybersecurity solutions, including FortiGate core features, threat landscape awareness, zero-trust network access, and secure SD-WAN/VPN architectures.</p>
-        </div>
-        <div>
-          <div class="cert-cred">
-            <span>ID: <code>2677797821MH</code></span>
-            <button type="button" class="cert-copy" data-copy="2677797821MH">COPY ID</button>
-          </div>
-          <div class="tags">
-            <span>Network Security</span><span>FortiGate NGFW</span><span>VPN</span><span>Threat Landscape</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cert 3: Fortinet Firewall Administrator -->
-      <div class="card cert-card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
-        <div>
-          <div class="cert-top">
-            <div class="cert-issuer-wrap">
-              <div class="cert-logo oneaccess" aria-hidden="true">FFA</div>
-              <div>
-                <div class="cert-issuer">OneAccess Technologies</div>
-                <div class="cert-date">Issued Dec 2025</div>
-              </div>
-            </div>
-            <span class="cert-verified">● VERIFIED</span>
-          </div>
-          <h3 class="cert-title">Fortinet Firewall Administrator</h3>
-          <p class="cert-desc">Validates practical administration, security policy engineering, NAT/VPN configuration, high-availability clustering, and real-time packet diagnostics on enterprise Fortinet FortiGate firewall appliances.</p>
-        </div>
-        <div>
-          <div class="cert-cred">
-            <span>ID: <code>OAT/FFA/000973271735</code></span>
-            <button type="button" class="cert-copy" data-copy="OAT/FFA/000973271735">COPY ID</button>
-          </div>
-          <div class="tags">
-            <span>Firewalls</span><span>Fortinet</span><span>NGFW Administration</span><span>HA &amp; Policies</span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -1363,33 +1194,30 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
   <div class="c">
     <div class="sh rv">
       <div class="sh-left">
-        <p class="slabel">06 // Academic Foundation</p>
-        <h2 class="stitle">Education &amp; Research</h2>
-        <p class="sdesc">From secondary school in Galle through to an honours engineering degree at SLIIT, culminating in IEEE-published robotics research.</p>
+        <p class="slabel">06 // Academic Background</p>
+        <h2 class="stitle">Education &amp; Publications</h2>
+        <p class="sdesc">Strong academic foundation in Computer Systems &amp; Network Engineering, backed by IEEE-published research.</p>
       </div>
     </div>
     <div class="edu-grid">
-      <div class="card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
-        <div class="edu-year">2003 — 2016 <span>[school]</span></div>
-        <div class="edu-name">Mahinda College, Galle</div>
-        <div class="edu-deg">Biological Science Stream</div>
-        <div class="edu-notes">G.C.E. O/L 2013 — 8 A passes, 1 C pass · G.C.E. A/L 2018 — 2 C passes, 2 S passes</div>
-      </div>
-      <div class="card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
-        <div class="edu-year">2018 — 2019 <span>[diploma]</span></div>
-        <div class="edu-name">ESOFT Metro Campus</div>
-        <div class="edu-deg">Diploma in IT (International)</div>
-        <div class="edu-notes">Successfully completed the DiTec half-year Dip.IT at ESOFT Galle.</div>
-      </div>
-      <div class="card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
-        <div class="edu-year">2019 — 2022 <span>[degree]</span></div>
+      <div class="card rv">
+        <div class="edu-year">2019 — 2022 <span>Honours Degree</span></div>
         <div class="edu-name">SLIIT — Sri Lanka Institute of Information Technology</div>
         <div class="edu-deg">BSc (Hons) Computer Systems &amp; Network Engineering</div>
         <div class="edu-notes">Final-year research: Computer Vision–Based Navigation Robot — exhibited at University of Moratuwa. Projects included robotics, face recognition, IoT systems, and full-stack web development.</div>
-        <span class="ieee">★ IEEE PUBLISHED · ICITR 2022</span>
+        <span class="ieee">★ Published in IEEE · ICITR 2022</span>
+      </div>
+      <div class="card rv">
+        <div class="edu-year">2018 — 2019 <span>Diploma</span></div>
+        <div class="edu-name">ESOFT Metro Campus</div>
+        <div class="edu-deg">Diploma in IT (International)</div>
+        <div class="edu-notes">Successfully completed the DiTec half-year Diploma in Information Technology at ESOFT Galle.</div>
+      </div>
+      <div class="card rv">
+        <div class="edu-year">2003 — 2016 <span>Secondary Education</span></div>
+        <div class="edu-name">Mahinda College, Galle</div>
+        <div class="edu-deg">Biological Science Stream</div>
+        <div class="edu-notes">G.C.E. O/L 2013 — 8 A passes, 1 C pass · G.C.E. A/L 2018 — 2 C passes, 2 S passes.</div>
       </div>
     </div>
   </div>
@@ -1401,34 +1229,28 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
   <div class="c">
     <div class="sh rv">
       <div class="sh-left">
-        <p class="slabel">07 // Establish Handshake</p>
+        <p class="slabel">07 // Get In Touch</p>
         <h2 class="stitle">Let's <span class="grad">Work Together</span></h2>
-        <p class="sdesc">Available for network security consulting, WAF/NGFW architecture, freelance engagements, and senior engineering opportunities.</p>
+        <p class="sdesc">Whether you're a recruiter hiring for a senior network/security role or an organization seeking consulting on NGFW, WAF, or infrastructure — I'd love to connect.</p>
       </div>
     </div>
 
     <div class="contact-grid">
       <div class="rv">
-        <div class="ssh-box">
-          <div><span class="kl">┌──(</span><span class="ku">manula㉿kali</span><span class="kl">)-[</span><span class="kd">~/comms</span><span class="kl">]</span></div>
-          <div><span class="kl">└─</span><span class="ku">$</span> nc -lvnp 443 --ssl</div>
-          <div class="pri" style="margin-top:.3rem">listening on [0.0.0.0] 443 (TLSv1.3) … awaiting incoming connection <span class="typed-cursor">▋</span></div>
-        </div>
-
         <div class="clinks">
           <a href="mailto:manulasapu2016@gmail.com" class="clink main">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
             manulasapu2016@gmail.com
           </a>
           <button type="button" class="clink" id="copy-email-btn">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
             Copy Email
           </button>
           <a href="tel:+94717435584" class="clink">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             (+94) 71 743 5584
           </a>
-          <a href="https://linkedin.com/in/manula97" target="_blank" rel="noopener noreferrer" class="clink">LinkedIn</a>
+          <a href="https://linkedin.com/in/manula97" target="_blank" rel="noopener noreferrer" class="clink">LinkedIn Profile</a>
           <a href="https://wa.me/94717435584" target="_blank" rel="noopener noreferrer" class="clink">WhatsApp</a>
           <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" class="clink">GitHub</a>
         </div>
@@ -1438,33 +1260,31 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
         </div>
       </div>
 
-      <!-- INTERACTIVE PACKET TRANSMITTER -->
-      <div class="card rv" data-tilt>
-        <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span><span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
-        <form class="pkt-form" id="pkt-form">
-          <div class="pkt-head">
-            <span>// ENCRYPTED PAYLOAD TRANSMITTER</span>
-            <span>PROTO: TLS 1.3</span>
+      <div class="card rv">
+        <form class="msg-form" id="msg-form">
+          <div>
+            <div class="msg-head">Send a Quick Message</div>
+            <div class="msg-sub">Reach out directly via Email or WhatsApp in one click.</div>
           </div>
           <div class="fgrp">
-            <label for="pf-name">SOURCE_HOST (Your Name / Org)</label>
-            <input class="finput" id="pf-name" type="text" placeholder="e.g. Alex Rivera // CloudSec Corp" required>
+            <label for="pf-name">Your Name / Organization</label>
+            <input class="finput" id="pf-name" type="text" placeholder="e.g. Sarah Jenkins — Tech Recruiter" required>
           </div>
           <div class="fgrp">
-            <label for="pf-subj">PACKET_HEADER (Subject / Scope)</label>
-            <input class="finput" id="pf-subj" type="text" placeholder="e.g. Network Security / WAF Consulting Inquiry" required>
+            <label for="pf-subj">Subject</label>
+            <input class="finput" id="pf-subj" type="text" placeholder="e.g. Senior Network Security Role / Consulting" required>
           </div>
           <div class="fgrp">
-            <label for="pf-msg">PAYLOAD_DATA (Message)</label>
-            <textarea class="finput" id="pf-msg" rows="4" placeholder="Write your message payload here..." required></textarea>
+            <label for="pf-msg">Message</label>
+            <textarea class="finput" id="pf-msg" rows="4" placeholder="Hi Manula, I came across your profile and would love to discuss..." required></textarea>
           </div>
           <div class="fbtns">
             <button type="submit" class="bpri">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              Transmit via Email
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send via Email
             </button>
             <button type="button" class="bsec" id="pf-wa">
-              Transmit via WhatsApp
+              Send via WhatsApp
             </button>
           </div>
         </form>
@@ -1477,19 +1297,18 @@ footer{border-top:1px solid var(--div);background:var(--bg2)}
 
 <footer>
   <div class="fi-in">
-    <span class="flogo">MPH · Manula Pamod Haputhanthrie ™</span>
-    <div class="fstat"><span class="fdot"></span><span>all systems operational · session uptime <span id="uptime">00:00:00</span></span></div>
-    <span>© <span id="yr"></span> ms97.live · <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" class="pri">GitHub</a></span>
+    <span class="flogo">Manula Pamod Haputhanthrie</span>
+    <div class="fstat"><span class="fdot"></span><span>Colombo, Sri Lanka · Available for Global &amp; Local Opportunities</span></div>
+    <span>© <span id="yr"></span> ms97.live · <a href="https://linkedin.com/in/manula97" target="_blank" rel="noopener noreferrer" class="pri">LinkedIn</a> · <a href="https://github.com/Manula97" target="_blank" rel="noopener noreferrer" class="pri">GitHub</a></span>
   </div>
 </footer>
 
 <script>
 const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const root=document.documentElement;
 
-/* ---------- Toast helper ---------- */
+/* ---------- Toast Notification ---------- */
 let toastTimer;
 function showToast(msg){
   const t=$('#toast');
@@ -1505,31 +1324,18 @@ const moon='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="
 const sun='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
 const setIcon=()=>tbtn.innerHTML=root.dataset.theme==='dark'?moon:sun;
 setIcon();
-function toggleTheme(){
+tbtn.addEventListener('click',()=>{
   root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';
   localStorage.setItem('theme',root.dataset.theme);
   setIcon(); readColors();
-  showToast(`[SYS] Theme switched to ${root.dataset.theme.toUpperCase()} mode`);
-}
-tbtn.addEventListener('click',toggleTheme);
+});
 
-/* ---------- Live Colombo Clock (UTC+5:30) ---------- */
-function tickClock(){
-  const now=new Date();
-  const sriLankaTime=new Intl.DateTimeFormat('en-GB',{
-    timeZone:'Asia/Colombo',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false
-  }).format(now);
-  const el=$('#lk-clock');
-  if(el) el.textContent=sriLankaTime;
-}
-tickClock(); setInterval(tickClock,1000);
-
-/* ---------- Mobile menu ---------- */
+/* ---------- Mobile Menu ---------- */
 const ham=$('#ham'),mm=$('#mmenu');
 ham.addEventListener('click',()=>mm.classList.toggle('open'));
 $$('#mmenu a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('open')));
 
-/* ---------- Scroll progress + active nav ---------- */
+/* ---------- Scroll Progress + Active Nav ---------- */
 const prog=$('#progress');
 addEventListener('scroll',()=>{
   const h=document.documentElement;
@@ -1556,197 +1362,102 @@ $$('.rv').forEach(el=>rio.observe(el));
   $('#yr').textContent=n.getFullYear();
 })();
 
-/* ---------- Name Cyber-Decode Effect ---------- */
-const glyphs='!<>-_\\/[]{}=+*^?#01ABCDEF';
-function scramble(el){
-  const final=el.dataset.text; let f=0; const total=final.length*3+6;
-  cancelAnimationFrame(el._r);
-  (function step(){
-    let out='';
-    for(let i=0;i<final.length;i++) out+= i<(f-6)/3 ? final[i] : glyphs[Math.random()*glyphs.length|0];
-    el.textContent=out; f++;
-    if(f<=total) el._r=requestAnimationFrame(step); else el.textContent=final;
-  })();
-}
-if(!RM){ $$('.scr').forEach((el,i)=>setTimeout(()=>scramble(el),i*250)); }
-$('#hname').addEventListener('mouseenter',()=>{ if(!RM) $$('.scr').forEach(scramble); });
-
 /* ---------- Typed Roles ---------- */
 const roles=[
-  'Network Security Engineer',
-  'WAF Specialist (Radware & SafeLine)',
-  'Cisco Certified Ethical Hacker',
-  'Fortinet NSE 3 Certified Engineer',
-  'IPTV & Multicast Specialist',
-  'VMware vCenter Administrator',
-  'Electronics & IoT Developer',
-  'Photographer · Google Local Guide L08'
+  'Enterprise Network Security & NGFW',
+  'Radware & SafeLine WAF Environments',
+  'ISO 27001 & PCI DSS Compliance',
+  'Cisco Certified Ethical Hacking',
+  'IPTV Broadcast & Multicast Networks',
+  'VMware vCenter (250+ VMs) & Cloud',
+  'Enterprise Routing & Switching'
 ];
 let ri=0,ci=0,del=false; const tout=$('#typed-out');
 (function type(){
   const r=roles[ri];
   ci+=del?-1:1;
-  tout.innerHTML=r.substring(0,ci)+'<span class="typed-cursor">▋</span>';
-  if(!del&&ci===r.length){del=true;return setTimeout(type,2000);}
+  tout.innerHTML=r.substring(0,ci)+'<span class="typed-cursor">|</span>';
+  if(!del&&ci===r.length){del=true;return setTimeout(type,2100);}
   if(del&&ci===0){del=false;ri=(ri+1)%roles.length;}
-  setTimeout(type,del?40:80);
+  setTimeout(type,del?35:70);
 })();
 
-/* ---------- Interactive Kali Terminal + SIEM Stream ---------- */
-const tb=$('#tbody');
-let activeTab='zsh', siemInterval=null;
-const kp=(path='~')=>`<div><span class="kl">┌──(</span><span class="ku">manula㉿kali</span><span class="kl">)-[</span><span class="kd">${path}</span><span class="kl">]</span></div><div><span class="kl">└─</span><span class="ku">$</span> <span class="tc"></span></div>`;
-
-const seq=[
-  {p:'~',c:'whoami && id',o:[
-    'manula (Manula Pamod Haputhanthrie)',
-    'uid=1000(manula) gid=1000(manula) groups=27(sudo),1001(netsec),1002(waf-admin)',
-    '<span class="tinfo">[*]</span> Role: Senior Network &amp; Security Engineer @ SLT-Mobitel PEOTV']},
-  {p:'~/recon',c:'nmap -sV --script=skills,waf,certs manula.local',o:[
-    'Nmap scan report for manula.local (10.0.0.97)',
-    'PORT      STATE SERVICE     VERSION',
-    '<span class="thi">443/tcp</span>   <span class="tok">open</span>  <span class="tac">ngfw</span>        Fortinet FortiGate · Check Point · pfSense',
-    '<span class="thi">8443/tcp</span>  <span class="tok">open</span>  <span class="tac">waf-adc</span>     Radware WAF &amp; Alteon ADC · SafeLine WAF',
-    '<span class="thi">4433/tcp</span>  <span class="tok">open</span>  <span class="tac">ids-ips</span>     IDS/IPS · Threat Hunting · Kali Linux',
-    '<span class="thi">27001/tcp</span> <span class="tok">open</span>  <span class="tac">compliance</span>  ISO 27001 · PCI DSS',
-    '<span class="thi">902/tcp</span>   <span class="tok">open</span>  <span class="tac">vmware</span>      vCenter · 250+ VMs',
-    '<span class="thi">1883/tcp</span>  <span class="tok">open</span>  <span class="tac">mqtt</span>        IoT · AWS · Python · CICT Port',
-    'Nmap done: 1 IP address (1 host up) scanned in 0.38 seconds']},
-  {p:'~/certs',c:'gpg --verify certs.asc',o:[
-    '<span class="tok">[✓]</span> <span class="thi">Ethical Hacker</span> — Cisco Networking Academy (Sep 2026)',
-    '<span class="tok">[✓]</span> <span class="thi">Fortinet NSE 3 Certified in Cybersecurity</span> — ID: 2677797821MH',
-    '<span class="tok">[✓]</span> <span class="thi">Fortinet Firewall Administrator</span> — ID: OAT/FFA/000973271735',
-    '<span class="tinfo">[i]</span> Type <span class="thi">help</span>, <span class="thi">certs</span>, or <span class="thi">waf</span> below to run interactive diagnostics!']}
-];
-
-function appendPromptCursor(){
-  const old=$('.prompt-tail',tb);
-  if(old) old.remove();
-  const last=document.createElement('div');
-  last.className='cmd prompt-tail';
-  last.innerHTML=kp('~').replace('<span class="tc"></span>','<span class="tcur"></span>');
-  tb.appendChild(last);
-  tb.scrollTop=tb.scrollHeight;
-}
-
-(async function runTerm(){
-  await sleep(RM?0:500);
-  for(const s of seq){
-    if(activeTab!=='zsh') return;
-    const line=document.createElement('div'); line.className='cmd';
-    line.innerHTML=kp(s.p); tb.appendChild(line);
-    const c=line.querySelector('.tc');
-    for(const ch of s.c){ c.textContent+=ch; if(!RM) await sleep(20+Math.random()*25); }
-    await sleep(RM?0:220);
-    for(const o of s.o){
-      const d=document.createElement('div'); d.className='to'; d.innerHTML=o;
-      tb.appendChild(d); tb.scrollTop=tb.scrollHeight;
-      await sleep(RM?0:65);
-    }
-    await sleep(RM?0:350);
+/* ---------- Hero Dual-Mode Switcher (Executive Snapshot vs Terminal View) ---------- */
+const scTabs=$$('.sc-tab');
+function switchHeroView(view){
+  scTabs.forEach(t=>{
+    const isAct=t.dataset.view===view;
+    t.classList.toggle('active',isAct);
+    t.setAttribute('aria-selected',isAct);
+  });
+  $('#pane-exec').classList.toggle('active',view==='exec');
+  $('#pane-term').classList.toggle('active',view==='term');
+  if(view==='term' && !tb.innerHTML.trim()){
+    execTermCommand('certs');
   }
-  appendPromptCursor();
-})();
+}
+scTabs.forEach(t=>t.addEventListener('click',()=>switchHeroView(t.dataset.view)));
+$('#try-term-btn').addEventListener('click',()=>switchHeroView('term'));
 
+/* ---------- Interactive Terminal (For Technical Visitors) ---------- */
+const tb=$('#tbody');
 const cliCommands={
   help:[
-    '<span class="thi">Available interactive commands:</span>',
-    '  <span class="thi">certs</span>      — Verify Cybersecurity Certifications &amp; Credential IDs',
-    '  <span class="thi">waf</span>        — Inspect Radware &amp; SafeLine WAF cluster status',
-    '  <span class="thi">neofetch</span>   — Display system &amp; engineer hardware/OS summary',
-    '  <span class="thi">nmap</span>       — Run port &amp; security capability scan',
-    '  <span class="thi">bgp</span>        — Show BGP/Routing &amp; IPTV Multicast table summary',
-    '  <span class="thi">traceroute</span> — Trace career path across 5 organizations',
-    '  <span class="thi">contact</span>    — Display direct contact channels',
-    '  <span class="thi">clear</span>      — Clear terminal buffer'
+    '<span class="thi">Available commands:</span>',
+    '  <span class="thi">certs</span>   — View verified Cybersecurity Certifications',
+    '  <span class="thi">waf</span>     — View Radware &amp; SafeLine WAF / NGFW capabilities',
+    '  <span class="thi">skills</span>  — View technical proficiency summary',
+    '  <span class="thi">career</span>  — View 5-company career history',
+    '  <span class="thi">clear</span>   — Clear terminal screen'
   ],
   certs:[
     '<span class="thi">=== VERIFIED CYBERSECURITY CERTIFICATIONS ===</span>',
-    '<span class="tok">[01]</span> <span class="thi">Ethical Hacker</span> — Cisco Networking Academy',
-    '     Issued: Sep 2026 · Scope: Penetration Testing, Vulnerability Assessment, NetSec',
-    '<span class="tok">[02]</span> <span class="thi">Fortinet NSE 3 Certified in Cybersecurity</span> — Fortinet',
-    '     Issued: Aug 2026 · Expires: Aug 2028 · Credential ID: <span class="tac">2677797821MH</span>',
-    '<span class="tok">[03]</span> <span class="thi">Fortinet Firewall Administrator</span> — OneAccess Technologies',
-    '     Issued: Dec 2025 · Credential ID: <span class="tac">OAT/FFA/000973271735</span>'
+    '<span class="tok">[✓]</span> <span class="thi">Ethical Hacker</span> — Cisco Networking Academy (Issued Sep 2026)',
+    '<span class="tok">[✓]</span> <span class="thi">Fortinet NSE 3 Certified in Cybersecurity</span> (Aug 2026 – Aug 2028)',
+    '    Credential ID: <span class="tac">2677797821MH</span>',
+    '<span class="tok">[✓]</span> <span class="thi">Fortinet Firewall Administrator</span> — OneAccess (Issued Dec 2025)',
+    '    Credential ID: <span class="tac">OAT/FFA/000973271735</span>'
   ],
   waf:[
-    '<span class="thi">=== WAF &amp; ADC ENGINE DIAGNOSTICS ===</span>',
-    '<span class="tok">[ONLINE]</span> <span class="thi">Radware WAF &amp; Alteon ADC</span> — L4/L7 Load Balancing, SSL Offload, OWASP Top-10 Shield',
-    '<span class="tok">[ONLINE]</span> <span class="thi">SafeLine WAF (Chaitin Tech)</span> — Semantic Engine Reverse-Proxy, API Bot/SQLi/XSS Mitigation',
-    '<span class="tok">[ONLINE]</span> <span class="thi">Perimeter NGFW</span> — Fortinet FortiGate &amp; Check Point HA Clusters (ISO 27001 / PCI DSS)'
+    '<span class="thi">=== APPLICATION &amp; PERIMETER SECURITY STACK ===</span>',
+    '<span class="tok">[ACTIVE]</span> <span class="thi">Radware WAF &amp; Alteon ADC</span> — L4/L7 Load Balancing &amp; OWASP Top-10 Protection',
+    '<span class="tok">[ACTIVE]</span> <span class="thi">SafeLine WAF</span> — Semantic Analysis Reverse-Proxy &amp; API Threat Mitigation',
+    '<span class="tok">[ACTIVE]</span> <span class="thi">NGFW</span> — Fortinet FortiGate, Check Point &amp; pfSense (ISO 27001 / PCI DSS)'
   ],
-  neofetch:[
-    '<span class="thi">       .---.        manula@kali.ms97.live</span>',
-    '<span class="thi">      /     \\       ---------------------</span>',
-    '<span class="thi">      \\.@-@./       OS:</span> Kali GNU/Linux Rolling x86_64',
-    '<span class="thi">      /`\\_/`\\       Role:</span> Senior Network &amp; Security Engineer',
-    '<span class="thi">     //  _  \\\\      Org:</span> SLT-Mobitel PEOTV (Colombo, LK)',
-    '<span class="thi">    | \\     )|_     Degree:</span> BSc (Hons) CS &amp; NE — SLIIT',
-    '<span class="thi">   /`\\_`>  <_/ \\    SecOps:</span> FortiGate, Check Point, Radware, SafeLine WAF',
-    '<span class="thi">   \\__/"---"\\__/    Certs:</span> Cisco Ethical Hacker · Fortinet NSE 3 · FFA'
+  skills:[
+    '<span class="thi">=== CORE TECHNICAL PROFICIENCY ===</span>',
+    '  Routing &amp; Switching (Cisco, Brocade, Huawei) .... <span class="tok">95%</span>',
+    '  NGFW (Fortinet, Check Point, pfSense) ........... <span class="tok">90%</span>',
+    '  WAF &amp; Proxy (Radware WAF, SafeLine WAF) ......... <span class="tok">90%</span>',
+    '  VMware vCenter (250+ VMs) &amp; Cloud ............... <span class="tok">85%</span>',
+    '  Radware ADC Load Balancing &amp; Mail Security ...... <span class="tok">80%</span>'
   ],
-  nmap:[
-    'Starting Nmap 7.95 ( https://nmap.org )',
-    '<span class="thi">443/tcp</span>   <span class="tok">open</span>  ngfw       FortiGate · Check Point · pfSense (90%)',
-    '<span class="thi">8443/tcp</span>  <span class="tok">open</span>  waf-adc    Radware WAF/ADC · SafeLine WAF (90%)',
-    '<span class="thi">179/tcp</span>   <span class="tok">open</span>  bgp        Cisco IOS/NX-OS · Huawei · Brocade (95%)',
-    '<span class="thi">902/tcp</span>   <span class="tok">open</span>  vcenter    VMware ESXi/vCenter · 250+ VMs (85%)',
-    '<span class="thi">27001/tcp</span> <span class="tok">open</span>  sec-audit  ISO 27001 &amp; PCI DSS Enforcement'
-  ],
-  bgp:[
-    'BGP router identifier 10.0.0.97, local AS number 45489',
-    'Neighbor        V    AS   MsgRcvd   MsgSent   State/PfxRcd',
-    '<span class="thi">172.16.10.1</span>     4 45489    948210    948195   <span class="tok">Established (IPTV-Core)</span>',
-    '<span class="thi">172.16.20.1</span>     4 45489    612044    612040   <span class="tok">Established (Radware-ADC-HA)</span>',
-    '<span class="thi">192.168.99.1</span>    4 65001    410922    410918   <span class="tok">Established (FortiGate-NGFW)</span>'
-  ],
-  traceroute:[
-    'traceroute to career.ms97.live (10.0.0.97), 5 hops max:',
-    ' 1  dialog-axiata.lk (10.1.0.1)       0.4 ms  [Trainee Network Engineer · Distinction]',
-    ' 2  nexten.lk (10.2.0.1)              0.9 ms  [Associate Network Engineer · 18 Libraries]',
-    ' 3  n-able.lk (10.3.0.1)              1.4 ms  [IoT Engineer · CICT Port Gas Monitoring]',
-    ' 4  combank.lk (10.4.0.1)             1.9 ms  [Network Engineer · Islandwide Banking WAN]',
-    ' 5  <span class="thi">peotv.slt.lk (10.0.0.97)</span>          <span class="tok">0.2 ms  [Senior Network &amp; Security Engineer · CURRENT]</span>'
-  ],
-  contact:[
-    '<span class="tok">[+]</span> Personal Email : manulasapu2016@gmail.com',
-    '<span class="tok">[+]</span> Work Email     : manula.pamod@slt.com.lk',
-    '<span class="tok">[+]</span> Phone / WA     : (+94) 71 743 5584',
-    '<span class="tok">[+]</span> LinkedIn       : linkedin.com/in/manula97'
+  career:[
+    '<span class="thi">=== PROFESSIONAL EXPERIENCE ===</span>',
+    '  05. <span class="thi">SLT-Mobitel PEOTV</span> — Senior Network &amp; Security Engineer (Current)',
+    '  04. <span class="thi">Commercial Bank of Ceylon</span> — Network Engineer',
+    '  03. <span class="thi">N-able (Pvt) Ltd</span> — IoT Engineer (CICT Port Terminal)',
+    '  02. <span class="thi">NextEn (Pvt) Ltd</span> — Associate Network Engineer',
+    '  01. <span class="thi">Dialog Axiata PLC</span> — Trainee Network/Telecom Engineer (Distinction)'
   ]
 };
-cliCommands['nmap --skills']=cliCommands.nmap;
 cliCommands['waf --status']=cliCommands.waf;
-cliCommands['show ip bgp']=cliCommands.bgp;
-cliCommands.skills=cliCommands.nmap;
 
 function execTermCommand(raw){
   const cmd=raw.trim().toLowerCase();
   if(!cmd) return;
-  if(activeTab!=='zsh') switchTermTab('zsh');
-  const tail=$('.prompt-tail',tb);
-  if(tail) tail.remove();
-  if(cmd==='clear'){
-    tb.innerHTML='';
-    appendPromptCursor();
-    return;
-  }
-  const line=document.createElement('div'); line.className='cmd';
-  line.innerHTML=kp('~');
-  line.querySelector('.tc').textContent=raw;
+  if(cmd==='clear'){ tb.innerHTML=''; return; }
+  const line=document.createElement('div');
+  line.className='cmd';
+  line.innerHTML=`<span class="kl">manula@kali:~$</span> <span class="ku">${raw.replace(/[<>&]/g,'')}</span>`;
   tb.appendChild(line);
-
-  const out=cliCommands[cmd] || [
-    `<span class="tbad">zsh: command not found: ${raw.replace(/[<>&]/g,'')}</span>`,
-    `Type <span class="thi">help</span>, <span class="thi">certs</span>, or <span class="thi">waf</span> to list available diagnostic commands.`
-  ];
-  out.forEach(lineHtml=>{
-    const d=document.createElement('div'); d.className='to'; d.innerHTML=lineHtml;
+  const out=cliCommands[cmd] || [`Command not found: ${raw.replace(/[<>&]/g,'')}. Type <span class="thi">help</span>.`];
+  out.forEach(h=>{
+    const d=document.createElement('div'); d.className='to'; d.innerHTML=h;
     tb.appendChild(d);
   });
-  appendPromptCursor();
+  tb.scrollTop=tb.scrollHeight;
 }
-
 $('#tform').addEventListener('submit',e=>{
   e.preventDefault();
   const inp=$('#tinput');
@@ -1755,62 +1466,20 @@ $('#tform').addEventListener('submit',e=>{
 });
 $$('.tchip').forEach(btn=>btn.addEventListener('click',()=>execTermCommand(btn.dataset.cmd)));
 
-function switchTermTab(tab){
-  activeTab=tab;
-  $$('.ttab').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
-  clearInterval(siemInterval);
-  tb.innerHTML='';
-  if(tab==='siem'){
-    const sampleLogs=[
-      () => `<span class="twarn">[WAF]</span>   SafeLine-WAF src=45.155.205.${1+Math.random()*250|0} uri="/api/v1/subscriber" sig="SQLi-Semantic-Detect" action=BLOCK`,
-      () => `<span class="twarn">[WAF]</span>   Radware-AppWall vip=172.16.20.10 src=103.41.12.${1+Math.random()*250|0} attack="OWASP-XSS-Payload" action=DROP`,
-      () => `<span class="tok">[ADC]</span>   Radware-Alteon pool=PEOTV-MW-CLUSTER health=UP active_servers=8 rtt=0.6ms`,
-      () => `<span class="tbad">[DROP]</span>  FortiGate-NGFW src=185.220.101.${1+Math.random()*250|0} dst=10.0.0.97 dport=22 policy="SSH-Brute-Prevent" cert=NSE3`,
-      () => `<span class="tok">[ALLOW]</span> PIM-MCAST src=10.20.4.${10+Math.random()*200|0} grp=239.192.1.${1+Math.random()*50|0} proto=UDP msg="IPTV Stream Healthy"`,
-      () => `<span class="tinfo">[AUDIT]</span> ISO27001-PCI host=vcenter.slt.local vms=254 status=COMPLIANT ha_state=HEALTHY`
-    ];
-    const hdr=document.createElement('div');
-    hdr.className='to thi';
-    hdr.textContent='=== STREAMING LIVE RADWARE WAF / SAFELINE WAF / FORTIGATE NGFW TELEMETRY ===';
-    tb.appendChild(hdr);
-    const pushLog=()=>{
-      const d=document.createElement('div'); d.className='to';
-      const ts=new Date().toISOString().slice(11,19);
-      d.innerHTML=`<span style="color:var(--txf)">${ts}</span> `+sampleLogs[Math.random()*sampleLogs.length|0]();
-      tb.appendChild(d);
-      if(tb.children.length>35) tb.removeChild(tb.children[1]);
-      tb.scrollTop=tb.scrollHeight;
-    };
-    for(let i=0;i<7;i++) pushLog();
-    siemInterval=setInterval(pushLog,1150);
-  } else {
-    execTermCommand('certs');
-  }
-}
-$$('.ttab').forEach(b=>b.addEventListener('click',()=>switchTermTab(b.dataset.tab)));
-
-/* ---------- Counters ---------- */
+/* ---------- Animated Counters ---------- */
 const cio=new IntersectionObserver(es=>es.forEach(e=>{
   if(!e.isIntersecting) return;
-  const el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||'',t0=performance.now(),dur=RM?1:1600;
+  const el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||'',t0=performance.now(),dur=RM?1:1500;
   (function f(t){const p=Math.min((t-t0)/dur,1);el.textContent=Math.round(end*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(f);})(t0);
   cio.unobserve(el);
 }),{threshold:.5});
 $$('[data-count]').forEach(el=>cio.observe(el));
 
-/* ---------- Skill LED Bars + Category Filter ---------- */
-$$('.sk').forEach(sk=>{
-  const seg=$('.seg',sk),n=20,on=Math.round(+sk.dataset.v/100*n);
-  for(let i=0;i<n;i++){
-    const s=document.createElement('i');
-    s.style.setProperty('--k',i/(n-1));
-    if(i<on) s.dataset.on='';
-    seg.appendChild(s);
-  }
-});
+/* ---------- Skill Bars + Filter ---------- */
 const sio=new IntersectionObserver(es=>es.forEach(e=>{
   if(!e.isIntersecting) return;
-  $$('.seg i[data-on]',e.target).forEach((s,i)=>setTimeout(()=>s.classList.add('on'),RM?0:i*40));
+  const fill=$('.bar-fill',e.target);
+  if(fill) fill.style.width=e.target.dataset.v+'%';
   sio.unobserve(e.target);
 }),{threshold:.3});
 $$('.sk').forEach(s=>sio.observe(s));
@@ -1819,68 +1488,45 @@ $$('.sk-flt').forEach(btn=>btn.addEventListener('click',()=>{
   $$('.sk-flt').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   const f=btn.dataset.filter;
-  $$('.sk').forEach(card=>{
-    card.classList.toggle('hidden', f!=='all' && card.dataset.cat!==f);
-  });
+  $$('.sk').forEach(card=>card.classList.toggle('hidden', f!=='all' && card.dataset.cat!==f));
 }));
 
-/* ---------- Copy Credential ID Buttons ---------- */
+/* ---------- Copy Credential ID ---------- */
 $$('.cert-copy').forEach(btn=>btn.addEventListener('click',()=>{
   const id=btn.dataset.copy;
   navigator.clipboard?.writeText(id);
-  showToast(`[+] Credential ID ${id} copied to clipboard`);
+  showToast(`Copied Credential ID: ${id}`);
 }));
 
-/* ---------- Spotlight + Subtle 3D Tilt Cards ---------- */
-$$('.card').forEach(c=>{
-  c.addEventListener('pointermove',e=>{
-    const r=c.getBoundingClientRect();
-    const x=e.clientX-r.left, y=e.clientY-r.top;
-    c.style.setProperty('--mx',x+'px');
-    c.style.setProperty('--my',y+'px');
-    if(!RM && c.hasAttribute('data-tilt') && matchMedia('(pointer:fine)').matches){
-      const rx=((y/r.height)-.5)*-4.5;
-      const ry=((x/r.width)-.5)*4.5;
-      c.style.transform=`perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-4px)`;
-    }
-  });
-  c.addEventListener('pointerleave',()=>{
-    c.style.transform='';
-  });
-});
+/* ---------- Card Spotlight Effect ---------- */
+$$('.card').forEach(c=>c.addEventListener('pointermove',e=>{
+  const r=c.getBoundingClientRect();
+  c.style.setProperty('--mx',(e.clientX-r.left)+'px');
+  c.style.setProperty('--my',(e.clientY-r.top)+'px');
+}));
 
-/* ---------- Tech Marquee (Updated with WAF, Radware, SafeLine & Certs) ---------- */
+/* ---------- Tech Marquee ---------- */
 const SI='https://cdn.simpleicons.org/', DI='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/';
 const tech=[
-  ['Kali Linux',SI+'kalilinux'],['Fortinet NGFW (NSE 3)',SI+'fortinet'],['Radware WAF & ADC',null],['SafeLine WAF',null],
-  ['Cisco Ethical Hacker',SI+'cisco'],['Check Point',null],['pfSense',SI+'pfsense'],
-  ['Linux',SI+'linux'],['Docker',SI+'docker'],['NGINX Reverse Proxy',SI+'nginx'],
-  ['Python',SI+'python'],['VMware vCenter',SI+'vmware'],
+  ['Fortinet NGFW (NSE 3)',SI+'fortinet'],['Radware WAF & ADC',null],['SafeLine WAF',null],
+  ['Cisco Ethical Hacker',SI+'cisco'],['Check Point',null],['Kali Linux',SI+'kalilinux'],['pfSense',SI+'pfsense'],
+  ['VMware vCenter',SI+'vmware'],['Cisco IOS/NX-OS',SI+'cisco'],['Huawei',SI+'huawei'],['Brocade',SI+'broadcom'],
+  ['Linux',SI+'linux'],['Docker',SI+'docker'],['NGINX',SI+'nginx'],['Python',SI+'python'],
   ['AWS',DI+'amazonwebservices/amazonwebservices-original-wordmark.svg'],
-  ['Azure',DI+'azure/azure-original.svg'],['Cisco IOS/NX-OS',SI+'cisco'],
-  ['Huawei',SI+'huawei'],['Brocade',SI+'broadcom'],
-  ['Windows Server',DI+'windows8/windows8-original.svg'],['Java',DI+'java/java-original.svg'],
-  ['ESP32/ESP8266',SI+'espressif'],['Raspberry Pi',SI+'raspberrypi'],['MQTT/IoT',SI+'mqtt'],
-  ['TensorFlow',SI+'tensorflow'],['OpenCV',SI+'opencv'],['ROS',SI+'ros']
+  ['Azure',DI+'azure/azure-original.svg'],['Windows Server',DI+'windows8/windows8-original.svg'],
+  ['ESP32 / IoT',SI+'espressif'],['MQTT',SI+'mqtt'],['TensorFlow',SI+'tensorflow'],['ROS',SI+'ros']
 ];
 const set=()=>'<div class="mq-set">'+tech.map(([n,u])=>`<span class="chip">${u?`<img class="ico" src="${u}" alt="" loading="lazy">`:''}${n}</span>`).join('')+'</div>';
 $('#mq').innerHTML=set()+set().replace('class="mq-set"','class="mq-set" aria-hidden="true"');
 
-/* ---------- Mouse Glow (Desktop) ---------- */
+/* ---------- Mouse Glow ---------- */
 const glow=$('#mouse-glow');
 if(matchMedia('(pointer:fine)').matches){
   document.addEventListener('mousemove',e=>{glow.style.opacity='1';glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';});
   document.addEventListener('mouseleave',()=>glow.style.opacity='0');
 }
 
-/* ---------- Footer Uptime ---------- */
-const tStart=Date.now();
-setInterval(()=>{
-  const s=Math.floor((Date.now()-tStart)/1000);
-  $('#uptime').textContent=[s/3600|0,(s/60|0)%60,s%60].map(x=>String(x).padStart(2,'0')).join(':');
-},1000);
-
-/* ---------- vCard Generator & Copy Email ---------- */
+/* ---------- vCard Download & Copy Email ---------- */
 function downloadVCard(){
   const vcf=[
     'BEGIN:VCARD',
@@ -1892,8 +1538,7 @@ function downloadVCard(){
     'EMAIL;TYPE=INTERNET:manulasapu2016@gmail.com',
     'EMAIL;TYPE=WORK:manula.pamod@slt.com.lk',
     'URL:https://www.ms97.live',
-    'NOTE:Certifications: Cisco Ethical Hacker, Fortinet NSE 3 (2677797821MH), Fortinet Firewall Administrator (OAT/FFA/000973271735)',
-    'ADR;TYPE=WORK:;;Colombo;Western Province;;Sri Lanka',
+    'NOTE:Cisco Certified Ethical Hacker | Fortinet NSE 3 (2677797821MH) | Fortinet Firewall Administrator (OAT/FFA/000973271735)',
     'END:VCARD'
   ].join('\n');
   const blob=new Blob([vcf],{type:'text/vcard'});
@@ -1901,105 +1546,54 @@ function downloadVCard(){
   a.href=URL.createObjectURL(blob);
   a.download='Manula_Haputhanthrie.vcf';
   a.click();
-  showToast('[+] Engineer vCard (.vcf) downloaded');
+  showToast('Contact vCard (.vcf) downloaded');
 }
 $('#hero-vcard').addEventListener('click',downloadVCard);
 
-function copyEmail(){
+$('#copy-email-btn').addEventListener('click',()=>{
   navigator.clipboard?.writeText('manulasapu2016@gmail.com');
-  showToast('[+] Copied manulasapu2016@gmail.com to clipboard');
-}
-$('#copy-email-btn').addEventListener('click',copyEmail);
+  showToast('Copied manulasapu2016@gmail.com to clipboard');
+});
 
-/* ---------- Interactive Packet Transmitter Form ---------- */
-$('#pkt-form').addEventListener('submit',e=>{
+/* ---------- Direct Message Form ---------- */
+$('#msg-form').addEventListener('submit',e=>{
   e.preventDefault();
   const name=$('#pf-name').value.trim();
   const subj=$('#pf-subj').value.trim();
   const msg=$('#pf-msg').value.trim();
-  const body=`[SOURCE]: ${name}\n[PROTOCOL]: Portfolio TLS Handshake\n\n${msg}`;
+  const body=`From: ${name}\n\n${msg}`;
   location.href=`mailto:manulasapu2016@gmail.com?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
-  showToast('[+] Opening mail client with formatted payload...');
 });
 $('#pf-wa').addEventListener('click',()=>{
   const name=$('#pf-name').value.trim()||'Visitor';
   const subj=$('#pf-subj').value.trim()||'Portfolio Inquiry';
-  const msg=$('#pf-msg').value.trim()||'Hi Manula, I visited ms97.live and would like to connect.';
-  const text=`*From:* ${name}\n*Topic:* ${subj}\n\n${msg}`;
+  const msg=$('#pf-msg').value.trim()||'Hi Manula, I visited your portfolio website and would like to connect.';
+  const text=`*Name:* ${name}\n*Regarding:* ${subj}\n\n${msg}`;
   window.open(`https://wa.me/94717435584?text=${encodeURIComponent(text)}`,'_blank','noopener');
 });
 
-/* ---------- Command Palette (Ctrl+K / Cmd+K) ---------- */
-const cmdModal=$('#cmd-modal'), cmdInput=$('#cmd-input');
-function openCmd(){
-  cmdModal.classList.add('open');
-  cmdInput.value='';
-  filterCmd('');
-  setTimeout(()=>cmdInput.focus(),30);
-}
-function closeCmd(){ cmdModal.classList.remove('open'); }
-$('#cmd-btn').addEventListener('click',openCmd);
-$('#noc-cmd-trigger').addEventListener('click',openCmd);
-cmdModal.addEventListener('click',e=>{ if(e.target===cmdModal) closeCmd(); });
-addEventListener('keydown',e=>{
-  if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){ e.preventDefault(); cmdModal.classList.contains('open')?closeCmd():openCmd(); }
-  if(e.key==='Escape' && cmdModal.classList.contains('open')) closeCmd();
-});
-function filterCmd(q){
-  const s=q.toLowerCase();
-  $$('.cmd-item').forEach(it=>{
-    it.style.display=it.textContent.toLowerCase().includes(s)?'flex':'none';
-  });
-}
-cmdInput.addEventListener('input',e=>filterCmd(e.target.value));
-$$('.cmd-item').forEach(it=>it.addEventListener('click',()=>{
-  const act=it.dataset.action;
-  closeCmd();
-  if(act.startsWith('goto:')) location.hash=act.slice(5);
-  else if(act==='term:certs'){ location.hash='#hero'; execTermCommand('certs'); }
-  else if(act==='term:neofetch'){ location.hash='#hero'; execTermCommand('neofetch'); }
-  else if(act==='term:soc'){ location.hash='#hero'; switchTermTab('siem'); }
-  else if(act==='copy-email') copyEmail();
-  else if(act==='vcard') downloadVCard();
-  else if(act==='theme') toggleTheme();
-}));
-
-/* ---------- Upgraded Network Topology Canvas (Named Hubs + Threat Counter) ---------- */
+/* ---------- Subtle Interactive Network Canvas ---------- */
 const cv=$('#net'),cx=cv.getContext('2d'),hero=$('#hero');
 let W=0,H=0,nodes=[],packets=[],mouse={x:-9999,y:-9999},running=true;
-let C1='0,245,196',C2='124,92,255',C3='255,59,107',dropsCount=0;
+let C1='0,229,184',C2='99,102,241';
 const LINK=145,LINK2=LINK*LINK;
-const hubLabels=['FORTIGATE-NGFW','SAFELINE-WAF','RADWARE-ADC','vCENTER-250','PEOTV-MCAST','BGP-ASN45489','CISCO-SEC'];
 
 function hexVar(v){
   const h=getComputedStyle(root).getPropertyValue(v).trim().replace('#','');
   return [0,2,4].map(i=>parseInt(h.slice(i,i+2),16)).join(',');
 }
-function readColors(){C1=hexVar('--pri');C2=hexVar('--acc');C3=hexVar('--danger');}
+function readColors(){C1=hexVar('--pri');C2=hexVar('--acc');}
 
 function resize(){
   const r=cv.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);
   W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);
-  const n=Math.round(Math.min(90,W*H/13500));
-  let hi=0;
-  nodes=Array.from({length:n},(_,idx)=>{
-    const isHub=idx<hubLabels.length;
-    return {
-      x:Math.random()*W,y:Math.random()*H,
-      vx:(Math.random()-.5)*.34,vy:(Math.random()-.5)*.34,
-      r:isHub?2.8:Math.random()*1.5+.9,
-      hub:isHub,
-      label:isHub?hubLabels[hi++]:null
-    };
-  });
+  const n=Math.round(Math.min(75,W*H/16000));
+  nodes=Array.from({length:n},()=>({
+    x:Math.random()*W,y:Math.random()*H,
+    vx:(Math.random()-.5)*.28,vy:(Math.random()-.5)*.28,
+    r:Math.random()*1.6+1,hub:Math.random()<.1
+  }));
   packets=[];
-}
-
-function incDrop(){
-  dropsCount++;
-  const d1=$('#noc-drops'), d2=$('#hero-drops');
-  if(d1) d1.textContent=dropsCount;
-  if(d2) d2.textContent=dropsCount;
 }
 
 function frame(){
@@ -2008,56 +1602,37 @@ function frame(){
     if(!RM){p.x+=p.vx;p.y+=p.vy;}
     if(p.x<0||p.x>W)p.vx*=-1;
     if(p.y<0||p.y>H)p.vy*=-1;
-    const dx=mouse.x-p.x,dy=mouse.y-p.y,d=dx*dx+dy*dy;
-    if(d<26000){p.x-=dx*.004;p.y-=dy*.004;}
   }
   for(let i=0;i<nodes.length;i++){
     const a=nodes[i];
     for(let j=i+1;j<nodes.length;j++){
       const b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=dx*dx+dy*dy;
       if(d<LINK2){
-        cx.strokeStyle=`rgba(${C1},${(1-d/LINK2)*.22})`;
+        cx.strokeStyle=`rgba(${C1},${(1-d/LINK2)*.18})`;
         cx.lineWidth=1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke();
       }
     }
     const mx=mouse.x-a.x,my=mouse.y-a.y,md=mx*mx+my*my;
-    if(md<34000){
-      cx.strokeStyle=`rgba(${C2},${(1-md/34000)*.55})`;
+    if(md<28000){
+      cx.strokeStyle=`rgba(${C2},${(1-md/28000)*.45})`;
       cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(mouse.x,mouse.y);cx.stroke();
     }
   }
-  cx.font='500 9.5px "JetBrains Mono", monospace';
   for(const p of nodes){
-    cx.fillStyle=p.hub?`rgba(${C2},.95)`:`rgba(${C1},.75)`;
-    cx.beginPath();cx.arc(p.x,p.y,p.r,0,Math.PI*2);cx.fill();
-    if(p.hub){
-      cx.strokeStyle=`rgba(${C2},.32)`;
-      cx.beginPath();cx.arc(p.x,p.y,p.r+6,0,Math.PI*2);cx.stroke();
-      if(p.label){
-        cx.fillStyle=`rgba(${C1},.65)`;
-        cx.fillText(p.label,p.x+10,p.y+3);
-      }
-    }
+    cx.fillStyle=p.hub?`rgba(${C2},.85)`:`rgba(${C1},.65)`;
+    cx.beginPath();cx.arc(p.x,p.y,p.hub?p.r+1.2:p.r,0,Math.PI*2);cx.fill();
   }
-  if(!RM&&packets.length<28&&Math.random()<.13){
+  if(!RM&&packets.length<18&&Math.random()<.08){
     const a=nodes[Math.random()*nodes.length|0];
     const near=nodes.filter(b=>b!==a&&(a.x-b.x)**2+(a.y-b.y)**2<LINK2);
-    if(near.length) packets.push({a,b:near[Math.random()*near.length|0],t:0,s:.012+Math.random()*.02,bad:Math.random()<.2,counted:false});
+    if(near.length) packets.push({a,b:near[Math.random()*near.length|0],t:0,s:.012+Math.random()*.015});
   }
   packets=packets.filter(k=>{
-    const stop=k.bad?.55:1;
-    if(k.t<stop) k.t=Math.min(k.t+k.s,stop); else if(!k.bad) return false;
+    k.t+=k.s;
+    if(k.t>=1) return false;
     const x=k.a.x+(k.b.x-k.a.x)*k.t,y=k.a.y+(k.b.y-k.a.y)*k.t;
-    if(k.bad&&k.t>=stop){
-      if(!k.counted){ k.counted=true; incDrop(); }
-      k.h=(k.h||0)+.05;
-      cx.strokeStyle=`rgba(${C3},${Math.max(0,1-k.h)})`;cx.lineWidth=1.6;
-      cx.beginPath();cx.arc(x,y,3+k.h*18,0,Math.PI*2);cx.stroke();cx.lineWidth=1;
-      return k.h<1;
-    }
-    const col=k.bad?C3:C1;
-    cx.fillStyle=`rgba(${col},1)`;cx.shadowColor=`rgba(${col},1)`;cx.shadowBlur=10;
-    cx.beginPath();cx.arc(x,y,2.1,0,Math.PI*2);cx.fill();cx.shadowBlur=0;
+    cx.fillStyle=`rgba(${C1},.95)`;
+    cx.beginPath();cx.arc(x,y,2,0,Math.PI*2);cx.fill();
     return true;
   });
   if(running&&!RM) requestAnimationFrame(frame);
