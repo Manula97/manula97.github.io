@@ -65,7 +65,7 @@ body{
   transition:background .3s,color .3s;position:relative;width:100%;
 }
 body.cli-open{overflow:hidden}
-#webgl-bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;pointer-events:none;display:block}
+#webgl-bg{position:fixed;inset:0;width:100vw;height:100lvh;z-index:0;pointer-events:none;display:block}
 main,footer{position:relative;z-index:2}
 img,svg{display:block;max-width:100%;height:auto}
 h1,h2,h3,h4{line-height:1.15;font-family:var(--font-display);text-wrap:balance}
@@ -187,7 +187,7 @@ nav{
 
 /* GUI SECTIONS */
 #hero{min-height:100svh;display:flex;align-items:center;padding-top:calc(var(--nav-h) + 2.25rem);padding-bottom:3.5rem;overflow:hidden}
-.hfade{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 55% 50% at 24% 42%,var(--pri-bg),transparent 70%),linear-gradient(to bottom,transparent 72%,var(--bg))}
+.hfade{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 55% 50% at 24% 42%,var(--pri-bg),transparent 70%),linear-gradient(to bottom,transparent 78%,var(--bg))}
 .hero-g{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:3rem;align-items:center}
 .hbadge-wrap{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.15rem}
 .hbadge{display:inline-flex;align-items:center;gap:.45rem;font:600 var(--text-xs) var(--font-body);padding:.35rem .85rem;border:1px solid var(--brd);background:var(--surfo);border-radius:var(--r-full);color:var(--tx);backdrop-filter:blur(8px)}
@@ -468,7 +468,7 @@ footer{border-top:1px solid var(--div);background:var(--bg-alt);backdrop-filter:
 <div class="mouse-glow" id="mouse-glow"></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<!-- FIXED 3D WEBGL SCENE (Live Threat Map Country-to-Country One-to-Many Globe + Scroll Tunnel) -->
+<!-- FIXED 3D WEBGL SCENE (High-DPI Mobile & Desktop Live Threat Map Globe + Scroll Tunnel) -->
 <canvas id="webgl-bg" aria-hidden="true"></canvas>
 
 <a href="#main" class="sr-only">Skip to content</a>
@@ -1170,7 +1170,7 @@ footer{border-top:1px solid var(--div);background:var(--bg-alt);backdrop-filter:
   </div>
 </footer>
 
-<!-- Three.js for Live Threat Map Country-to-Country One-to-Many 3D Globe -->
+<!-- Three.js for High-DPI Mobile & Desktop Live Threat Map 3D Globe -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
@@ -1335,24 +1335,30 @@ $$('.card, .showcase').forEach(c=>{
 });
 
 /* ==========================================================================
-   #1 + #4 · LIVE THREAT MAP GLOBE (ONE-TO-MANY COUNTRY-TO-COUNTRY, RED & GREEN)
+   #1 + #4 · HIGH-DPI MOBILE & DESKTOP LIVE THREAT MAP GLOBE (RED & GREEN)
    ========================================================================== */
 (()=>{
   const canvas=$('#webgl-bg');
   if(!window.THREE || !canvas) return;
 
   const isMobile = window.innerWidth < 768;
-  const renderer = new THREE.WebGLRenderer({canvas, alpha:true, antialias:!isMobile, powerPreference:'high-performance'});
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1, isMobile?1.5:2));
+  /* Hardware antialiasing enabled on both desktop and mobile + full Retina/AMOLED pixel ratio (up to 3x) */
+  const renderer = new THREE.WebGLRenderer({
+    canvas,
+    alpha:true,
+    antialias:true,
+    powerPreference:'high-performance'
+  });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 3));
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2(0x080c14, 0.012);
+  scene.fog = new THREE.FogExp2(0x080c14, isMobile ? 0.008 : 0.012);
 
   const camera = new THREE.PerspectiveCamera(55, window.innerWidth/window.innerHeight, 0.1, 300);
   camera.position.set(0, 0, 18);
 
-  /* --- GROUP 1: 3D REAL-WORLD LIVE THREAT MAP GLOBE ON LEFT SIDE --- */
+  /* --- GROUP 1: 3D REAL-WORLD LIVE THREAT MAP GLOBE --- */
   const globeGroup = new THREE.Group();
   globeGroup.rotation.y = -1.65;
   scene.add(globeGroup);
@@ -1362,11 +1368,12 @@ $$('.card, .showcase').forEach(c=>{
       globeGroup.position.set(-5.2, 0.2, -0.5);
       globeGroup.scale.setScalar(1.06);
     } else if(window.innerWidth > 768){
-      globeGroup.position.set(-1.8, 2.0, -2);
-      globeGroup.scale.setScalar(0.9);
+      globeGroup.position.set(-1.5, 1.8, -0.5);
+      globeGroup.scale.setScalar(0.95);
     } else {
-      globeGroup.position.set(0, 2.6, -3.5);
-      globeGroup.scale.setScalar(0.75);
+      /* Positioned at z: 0 out of the fog with crisp 0.88 scale on mobile phones */
+      globeGroup.position.set(0, 2.1, 0);
+      globeGroup.scale.setScalar(0.88);
     }
   }
   positionGlobeForViewport();
@@ -1374,13 +1381,13 @@ $$('.card, .showcase').forEach(c=>{
   const GLOBE_R = 4.65;
 
   /* Ocean Sphere Base */
-  const coreGeo = new THREE.SphereGeometry(GLOBE_R*0.985, 36, 36);
-  const coreMat = new THREE.MeshBasicMaterial({color:0x060b14, transparent:true, opacity:0.86});
+  const coreGeo = new THREE.SphereGeometry(GLOBE_R*0.985, 40, 40);
+  const coreMat = new THREE.MeshBasicMaterial({color:0x060b14, transparent:true, opacity:0.88});
   globeGroup.add(new THREE.Mesh(coreGeo, coreMat));
 
   /* Subtle Lat/Lon Graticule Grid */
   const gridGeo = new THREE.SphereGeometry(GLOBE_R*0.995, 24, 16);
-  const gridMat = new THREE.MeshBasicMaterial({color:0x1e293b, wireframe:true, transparent:true, opacity:0.20});
+  const gridMat = new THREE.MeshBasicMaterial({color:0x1e293b, wireframe:true, transparent:true, opacity:isMobile?0.26:0.20});
   globeGroup.add(new THREE.Mesh(gridGeo, gridMat));
 
   /* Helper: Lat/Lon to 3D Vector on Sphere */
@@ -1394,11 +1401,20 @@ $$('.card, .showcase').forEach(c=>{
     );
   }
 
-  /* Material for 3D World Country Borders */
-  const countryBorderMat = new THREE.LineBasicMaterial({color:0x38bdf8, transparent:true, opacity:0.50});
-  const countryDotsMat = new THREE.PointsMaterial({color:0x7dd3fc, size:0.052, transparent:true, opacity:0.70});
+  /* Material for 3D World Country Borders (boosted contrast on mobile screens) */
+  const countryBorderMat = new THREE.LineBasicMaterial({
+    color:0x38bdf8,
+    transparent:true,
+    opacity: isMobile ? 0.68 : 0.52
+  });
+  const countryDotsMat = new THREE.PointsMaterial({
+    color:0x7dd3fc,
+    size: isMobile ? 0.068 : 0.052,
+    transparent:true,
+    opacity: isMobile ? 0.85 : 0.72
+  });
 
-  /* Built-in Instant Continent Outlines (renders immediately, upgraded by full World GeoJSON) */
+  /* Built-in Instant Continent Outlines */
   const fallbackContinents = [
     [[70,-160],[70,-60],[50,-55],[25,-80],[10,-85],[18,-105],[32,-117],[60,-140],[70,-160]],
     [[12,-75],[5,-35],[-23,-43],[-55,-68],[-40,-73],[-18,-70],[0,-80],[12,-75]],
@@ -1487,7 +1503,7 @@ $$('.card, .showcase').forEach(c=>{
     const surfPos = latLonToVec3(lat, lon, GLOBE_R*1.006);
     const normal = surfPos.clone().normalize();
     const isAttackOrigin = idx % 3 === 0 && idx !== 0;
-    const nodeGeo = new THREE.SphereGeometry(idx===0 ? 0.11 : 0.065, 10, 10);
+    const nodeGeo = new THREE.SphereGeometry(idx===0 ? 0.12 : 0.07, 12, 12);
     const nodeMat = new THREE.MeshBasicMaterial({color: isAttackOrigin ? COLOR_ATTACK : COLOR_CLEAN});
     const nodeMesh = new THREE.Mesh(nodeGeo, nodeMat);
     nodeMesh.position.copy(surfPos);
@@ -1498,7 +1514,7 @@ $$('.card, .showcase').forEach(c=>{
   /* Surface Shockwave Ring Generator (Red for Attack, Green for Non-Attack) */
   const impacts = [];
   function triggerCountryPulse(targetNode, colorHex, maxScale=1.6){
-    const rGeo = new THREE.RingGeometry(0.05, 0.12, 24);
+    const rGeo = new THREE.RingGeometry(0.055, 0.13, 24);
     const rMat = new THREE.MeshBasicMaterial({color:colorHex, side:THREE.DoubleSide, transparent:true, opacity:0.95});
     const rMesh = new THREE.Mesh(rGeo, rMat);
     rMesh.position.copy(targetNode.surfPos.clone().addScaledVector(targetNode.normal, 0.02));
@@ -1511,44 +1527,39 @@ $$('.card, .showcase').forEach(c=>{
      LIVE THREAT MAP ENGINE: ONE-TO-MANY COUNTRY-TO-COUNTRY ARCS (RED & GREEN)
      ========================================================================== */
   const activeFlights = [];
-  const MAX_FLIGHTS = isMobile ? 16 : 28;
+  const MAX_FLIGHTS = isMobile ? 20 : 28;
 
-  /* Spawn a single country-to-country curved missile (Red = Attack, Green = Non-Attack) */
   function spawnCountryToCountryArc(srcNode, dstNode, isAttack, delayFrames=0){
     if(activeFlights.length >= MAX_FLIGHTS) return;
     const colorHex = isAttack ? COLOR_ATTACK : COLOR_CLEAN;
     const start = srcNode.surfPos;
     const end   = dstNode.surfPos;
 
-    /* Great-circle arch height proportional to distance between countries */
     const dist = start.distanceTo(end);
     const mid = start.clone().add(end).multiplyScalar(0.5).normalize().multiplyScalar(GLOBE_R + Math.max(0.85, dist * 0.42));
     const curve = new THREE.QuadraticBezierCurve3(start, mid, end);
 
-    /* Subtle guide path arc between Source Country and Destination Country */
-    const guidePts = curve.getPoints(36);
+    const guidePts = curve.getPoints(40);
     const guideGeo = new THREE.BufferGeometry().setFromPoints(guidePts);
     const guideMat = new THREE.LineBasicMaterial({
       color: colorHex,
       transparent: true,
-      opacity: isAttack ? 0.22 : 0.18
+      opacity: isMobile ? (isAttack ? 0.32 : 0.26) : (isAttack ? 0.22 : 0.18)
     });
     const guideLine = new THREE.Line(guideGeo, guideMat);
     globeGroup.add(guideLine);
 
-    /* Moving glowing point head (Red or Green) */
-    const headGeo = new THREE.SphereGeometry(isAttack ? 0.085 : 0.075, 8, 8);
+    const headGeo = new THREE.SphereGeometry(isAttack ? 0.09 : 0.08, 10, 10);
     const headMat = new THREE.MeshBasicMaterial({color: colorHex});
     const headMesh = new THREE.Mesh(headGeo, headMat);
     headMesh.visible = false;
     globeGroup.add(headMesh);
 
-    /* Moving glowing comet tail along the curve (10 segments) */
-    const TAIL_PTS = 10;
+    const TAIL_PTS = 12;
     const tailPositions = new Float32Array(TAIL_PTS * 3);
     const tailGeo = new THREE.BufferGeometry();
     tailGeo.setAttribute('position', new THREE.BufferAttribute(tailPositions, 3));
-    const tailMat = new THREE.LineBasicMaterial({color: colorHex, transparent: true, opacity: 0.9});
+    const tailMat = new THREE.LineBasicMaterial({color: colorHex, transparent: true, opacity: 0.95});
     const tailLine = new THREE.Line(tailGeo, tailMat);
     tailLine.visible = false;
     globeGroup.add(tailLine);
@@ -1569,37 +1580,33 @@ $$('.card, .showcase').forEach(c=>{
     });
   }
 
-  /* Launch a ONE-TO-MANY burst from one Source Country to 2–4 Destination Countries */
   function launchOneToManyBurst(){
     const srcIdx = Math.random() * countryNodes.length | 0;
     const srcNode = countryNodes[srcIdx];
-    const isAttackBurst = Math.random() < 0.48; // ~48% Red Attack waves, ~52% Green Clean waves
-    const burstCount = 2 + (Math.random() * 3 | 0); // 1 country -> 2 to 4 target countries
+    const isAttackBurst = Math.random() < 0.48;
+    const burstCount = 2 + (Math.random() * 3 | 0);
 
     const usedTargets = new Set([srcIdx]);
     for(let b=0; b<burstCount; b++){
       let dstIdx = Math.random() * countryNodes.length | 0;
-      /* Occasionally bias toward Sri Lanka (index 0) so the user's home hub stays active */
       if(b === 0 && srcIdx !== 0 && Math.random() < 0.45) dstIdx = 0;
       if(usedTargets.has(dstIdx)) continue;
       usedTargets.add(dstIdx);
 
       const dstNode = countryNodes[dstIdx];
-      /* Staggered launch frames (0, 6, 12...) for authentic Live Threat Map salvo feel */
       spawnCountryToCountryArc(srcNode, dstNode, isAttackBurst, b * 6);
     }
   }
 
-  /* Seed initial one-to-many waves immediately */
   for(let w=0; w<6; w++) launchOneToManyBurst();
 
   /* --- GROUP 2: #4 SCROLL-DRIVEN 3D NETWORK TUNNEL FLY-THROUGH --- */
   const tunnelGroup = new THREE.Group();
   scene.add(tunnelGroup);
 
-  const RING_COUNT = isMobile ? 14 : 24;
+  const RING_COUNT = isMobile ? 16 : 24;
   const RING_SPACING = 7.5;
-  const ringMat = new THREE.LineBasicMaterial({color:0x38bdf8, transparent:true, opacity:0.14});
+  const ringMat = new THREE.LineBasicMaterial({color:0x38bdf8, transparent:true, opacity:0.15});
 
   for(let i=0; i<RING_COUNT; i++){
     const zPos = -8 - i * RING_SPACING;
@@ -1616,7 +1623,7 @@ $$('.card, .showcase').forEach(c=>{
     tunnelGroup.add(rLine);
   }
 
-  const NODE_COUNT = isMobile ? 160 : 320;
+  const NODE_COUNT = isMobile ? 200 : 320;
   const nodePositions = new Float32Array(NODE_COUNT * 3);
   const nodeVecs = [];
   for(let i=0; i<NODE_COUNT; i++){
@@ -1671,11 +1678,18 @@ $$('.card, .showcase').forEach(c=>{
     targetMouseY = (e.clientY / window.innerHeight - 0.5) * 2;
   }, {passive:true});
 
+  /* Ignore tiny mobile address-bar height resizes so the WebGL canvas never blurs mid-scroll */
+  let lastWinW = window.innerWidth, lastWinH = window.innerHeight;
   window.addEventListener('resize', ()=>{
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    positionGlobeForViewport();
+    const w = window.innerWidth, h = window.innerHeight;
+    if(w !== lastWinW || Math.abs(h - lastWinH) > 120){
+      lastWinW = w; lastWinH = h;
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 3));
+      renderer.setSize(w, h);
+      positionGlobeForViewport();
+    }
   });
 
   /* Main 60fps WebGL Render Loop */
@@ -1699,12 +1713,10 @@ $$('.card, .showcase').forEach(c=>{
         globeGroup.rotation.y += 0.0026;
         globeGroup.rotation.x = 0.15 + curMouseY * 0.12;
 
-        /* Continuously spawn new One-to-Many Country-to-Country waves */
         if(frameCounter % 28 === 0 && activeFlights.length < MAX_FLIGHTS - 2){
           launchOneToManyBurst();
         }
 
-        /* Update all active Country-to-Country Red & Green Flights */
         for(let i=activeFlights.length-1; i>=0; i--){
           const fl = activeFlights[i];
           if(fl.delay > 0){
@@ -1715,18 +1727,15 @@ $$('.card, .showcase').forEach(c=>{
             fl.started = true;
             fl.headMesh.visible = true;
             fl.tailLine.visible = true;
-            /* Pulse the Source Country when launching */
             fl.srcNode.mesh.material.color.setHex(fl.colorHex);
             triggerCountryPulse(fl.srcNode, fl.colorHex, 1.15);
           }
 
           fl.t += fl.speed;
           if(fl.t >= 1){
-            /* Impact on Destination Country! */
             fl.dstNode.mesh.material.color.setHex(fl.colorHex);
             triggerCountryPulse(fl.dstNode, fl.colorHex, 1.85);
 
-            /* Cleanup completed flight */
             globeGroup.remove(fl.guideLine);
             globeGroup.remove(fl.headMesh);
             globeGroup.remove(fl.tailLine);
@@ -1740,11 +1749,9 @@ $$('.card, .showcase').forEach(c=>{
             continue;
           }
 
-          /* Move glowing head along the 3D country-to-country curve */
           const headPos = fl.curve.getPointAt(fl.t);
           fl.headMesh.position.copy(headPos);
 
-          /* Update comet tail trailing behind the head */
           const posAttr = fl.tailLine.geometry.attributes.position;
           const tailLen = 0.18;
           for(let k=0; k<fl.tailPtsCount; k++){
@@ -1755,7 +1762,6 @@ $$('.card, .showcase').forEach(c=>{
           posAttr.needsUpdate = true;
         }
 
-        /* Update Red & Green Surface Shockwave Rings on Countries */
         for(let i=impacts.length-1; i>=0; i--){
           const imp = impacts[i];
           imp.scale += 0.11;
